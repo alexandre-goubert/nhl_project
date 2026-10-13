@@ -136,6 +136,21 @@ a:hover{
     margin:20px;
 }
 
+.discover-teams2, .discover-teams3, .discover-teams4, .discover-teams5{
+    background-color: #95d3e288;
+    display:inline-block;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.discover-teams2 p, .discover-teams3 p, .discover-teams4 p, .discover-teams5 p{
+    color: #101C30;
+    font-weight: bold;
+    font-size: 20px;
+    margin:20px;
+    padding-bottom: 20px;
+}
+
 .container2{
     background-color: #F1F5F9;
     padding: 50px;
