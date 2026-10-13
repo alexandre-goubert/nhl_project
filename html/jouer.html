@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>NHL Zone</title>
+</head>
+<body>
+<header>
+
+        <div class="header-title">Nhl <span>Zone</span>
+
+        </div>
+
+        <div class="header-menu"> <!-- Menu de navigation -->
+
+            <div class="header-home">
+
+                <a href="../index.html"><p>Accueil</p></a>
+
+            </div>
+
+            <div class="header-teams">
+
+                <a href="teams.html"><p>Equipes</p></a>
+
+            </div>
+
+            <div class="header-matches">
+
+                <p>Matchs</p>
+
+            </div>
+
+            <div class="header-rankings">
+
+                <a href="rankings.html"><p>Classements</p></a>
+
+            </div>
+
+    </div>
+
+</header>
+<main class="quiz-game">
+
+    <a href="quiz.html" class="quiz-back">← Retour aux quiz</a>
+
+    <section class="quiz-introduction">
+
+        <h1 id="quiz-title">Titre du quiz</h1>
+        <p id="quiz-description">Description du quiz</p>
+
+    </section>
+
+    <section id="quiz-content" aria-labelledby="question-title">
+
+        <div class="quiz-progress">
+
+            <p id="question-counter">Question 1 sur 5</p>
+            <progress id="quiz-progress" value="0" max="5"
+                      aria-label="Questions terminées"></progress>
+
+        </div>
+
+        <h2 id="question-title">La question sera affichée ici</h2>
+
+        <div class="quiz-answers" role="group"
+             aria-labelledby="question-title">
+
+            <button type="button" class="answer"
+                    data-index="0" aria-pressed="false">
+                Réponse 1
+            </button>
+
+            <button type="button" class="answer"
+                    data-index="1" aria-pressed="false">
+                Réponse 2
+            </button>
+
+            <button type="button" class="answer"
+                    data-index="2" aria-pressed="false">
+                Réponse 3
+            </button>
+
+            <button type="button" class="answer"
+                    data-index="3" aria-pressed="false">
+                Réponse 4
+            </button>
+
+        </div>
+
+        <p id="quiz-feedback" aria-live="polite"></p>
+
+        <div class="quiz-actions">
+
+            <button type="button" id="validate-answer" disabled>
+                Valider ma réponse
+            </button>
+
+            <button type="button" id="next-question" hidden>
+                Question suivante
+            </button>
+
+        </div>
+
+    </section>
+
+    <section id="quiz-result" aria-labelledby="result-title" hidden>
+
+        <h2 id="result-title">Quiz terminé !</h2>
+
+        <p id="final-score"></p>
+
+        <button type="button" id="restart-quiz">Rejouer</button>
+
+        <a href="quiz.html">Choisir un autre quiz</a>
+
+    </section>
+
+</main>
+
+<footer>
+
+        <div class="footer-title">NHL <span>Zone</span>
+
+        </div>
+
+        <div class="footer-menu">
+
+            <p>Site de fans indépendant</p>
+            <p>Non affilié à la NHL</p>
+        </div>
+</footer>
+
+<script type="module" src="../script/quiz.js" defer></script>
+</body>
+</html>

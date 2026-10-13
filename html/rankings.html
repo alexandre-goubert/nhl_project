@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-rankings.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>NHL Zone</title>
+</head>
+<body>
+<header>
+
+        <div class="header-title">Nhl <span>Zone</span>
+
+        </div>
+
+        <div class="header-menu">
+
+            <div class="header-home">
+
+                <a href="../index.html"><p>Accueil</p></a>
+
+            </div>
+
+            <div class="header-teams">
+
+                <a href="teams.html"><p>Equipes</p></a>
+
+            </div>
+
+            <div class="header-matches">
+
+                <p>Matchs</p>
+
+            </div>
+
+            <div class="header-rankings">
+
+                <a href="rankings.html"><p>Classements</p></a>
+
+            </div>
+
+    </div>
+
+</header>
+
+<main>
+
+    <h1>Classements</h1>
+    <p class="standings-meta">Saison 2026–2027 · Données au 12 octobre 2026</p>
+
+    <!-- Source : https://api-web.nhle.com/v1/standings/2026-10-12 ; relevé du 12/10/2026. Données statiques, sans actualisation automatique. -->
+
+    <div class="rankings-menu" aria-label="Choisir un classement">
+        <div class="rankings-filter-group">
+            <button type="button" data-cible="nhl" aria-controls="nhl" aria-pressed="true">NHL</button>
+            <button type="button" data-cible="eastern" aria-controls="eastern" aria-pressed="false">Conférence Est</button>
+            <button type="button" data-cible="western" aria-controls="western" aria-pressed="false">Conférence Ouest</button>
+        </div>
+        <div class="rankings-filter-group">
+            <button type="button" data-cible="atlantic" aria-controls="atlantic" aria-pressed="false">Atlantic</button>
+            <button type="button" data-cible="metropolitan" aria-controls="metropolitan" aria-pressed="false">Metropolitan</button>
+            <button type="button" data-cible="central" aria-controls="central" aria-pressed="false">Central</button>
+            <button type="button" data-cible="pacific" aria-controls="pacific" aria-pressed="false">Pacific</button>
+        </div>
+    </div>
+
+    <div id="nhl" class="ranking" role="region" aria-labelledby="caption-nhl" tabindex="0">
+
+        <table>
+            <caption id="caption-nhl">Classement NHL</caption>
+            <thead>
+                <tr>
+                    <th>R</th>
+                    <th>Équipe</th>
+                    <th>G</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>OT</th>
+                    <th>PTS</th>
+                    <th>Streak</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Carolina Hurricanes</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>11</td>
+                    <td><span class="streak streak-win">W5</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ottawa Senators</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td><span class="streak streak-win">W3</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>New York Rangers</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Vegas Golden Knights</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Edmonton Oilers</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>9</td>
+                    <td><span class="streak streak-win">W4</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Minnesota Wild</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>9</td>
+                    <td><span class="streak streak-win">W2</span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Tampa Bay Lightning</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W4</span></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Anaheim Ducks</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W2</span></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Seattle Kraken</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W2</span></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Utah Mammoth</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Boston Bruins</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W2</span></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Winnipeg Jets</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Toronto Maple Leafs</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Pittsburgh Penguins</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Colorado Avalanche</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Washington Capitals</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Nashville Predators</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td><span class="streak streak-ot">OT1</span></td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>San Jose Sharks</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Buffalo Sabres</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Florida Panthers</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td><span class="streak streak-loss">L2</span></td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Dallas Stars</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td><span class="streak streak-ot">OT1</span></td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>St. Louis Blues</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Montréal Canadiens</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Columbus Blue Jackets</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>New York Islanders</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>New Jersey Devils</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>Vancouver Canucks</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td><span class="streak streak-loss">L4</span></td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>Detroit Red Wings</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td><span class="streak streak-ot">OT1</span></td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>Los Angeles Kings</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td><span class="streak streak-ot">OT1</span></td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>Chicago Blackhawks</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td><span class="streak streak-loss">L2</span></td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>Philadelphia Flyers</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td><span class="streak streak-loss">L4</span></td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>Calgary Flames</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><span class="streak streak-loss">L5</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="eastern" class="ranking" role="region" aria-labelledby="caption-eastern" tabindex="0" hidden>
+
+        <table>
+            <caption id="caption-eastern">Classement Eastern Conference</caption>
+            <thead>
+                <tr>
+                    <th>R</th>
+                    <th>Équipe</th>
+                    <th>G</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>OT</th>
+                    <th>PTS</th>
+                    <th>Streak</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Carolina Hurricanes</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>11</td>
+                    <td><span class="streak streak-win">W5</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ottawa Senators</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td><span class="streak streak-win">W3</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>New York Rangers</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Tampa Bay Lightning</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W4</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Boston Bruins</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W2</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Toronto Maple Leafs</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Pittsburgh Penguins</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Washington Capitals</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Buffalo Sabres</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Florida Panthers</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td><span class="streak streak-loss">L2</span></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Montréal Canadiens</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Columbus Blue Jackets</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>New York Islanders</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>New Jersey Devils</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Detroit Red Wings</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td><span class="streak streak-ot">OT1</span></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Philadelphia Flyers</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td><span class="streak streak-loss">L4</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="western" class="ranking" role="region" aria-labelledby="caption-western" tabindex="0" hidden>
+        <table>
+            <caption id="caption-western">Classement Western Conference</caption>
+            <thead>
+                <tr>
+                    <th>R</th>
+                    <th>Équipe</th>
+                    <th>G</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>OT</th>
+                    <th>PTS</th>
+                    <th>Streak</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Vegas Golden Knights</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Edmonton Oilers</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>9</td>
+                    <td><span class="streak streak-win">W4</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Minnesota Wild</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>9</td>
+                    <td><span class="streak streak-win">W2</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Anaheim Ducks</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W2</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Seattle Kraken</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W2</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Utah Mammoth</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Winnipeg Jets</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Colorado Avalanche</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Nashville Predators</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td><span class="streak streak-ot">OT1</span></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>San Jose Sharks</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Dallas Stars</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td><span class="streak streak-ot">OT1</span></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>St. Louis Blues</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Vancouver Canucks</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td><span class="streak streak-loss">L4</span></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Los Angeles Kings</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td><span class="streak streak-ot">OT1</span></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Chicago Blackhawks</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td><span class="streak streak-loss">L2</span></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Calgary Flames</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><span class="streak streak-loss">L5</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="atlantic" class="ranking" role="region" aria-labelledby="caption-atlantic" tabindex="0" hidden data-division>
+        <table>
+            <caption id="caption-atlantic">Classement Atlantic Division</caption>
+            <thead>
+                <tr>
+                    <th>R</th>
+                    <th>Équipe</th>
+                    <th>G</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>OT</th>
+                    <th>PTS</th>
+                    <th>Streak</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ottawa Senators</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td><span class="streak streak-win">W3</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tampa Bay Lightning</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W4</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Boston Bruins</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W2</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Toronto Maple Leafs</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Buffalo Sabres</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Florida Panthers</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td><span class="streak streak-loss">L2</span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Montréal Canadiens</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Detroit Red Wings</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td><span class="streak streak-ot">OT1</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="metropolitan" class="ranking" role="region" aria-labelledby="caption-metropolitan" tabindex="0" hidden data-division>
+        <table>
+            <caption id="caption-metropolitan">Classement Metropolitan Division</caption>
+            <thead>
+                <tr>
+                    <th>R</th>
+                    <th>Équipe</th>
+                    <th>G</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>OT</th>
+                    <th>PTS</th>
+                    <th>Streak</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Carolina Hurricanes</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>11</td>
+                    <td><span class="streak streak-win">W5</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>New York Rangers</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pittsburgh Penguins</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Washington Capitals</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Columbus Blue Jackets</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>New York Islanders</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>New Jersey Devils</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Philadelphia Flyers</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td><span class="streak streak-loss">L4</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="central" class="ranking" role="region" aria-labelledby="caption-central" tabindex="0" hidden data-division>
+        <table>
+            <caption id="caption-central">Classement Central Division</caption>
+            <thead>
+                <tr>
+                    <th>R</th>
+                    <th>Équipe</th>
+                    <th>G</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>OT</th>
+                    <th>PTS</th>
+                    <th>Streak</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Minnesota Wild</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>9</td>
+                    <td><span class="streak streak-win">W2</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Utah Mammoth</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Winnipeg Jets</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Colorado Avalanche</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Nashville Predators</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td><span class="streak streak-ot">OT1</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Dallas Stars</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td><span class="streak streak-ot">OT1</span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>St. Louis Blues</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td><span class="streak streak-win">W1</span></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Chicago Blackhawks</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td><span class="streak streak-loss">L2</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="pacific" class="ranking" role="region" aria-labelledby="caption-pacific" tabindex="0" hidden data-division>
+        <table>
+            <caption id="caption-pacific">Classement Pacific Division</caption>
+            <thead>
+                <tr>
+                    <th>R</th>
+                    <th>Équipe</th>
+                    <th>G</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>OT</th>
+                    <th>PTS</th>
+                    <th>Streak</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Vegas Golden Knights</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Edmonton Oilers</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>9</td>
+                    <td><span class="streak streak-win">W4</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Anaheim Ducks</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W2</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Seattle Kraken</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td><span class="streak streak-win">W2</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>San Jose Sharks</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td><span class="streak streak-loss">L1</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Vancouver Canucks</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td><span class="streak streak-loss">L4</span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Los Angeles Kings</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td><span class="streak streak-ot">OT1</span></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Calgary Flames</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><span class="streak streak-loss">L5</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="standings-legend">G : matchs joués · W : victoires · L : défaites · OT : défaites après prolongation ou tirs au but · PTS : points.<br>W3 : 3 victoires consécutives · L2 : 2 défaites consécutives. Le repère cyan signale les trois premiers de chaque division.</p>
+
+    <div class="information-container">
+
+        <h2>Format et fonctionnement des playoffs</h2>
+        <p><strong>16 équipes</strong> se qualifieront pour les séries éliminatoires de la Coupe Stanley. Le format est une saison régulière qui est en grande partie basée sur les divisions avec des jokers.</p>
+
+        <p>Les trois meilleures équipes de chaque division constitueront les 12 premières équipes des séries éliminatoires.</p>
+        
+        <p>Les quatre places restantes seront remplies par les wild-cards, c'est-à-dire les deux prochains finalistes les mieux classés de chaque conférence, sur la base du bilan de la saison régulière et quelle que soit la division. Il est possible qu'une division de chaque conférence envoie cinq équipes en séries éliminatoires tandis que l'autre n'en envoie que trois.</p>
+        
+        <p>Au premier tour, le vainqueur de division avec le meilleur bilan de chaque conférence sera confronté à l'équipe wild-card avec le bilan le plus faible ; l'équipe wild-card avec le meilleur bilan affrontera l'autre vainqueur de division.</p>
+        
+        <p>Les équipes terminant deuxième et troisième de chaque division se rencontreront au premier tour dans le cadre du tableau dirigé par leurs vainqueurs de division respectifs.</p>
+        
+        <p>Au deuxième tour, les vainqueurs du premier tour de chaque confrontation s'affrontent pour déterminer les quatre participants au <strong>Finales de conférence</strong>.</p>
+        
+        <p>L'<strong>avantage de l'équipe à domicile</strong>revient à l'équipe qui s'est classée plus haut au classement de la saison régulière. Lors des finales de conférence et de la finale de la Coupe Stanley, l'avantage de l'équipe à domicile revient à l'équipe qui a obtenu le meilleur bilan en saison régulière, quel que soit le classement final des équipes dans leurs divisions respectives.</p>
+
+    </div>
+
+
+
+</main>
+
+<footer>
+
+        <div class="footer-title">NHL <span>Zone</span>
+
+        </div>
+
+        <div class="footer-menu"> <!-- Menu du pied de page -->
+
+            <p>Site de fans indépendant</p>
+            <p>Non affilié à la NHL</p>
+            
+</footer>
+
+<script src="../script/rankings.js"></script>
+</body>
+</html>
