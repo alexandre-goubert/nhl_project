@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-matches.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Matchs et résultats — NHL Zone</title>
+</head>
+<body>
+<header>
+
+        <div class="header-title">Nhl <span>Zone</span>
+
+        </div>
+
+        <div class="header-menu">
+
+            <div class="header-home">
+
+                <a href="../index.html"><p>Accueil</p></a>
+
+            </div>
+
+            <div class="header-teams">
+
+                <a href="teams.html"><p>Equipes</p></a>
+
+            </div>
+
+            <div class="header-matches">
+
+                <a href="matches.html" aria-current="page"><p>Matchs</p></a>
+
+            </div>
+
+            <div class="header-rankings">
+
+                <a href="rankings.html"><p>Classements</p></a>
+
+            </div>
+
+    </div>
+
+</header>
+
+<main>
+    <section class="matches-intro">
+        <h1>Les matchs <span>de la NHL</span></h1>
+        <p>Retrouvez les scores et les dernières confrontations de vos franchises.</p>
+        <div class="matches-summary"><span>Résultats du 1 au 13 octobre 2026</span><span>Matchs terminés uniquement</span></div>
+    </section>
+
+    <form class="matches-filters" id="matches-filters" hidden>
+        <div><label for="match-date">Journée NHL</label><input type="date" id="match-date" min="2026-10-01" max="2026-10-13"></div>
+        <div><label for="match-team">Franchise</label><select id="match-team"><option value="">Toutes les équipes</option>
+            <option value="ANA">Anaheim Ducks</option>
+            <option value="BOS">Boston Bruins</option>
+            <option value="BUF">Buffalo Sabres</option>
+            <option value="CGY">Calgary Flames</option>
+            <option value="CAR">Carolina Hurricanes</option>
+            <option value="CHI">Chicago Blackhawks</option>
+            <option value="COL">Colorado Avalanche</option>
+            <option value="CBJ">Columbus Blue Jackets</option>
+            <option value="DAL">Dallas Stars</option>
+            <option value="DET">Detroit Red Wings</option>
+            <option value="EDM">Edmonton Oilers</option>
+            <option value="FLA">Florida Panthers</option>
+            <option value="LAK">Los Angeles Kings</option>
+            <option value="MIN">Minnesota Wild</option>
+            <option value="MTL">Montréal Canadiens</option>
+            <option value="NSH">Nashville Predators</option>
+            <option value="NJD">New Jersey Devils</option>
+            <option value="NYI">New York Islanders</option>
+            <option value="NYR">New York Rangers</option>
+            <option value="OTT">Ottawa Senators</option>
+            <option value="PHI">Philadelphia Flyers</option>
+            <option value="PIT">Pittsburgh Penguins</option>
+            <option value="SJS">San Jose Sharks</option>
+            <option value="SEA">Seattle Kraken</option>
+            <option value="STL">St. Louis Blues</option>
+            <option value="TBL">Tampa Bay Lightning</option>
+            <option value="TOR">Toronto Maple Leafs</option>
+            <option value="UTA">Utah Mammoth</option>
+            <option value="VAN">Vancouver Canucks</option>
+            <option value="VGK">Vegas Golden Knights</option>
+            <option value="WSH">Washington Capitals</option>
+            <option value="WPG">Winnipeg Jets</option>
+        </select></div>
+        <button type="reset">Réinitialiser</button>
+    </form>
+    <p id="matches-count" role="status"></p>
+    <p class="matches-note">Dates du calendrier NHL nord-américain. Les rencontres les plus récentes apparaissent en premier.</p>
+    <div id="matches-results">
+        <section class="match-day"><h2><time datetime="2026-10-12">12 octobre 2026</time></h2><div class="matches-grid">
+            <article class="match-card" data-date="2026-10-12" data-teams="VGK MIN">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-VGK">VGK</span><div><a href="vegas.html">Vegas Golden Knights</a><small>Extérieur</small></div><strong class="match-score">2</strong></div>
+                <div class="match-team winner"><span class="team-code-MIN">MIN</span><div><a href="minnesota.html">Minnesota Wild</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-bottom"><span>Grand Casino Arena</span><a href="https://www.nhl.com/gamecenter/vgk-vs-min/2026/10/12/2026020089">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-12" data-teams="OTT NJD">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-OTT">OTT</span><div><a href="ottawa.html">Ottawa Senators</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-team"><span class="team-code-NJD">NJD</span><div><a href="newjersey.html">New Jersey Devils</a><small>Domicile</small></div><strong class="match-score">1</strong></div>
+                <div class="match-bottom"><span>Prudential Center</span><a href="https://www.nhl.com/gamecenter/ott-vs-njd/2026/10/12/2026020088">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-12" data-teams="FLA BUF">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-FLA">FLA</span><div><a href="florida.html">Florida Panthers</a><small>Extérieur</small></div><strong class="match-score">3</strong></div>
+                <div class="match-team winner"><span class="team-code-BUF">BUF</span><div><a href="buffalo.html">Buffalo Sabres</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-bottom"><span>KeyBank Center</span><a href="https://www.nhl.com/gamecenter/fla-vs-buf/2026/10/12/2026020087">Fiche NHL ↗</a></div>
+            </article>
+        </div></section>
+        <section class="match-day"><h2><time datetime="2026-10-11">11 octobre 2026</time></h2><div class="matches-grid">
+            <article class="match-card" data-date="2026-10-11" data-teams="CAR PHI">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-CAR">CAR</span><div><a href="carolina.html">Carolina Hurricanes</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-team"><span class="team-code-PHI">PHI</span><div><a href="philadelphia.html">Philadelphia Flyers</a><small>Domicile</small></div><strong class="match-score">1</strong></div>
+                <div class="match-bottom"><span>Xfinity Mobile Arena</span><a href="https://www.nhl.com/gamecenter/car-vs-phi/2026/10/11/2026020086">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-11" data-teams="VAN NYR">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-VAN">VAN</span><div><a href="vancouver.html">Vancouver Canucks</a><small>Extérieur</small></div><strong class="match-score">2</strong></div>
+                <div class="match-team winner"><span class="team-code-NYR">NYR</span><div><a href="rangers.html">New York Rangers</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">6</strong></div>
+                <div class="match-bottom"><span>Madison Square Garden</span><a href="https://www.nhl.com/gamecenter/van-vs-nyr/2026/10/11/2026020085">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-11" data-teams="SEA WSH">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-SEA">SEA</span><div><a href="seattle.html">Seattle Kraken</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-team"><span class="team-code-WSH">WSH</span><div><a href="washington.html">Washington Capitals</a><small>Domicile</small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Capital One Arena</span><a href="https://www.nhl.com/gamecenter/sea-vs-wsh/2026/10/11/2026020084">Fiche NHL ↗</a></div>
+            </article>
+        </div></section>
+        <section class="match-day"><h2><time datetime="2026-10-10">10 octobre 2026</time></h2><div class="matches-grid">
+            <article class="match-card" data-date="2026-10-10" data-teams="ANA CGY">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-ANA">ANA</span><div><a href="anaheim.html">Anaheim Ducks</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-team"><span class="team-code-CGY">CGY</span><div><a href="calgary.html">Calgary Flames</a><small>Domicile</small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>Scotiabank Saddledome</span><a href="https://www.nhl.com/gamecenter/ana-vs-cgy/2026/10/10/2026020082">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-10" data-teams="LAK VGK">
+                <div class="match-top"><span class="match-status">Après prolongation</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-LAK">LAK</span><div><a href="losangeles.html">Los Angeles Kings</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-VGK">VGK</span><div><a href="vegas.html">Vegas Golden Knights</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>T-Mobile Arena</span><a href="https://www.nhl.com/gamecenter/lak-vs-vgk/2026/10/10/2026020083">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-10" data-teams="TBL NYI">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-TBL">TBL</span><div><a href="tampabay.html">Tampa Bay Lightning</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-team"><span class="team-code-NYI">NYI</span><div><a href="islanders.html">New York Islanders</a><small>Domicile</small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>UBS Arena</span><a href="https://www.nhl.com/gamecenter/tbl-vs-nyi/2026/10/10/2026020081">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-10" data-teams="UTA BUF">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-UTA">UTA</span><div><a href="utah.html">Utah Mammoth</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-team"><span class="team-code-BUF">BUF</span><div><a href="buffalo.html">Buffalo Sabres</a><small>Domicile</small></div><strong class="match-score">1</strong></div>
+                <div class="match-bottom"><span>KeyBank Center</span><a href="https://www.nhl.com/gamecenter/uta-vs-buf/2026/10/10/2026020074">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-10" data-teams="DET MTL">
+                <div class="match-top"><span class="match-status">Après tirs au but</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-DET">DET</span><div><a href="detroit.html">Detroit Red Wings</a><small>Extérieur</small></div><strong class="match-score">0</strong></div>
+                <div class="match-team winner"><span class="team-code-MTL">MTL</span><div><a href="montreal.html">Montréal Canadiens</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">1</strong></div>
+                <div class="match-bottom"><span>Centre Bell</span><a href="https://www.nhl.com/gamecenter/det-vs-mtl/2026/10/10/2026020075">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-10" data-teams="NSH OTT">
+                <div class="match-top"><span class="match-status">Après tirs au but</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-NSH">NSH</span><div><a href="nashville.html">Nashville Predators</a><small>Extérieur</small></div><strong class="match-score">2</strong></div>
+                <div class="match-team winner"><span class="team-code-OTT">OTT</span><div><a href="ottawa.html">Ottawa Senators</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Canadian Tire Centre</span><a href="https://www.nhl.com/gamecenter/nsh-vs-ott/2026/10/10/2026020076">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-10" data-teams="DAL PIT">
+                <div class="match-top"><span class="match-status">Après tirs au but</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-DAL">DAL</span><div><a href="dallas.html">Dallas Stars</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-PIT">PIT</span><div><a href="pittsburgh.html">Pittsburgh Penguins</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>PPG Paints Arena</span><a href="https://www.nhl.com/gamecenter/dal-vs-pit/2026/10/10/2026020077">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-10" data-teams="CAR CHI">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-CAR">CAR</span><div><a href="carolina.html">Carolina Hurricanes</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-team"><span class="team-code-CHI">CHI</span><div><a href="chicago.html">Chicago Blackhawks</a><small>Domicile</small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>United Center</span><a href="https://www.nhl.com/gamecenter/car-vs-chi/2026/10/10/2026020078">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-10" data-teams="CBJ STL">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-CBJ">CBJ</span><div><a href="columbus.html">Columbus Blue Jackets</a><small>Extérieur</small></div><strong class="match-score">3</strong></div>
+                <div class="match-team winner"><span class="team-code-STL">STL</span><div><a href="stlouis.html">St. Louis Blues</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-bottom"><span>Enterprise Center</span><a href="https://www.nhl.com/gamecenter/cbj-vs-stl/2026/10/10/2026020079">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-10" data-teams="TOR COL">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-TOR">TOR</span><div><a href="toronto.html">Toronto Maple Leafs</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">6</strong></div>
+                <div class="match-team"><span class="team-code-COL">COL</span><div><a href="colorado.html">Colorado Avalanche</a><small>Domicile</small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Ball Arena</span><a href="https://www.nhl.com/gamecenter/tor-vs-col/2026/10/10/2026020080">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-10" data-teams="MIN FLA">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-MIN">MIN</span><div><a href="minnesota.html">Minnesota Wild</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-team"><span class="team-code-FLA">FLA</span><div><a href="florida.html">Florida Panthers</a><small>Domicile</small></div><strong class="match-score">1</strong></div>
+                <div class="match-bottom"><span>Amerant Bank Arena</span><a href="https://www.nhl.com/gamecenter/min-vs-fla/2026/10/10/2026020073">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-10" data-teams="EDM SJS">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-EDM">EDM</span><div><a href="edmonton.html">Edmonton Oilers</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-team"><span class="team-code-SJS">SJS</span><div><a href="sanjose.html">San Jose Sharks</a><small>Domicile</small></div><strong class="match-score">1</strong></div>
+                <div class="match-bottom"><span>SAP Center at San Jose</span><a href="https://www.nhl.com/gamecenter/edm-vs-sjs/2026/10/10/2026020072">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-10" data-teams="VAN NJD">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-VAN">VAN</span><div><a href="vancouver.html">Vancouver Canucks</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-NJD">NJD</span><div><a href="newjersey.html">New Jersey Devils</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-bottom"><span>Prudential Center</span><a href="https://www.nhl.com/gamecenter/van-vs-njd/2026/10/10/2026020071">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-10" data-teams="PHI BOS">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-PHI">PHI</span><div><a href="philadelphia.html">Philadelphia Flyers</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-BOS">BOS</span><div><a href="boston.html">Boston Bruins</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-bottom"><span>TD Garden</span><a href="https://www.nhl.com/gamecenter/phi-vs-bos/2026/10/10/2026020070">Fiche NHL ↗</a></div>
+            </article>
+        </div></section>
+        <section class="match-day"><h2><time datetime="2026-10-09">9 octobre 2026</time></h2><div class="matches-grid">
+            <article class="match-card" data-date="2026-10-09" data-teams="ANA WPG">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-ANA">ANA</span><div><a href="anaheim.html">Anaheim Ducks</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-team"><span class="team-code-WPG">WPG</span><div><a href="winnipeg.html">Winnipeg Jets</a><small>Domicile</small></div><strong class="match-score">1</strong></div>
+                <div class="match-bottom"><span>Canada Life Centre</span><a href="https://www.nhl.com/gamecenter/ana-vs-wpg/2026/10/09/2026020069">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-09" data-teams="SEA DET">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-SEA">SEA</span><div><a href="seattle.html">Seattle Kraken</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">6</strong></div>
+                <div class="match-team"><span class="team-code-DET">DET</span><div><a href="detroit.html">Detroit Red Wings</a><small>Domicile</small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Little Caesars Arena</span><a href="https://www.nhl.com/gamecenter/sea-vs-det/2026/10/09/2026020066">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-09" data-teams="NYR WSH">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-NYR">NYR</span><div><a href="rangers.html">New York Rangers</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-WSH">WSH</span><div><a href="washington.html">Washington Capitals</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Capital One Arena</span><a href="https://www.nhl.com/gamecenter/nyr-vs-wsh/2026/10/09/2026020067">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-09" data-teams="PIT CBJ">
+                <div class="match-top"><span class="match-status">Après tirs au but</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-PIT">PIT</span><div><a href="pittsburgh.html">Pittsburgh Penguins</a><small>Extérieur</small></div><strong class="match-score">2</strong></div>
+                <div class="match-team winner"><span class="team-code-CBJ">CBJ</span><div><a href="columbus.html">Columbus Blue Jackets</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Nationwide Arena</span><a href="https://www.nhl.com/gamecenter/pit-vs-cbj/2026/10/09/2026020068">Fiche NHL ↗</a></div>
+            </article>
+        </div></section>
+        <section class="match-day"><h2><time datetime="2026-10-08">8 octobre 2026</time></h2><div class="matches-grid">
+            <article class="match-card" data-date="2026-10-08" data-teams="TOR VGK">
+                <div class="match-top"><span class="match-status">Après tirs au but</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-TOR">TOR</span><div><a href="toronto.html">Toronto Maple Leafs</a><small>Extérieur</small></div><strong class="match-score">3</strong></div>
+                <div class="match-team winner"><span class="team-code-VGK">VGK</span><div><a href="vegas.html">Vegas Golden Knights</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-bottom"><span>T-Mobile Arena</span><a href="https://www.nhl.com/gamecenter/tor-vs-vgk/2026/10/08/2026020065">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-08" data-teams="COL CGY">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-COL">COL</span><div><a href="colorado.html">Colorado Avalanche</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">7</strong></div>
+                <div class="match-team"><span class="team-code-CGY">CGY</span><div><a href="calgary.html">Calgary Flames</a><small>Domicile</small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Scotiabank Saddledome</span><a href="https://www.nhl.com/gamecenter/col-vs-cgy/2026/10/08/2026020064">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-08" data-teams="SJS STL">
+                <div class="match-top"><span class="match-status">Après prolongation</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-SJS">SJS</span><div><a href="sanjose.html">San Jose Sharks</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-team"><span class="team-code-STL">STL</span><div><a href="stlouis.html">St. Louis Blues</a><small>Domicile</small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>Enterprise Center</span><a href="https://www.nhl.com/gamecenter/sjs-vs-stl/2026/10/08/2026020063">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-08" data-teams="CHI NYI">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-CHI">CHI</span><div><a href="chicago.html">Chicago Blackhawks</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-NYI">NYI</span><div><a href="islanders.html">New York Islanders</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-bottom"><span>UBS Arena</span><a href="https://www.nhl.com/gamecenter/chi-vs-nyi/2026/10/08/2026020062">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-08" data-teams="UTA BOS">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-UTA">UTA</span><div><a href="utah.html">Utah Mammoth</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-BOS">BOS</span><div><a href="boston.html">Boston Bruins</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">6</strong></div>
+                <div class="match-bottom"><span>TD Garden</span><a href="https://www.nhl.com/gamecenter/uta-vs-bos/2026/10/08/2026020056">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-08" data-teams="DAL BUF">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-DAL">DAL</span><div><a href="dallas.html">Dallas Stars</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-team"><span class="team-code-BUF">BUF</span><div><a href="buffalo.html">Buffalo Sabres</a><small>Domicile</small></div><strong class="match-score">0</strong></div>
+                <div class="match-bottom"><span>KeyBank Center</span><a href="https://www.nhl.com/gamecenter/dal-vs-buf/2026/10/08/2026020057">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-08" data-teams="NSH MTL">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-NSH">NSH</span><div><a href="nashville.html">Nashville Predators</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-team"><span class="team-code-MTL">MTL</span><div><a href="montreal.html">Montréal Canadiens</a><small>Domicile</small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>Centre Bell</span><a href="https://www.nhl.com/gamecenter/nsh-vs-mtl/2026/10/08/2026020058">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-08" data-teams="PHI OTT">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-PHI">PHI</span><div><a href="philadelphia.html">Philadelphia Flyers</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-OTT">OTT</span><div><a href="ottawa.html">Ottawa Senators</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>Canadian Tire Centre</span><a href="https://www.nhl.com/gamecenter/phi-vs-ott/2026/10/08/2026020059">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-08" data-teams="MIN TBL">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-MIN">MIN</span><div><a href="minnesota.html">Minnesota Wild</a><small>Extérieur</small></div><strong class="match-score">2</strong></div>
+                <div class="match-team winner"><span class="team-code-TBL">TBL</span><div><a href="tampabay.html">Tampa Bay Lightning</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Benchmark International Arena</span><a href="https://www.nhl.com/gamecenter/min-vs-tbl/2026/10/08/2026020060">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-08" data-teams="VAN CAR">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-VAN">VAN</span><div><a href="vancouver.html">Vancouver Canucks</a><small>Extérieur</small></div><strong class="match-score">2</strong></div>
+                <div class="match-team winner"><span class="team-code-CAR">CAR</span><div><a href="carolina.html">Carolina Hurricanes</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">7</strong></div>
+                <div class="match-bottom"><span>Lenovo Center</span><a href="https://www.nhl.com/gamecenter/van-vs-car/2026/10/08/2026020061">Fiche NHL ↗</a></div>
+            </article>
+        </div></section>
+        <section class="match-day"><h2><time datetime="2026-10-07">7 octobre 2026</time></h2><div class="matches-grid">
+            <article class="match-card" data-date="2026-10-07" data-teams="EDM ANA">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-EDM">EDM</span><div><a href="edmonton.html">Edmonton Oilers</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-team"><span class="team-code-ANA">ANA</span><div><a href="anaheim.html">Anaheim Ducks</a><small>Domicile</small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>Honda Center</span><a href="https://www.nhl.com/gamecenter/edm-vs-ana/2026/10/07/2026020055">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-07" data-teams="PIT WSH">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-PIT">PIT</span><div><a href="pittsburgh.html">Pittsburgh Penguins</a><small>Extérieur</small></div><strong class="match-score">3</strong></div>
+                <div class="match-team winner"><span class="team-code-WSH">WSH</span><div><a href="washington.html">Washington Capitals</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-bottom"><span>Capital One Arena</span><a href="https://www.nhl.com/gamecenter/pit-vs-wsh/2026/10/07/2026020053">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-07" data-teams="COL WPG">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-COL">COL</span><div><a href="colorado.html">Colorado Avalanche</a><small>Extérieur</small></div><strong class="match-score">2</strong></div>
+                <div class="match-team winner"><span class="team-code-WPG">WPG</span><div><a href="winnipeg.html">Winnipeg Jets</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Canada Life Centre</span><a href="https://www.nhl.com/gamecenter/col-vs-wpg/2026/10/07/2026020054">Fiche NHL ↗</a></div>
+            </article>
+        </div></section>
+        <section class="match-day"><h2><time datetime="2026-10-06">6 octobre 2026</time></h2><div class="matches-grid">
+            <article class="match-card" data-date="2026-10-06" data-teams="FLA LAK">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-FLA">FLA</span><div><a href="florida.html">Florida Panthers</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">2</strong></div>
+                <div class="match-team"><span class="team-code-LAK">LAK</span><div><a href="losangeles.html">Los Angeles Kings</a><small>Domicile</small></div><strong class="match-score">1</strong></div>
+                <div class="match-bottom"><span>Crypto.com Arena</span><a href="https://www.nhl.com/gamecenter/fla-vs-lak/2026/10/06/2026020052">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-06" data-teams="VGK SEA">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-VGK">VGK</span><div><a href="vegas.html">Vegas Golden Knights</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">6</strong></div>
+                <div class="match-team"><span class="team-code-SEA">SEA</span><div><a href="seattle.html">Seattle Kraken</a><small>Domicile</small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>Climate Pledge Arena</span><a href="https://www.nhl.com/gamecenter/vgk-vs-sea/2026/10/06/2026020051">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-06" data-teams="STL CHI">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-STL">STL</span><div><a href="stlouis.html">St. Louis Blues</a><small>Extérieur</small></div><strong class="match-score">2</strong></div>
+                <div class="match-team winner"><span class="team-code-CHI">CHI</span><div><a href="chicago.html">Chicago Blackhawks</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-bottom"><span>United Center</span><a href="https://www.nhl.com/gamecenter/stl-vs-chi/2026/10/06/2026020050">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-06" data-teams="NYI NYR">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-NYI">NYI</span><div><a href="islanders.html">New York Islanders</a><small>Extérieur</small></div><strong class="match-score">2</strong></div>
+                <div class="match-team winner"><span class="team-code-NYR">NYR</span><div><a href="rangers.html">New York Rangers</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-bottom"><span>Madison Square Garden</span><a href="https://www.nhl.com/gamecenter/nyi-vs-nyr/2026/10/06/2026020048">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-06" data-teams="NSH TOR">
+                <div class="match-top"><span class="match-status">Après prolongation</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-NSH">NSH</span><div><a href="nashville.html">Nashville Predators</a><small>Extérieur</small></div><strong class="match-score">4</strong></div>
+                <div class="match-team winner"><span class="team-code-TOR">TOR</span><div><a href="toronto.html">Toronto Maple Leafs</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-bottom"><span>Scotiabank Arena</span><a href="https://www.nhl.com/gamecenter/nsh-vs-tor/2026/10/06/2026020044">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-06" data-teams="CAR MTL">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-CAR">CAR</span><div><a href="carolina.html">Carolina Hurricanes</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">6</strong></div>
+                <div class="match-team"><span class="team-code-MTL">MTL</span><div><a href="montreal.html">Montréal Canadiens</a><small>Domicile</small></div><strong class="match-score">4</strong></div>
+                <div class="match-bottom"><span>Centre Bell</span><a href="https://www.nhl.com/gamecenter/car-vs-mtl/2026/10/06/2026020045">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-06" data-teams="OTT DET">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-OTT">OTT</span><div><a href="ottawa.html">Ottawa Senators</a><small>Extérieur</small></div><strong class="match-score">3</strong></div>
+                <div class="match-team winner"><span class="team-code-DET">DET</span><div><a href="detroit.html">Detroit Red Wings</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-bottom"><span>Little Caesars Arena</span><a href="https://www.nhl.com/gamecenter/ott-vs-det/2026/10/06/2026020046">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-06" data-teams="UTA NJD">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-UTA">UTA</span><div><a href="utah.html">Utah Mammoth</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-team"><span class="team-code-NJD">NJD</span><div><a href="newjersey.html">New Jersey Devils</a><small>Domicile</small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Prudential Center</span><a href="https://www.nhl.com/gamecenter/uta-vs-njd/2026/10/06/2026020047">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-06" data-teams="MIN BUF">
+                <div class="match-top"><span class="match-status">Après prolongation</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-MIN">MIN</span><div><a href="minnesota.html">Minnesota Wild</a><small>Extérieur</small></div><strong class="match-score">2</strong></div>
+                <div class="match-team winner"><span class="team-code-BUF">BUF</span><div><a href="buffalo.html">Buffalo Sabres</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>KeyBank Center</span><a href="https://www.nhl.com/gamecenter/min-vs-buf/2026/10/06/2026020049">Fiche NHL ↗</a></div>
+            </article>
+        </div></section>
+        <section class="match-day"><h2><time datetime="2026-10-05">5 octobre 2026</time></h2><div class="matches-grid">
+            <article class="match-card" data-date="2026-10-05" data-teams="SJS DAL">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-SJS">SJS</span><div><a href="sanjose.html">San Jose Sharks</a><small>Extérieur</small></div><strong class="match-score">0</strong></div>
+                <div class="match-team winner"><span class="team-code-DAL">DAL</span><div><a href="dallas.html">Dallas Stars</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-bottom"><span>American Airlines Center</span><a href="https://www.nhl.com/gamecenter/sjs-vs-dal/2026/10/05/2026020043">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-05" data-teams="OTT BOS">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-OTT">OTT</span><div><a href="ottawa.html">Ottawa Senators</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-team"><span class="team-code-BOS">BOS</span><div><a href="boston.html">Boston Bruins</a><small>Domicile</small></div><strong class="match-score">1</strong></div>
+                <div class="match-bottom"><span>TD Garden</span><a href="https://www.nhl.com/gamecenter/ott-vs-bos/2026/10/05/2026020041">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-05" data-teams="WPG PIT">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-WPG">WPG</span><div><a href="winnipeg.html">Winnipeg Jets</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-team"><span class="team-code-PIT">PIT</span><div><a href="pittsburgh.html">Pittsburgh Penguins</a><small>Domicile</small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>PPG Paints Arena</span><a href="https://www.nhl.com/gamecenter/wpg-vs-pit/2026/10/05/2026020042">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-05" data-teams="PHI TBL">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-PHI">PHI</span><div><a href="philadelphia.html">Philadelphia Flyers</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-TBL">TBL</span><div><a href="tampabay.html">Tampa Bay Lightning</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-bottom"><span>Benchmark International Arena</span><a href="https://www.nhl.com/gamecenter/phi-vs-tbl/2026/10/05/2026020040">Fiche NHL ↗</a></div>
+            </article>
+        </div></section>
+        <section class="match-day"><h2><time datetime="2026-10-04">4 octobre 2026</time></h2><div class="matches-grid">
+            <article class="match-card" data-date="2026-10-04" data-teams="VGK VAN">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-VGK">VGK</span><div><a href="vegas.html">Vegas Golden Knights</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-team"><span class="team-code-VAN">VAN</span><div><a href="vancouver.html">Vancouver Canucks</a><small>Domicile</small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>Rogers Arena</span><a href="https://www.nhl.com/gamecenter/vgk-vs-van/2026/10/04/2026020039">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-04" data-teams="FLA ANA">
+                <div class="match-top"><span class="match-status">Après prolongation</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-FLA">FLA</span><div><a href="florida.html">Florida Panthers</a><small>Extérieur</small></div><strong class="match-score">2</strong></div>
+                <div class="match-team winner"><span class="team-code-ANA">ANA</span><div><a href="anaheim.html">Anaheim Ducks</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Honda Center</span><a href="https://www.nhl.com/gamecenter/fla-vs-ana/2026/10/04/2026020037">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-04" data-teams="CGY SEA">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-CGY">CGY</span><div><a href="calgary.html">Calgary Flames</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-SEA">SEA</span><div><a href="seattle.html">Seattle Kraken</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">6</strong></div>
+                <div class="match-bottom"><span>Climate Pledge Arena</span><a href="https://www.nhl.com/gamecenter/cgy-vs-sea/2026/10/04/2026020038">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-04" data-teams="UTA NYR">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-UTA">UTA</span><div><a href="utah.html">Utah Mammoth</a><small>Extérieur</small></div><strong class="match-score">2</strong></div>
+                <div class="match-team winner"><span class="team-code-NYR">NYR</span><div><a href="rangers.html">New York Rangers</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-bottom"><span>Madison Square Garden</span><a href="https://www.nhl.com/gamecenter/uta-vs-nyr/2026/10/04/2026020036">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-04" data-teams="WPG DET">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-WPG">WPG</span><div><a href="winnipeg.html">Winnipeg Jets</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-team"><span class="team-code-DET">DET</span><div><a href="detroit.html">Detroit Red Wings</a><small>Domicile</small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>Little Caesars Arena</span><a href="https://www.nhl.com/gamecenter/wpg-vs-det/2026/10/04/2026020035">Fiche NHL ↗</a></div>
+            </article>
+        </div></section>
+        <section class="match-day"><h2><time datetime="2026-10-03">3 octobre 2026</time></h2><div class="matches-grid">
+            <article class="match-card" data-date="2026-10-03" data-teams="CGY VAN">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-CGY">CGY</span><div><a href="calgary.html">Calgary Flames</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-VAN">VAN</span><div><a href="vancouver.html">Vancouver Canucks</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-bottom"><span>Rogers Arena</span><a href="https://www.nhl.com/gamecenter/cgy-vs-van/2026/10/03/2026020033">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-03" data-teams="LAK SJS">
+                <div class="match-top"><span class="match-status">Après prolongation</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-LAK">LAK</span><div><a href="losangeles.html">Los Angeles Kings</a><small>Extérieur</small></div><strong class="match-score">4</strong></div>
+                <div class="match-team winner"><span class="team-code-SJS">SJS</span><div><a href="sanjose.html">San Jose Sharks</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-bottom"><span>SAP Center at San Jose</span><a href="https://www.nhl.com/gamecenter/lak-vs-sjs/2026/10/03/2026020034">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-03" data-teams="STL COL">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-STL">STL</span><div><a href="stlouis.html">St. Louis Blues</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-COL">COL</span><div><a href="colorado.html">Colorado Avalanche</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">6</strong></div>
+                <div class="match-bottom"><span>Ball Arena</span><a href="https://www.nhl.com/gamecenter/stl-vs-col/2026/10/03/2026020032">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-03" data-teams="DAL NSH">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-DAL">DAL</span><div><a href="dallas.html">Dallas Stars</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-NSH">NSH</span><div><a href="nashville.html">Nashville Predators</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>Bridgestone Arena</span><a href="https://www.nhl.com/gamecenter/dal-vs-nsh/2026/10/03/2026020030">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-03" data-teams="BOS MIN">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-BOS">BOS</span><div><a href="boston.html">Boston Bruins</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-MIN">MIN</span><div><a href="minnesota.html">Minnesota Wild</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-bottom"><span>Grand Casino Arena</span><a href="https://www.nhl.com/gamecenter/bos-vs-min/2026/10/03/2026020031">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-03" data-teams="NJD NYI">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-NJD">NJD</span><div><a href="newjersey.html">New Jersey Devils</a><small>Extérieur</small></div><strong class="match-score">0</strong></div>
+                <div class="match-team winner"><span class="team-code-NYI">NYI</span><div><a href="islanders.html">New York Islanders</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">6</strong></div>
+                <div class="match-bottom"><span>UBS Arena</span><a href="https://www.nhl.com/gamecenter/njd-vs-nyi/2026/10/03/2026020029">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-03" data-teams="CHI BUF">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-CHI">CHI</span><div><a href="chicago.html">Chicago Blackhawks</a><small>Extérieur</small></div><strong class="match-score">3</strong></div>
+                <div class="match-team winner"><span class="team-code-BUF">BUF</span><div><a href="buffalo.html">Buffalo Sabres</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-bottom"><span>KeyBank Center</span><a href="https://www.nhl.com/gamecenter/chi-vs-buf/2026/10/03/2026020022">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-03" data-teams="OTT TOR">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-OTT">OTT</span><div><a href="ottawa.html">Ottawa Senators</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-team"><span class="team-code-TOR">TOR</span><div><a href="toronto.html">Toronto Maple Leafs</a><small>Domicile</small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>Scotiabank Arena</span><a href="https://www.nhl.com/gamecenter/ott-vs-tor/2026/10/03/2026020023">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-03" data-teams="WSH TBL">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-WSH">WSH</span><div><a href="washington.html">Washington Capitals</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-TBL">TBL</span><div><a href="tampabay.html">Tampa Bay Lightning</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Benchmark International Arena</span><a href="https://www.nhl.com/gamecenter/wsh-vs-tbl/2026/10/03/2026020024">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-03" data-teams="CAR PHI">
+                <div class="match-top"><span class="match-status">Après prolongation</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-CAR">CAR</span><div><a href="carolina.html">Carolina Hurricanes</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-team"><span class="team-code-PHI">PHI</span><div><a href="philadelphia.html">Philadelphia Flyers</a><small>Domicile</small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>Xfinity Mobile Arena</span><a href="https://www.nhl.com/gamecenter/car-vs-phi/2026/10/03/2026020025">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-03" data-teams="MTL PIT">
+                <div class="match-top"><span class="match-status">Après prolongation</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-MTL">MTL</span><div><a href="montreal.html">Montréal Canadiens</a><small>Extérieur</small></div><strong class="match-score">5</strong></div>
+                <div class="match-team winner"><span class="team-code-PIT">PIT</span><div><a href="pittsburgh.html">Pittsburgh Penguins</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">6</strong></div>
+                <div class="match-bottom"><span>PPG Paints Arena</span><a href="https://www.nhl.com/gamecenter/mtl-vs-pit/2026/10/03/2026020026">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-03" data-teams="UTA CBJ">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-UTA">UTA</span><div><a href="utah.html">Utah Mammoth</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-team"><span class="team-code-CBJ">CBJ</span><div><a href="columbus.html">Columbus Blue Jackets</a><small>Domicile</small></div><strong class="match-score">1</strong></div>
+                <div class="match-bottom"><span>Nationwide Arena</span><a href="https://www.nhl.com/gamecenter/uta-vs-cbj/2026/10/03/2026020027">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-03" data-teams="SEA EDM">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-SEA">SEA</span><div><a href="seattle.html">Seattle Kraken</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-EDM">EDM</span><div><a href="edmonton.html">Edmonton Oilers</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Rogers Place</span><a href="https://www.nhl.com/gamecenter/sea-vs-edm/2026/10/03/2026020028">Fiche NHL ↗</a></div>
+            </article>
+        </div></section>
+        <section class="match-day"><h2><time datetime="2026-10-02">2 octobre 2026</time></h2><div class="matches-grid">
+            <article class="match-card" data-date="2026-10-02" data-teams="ANA VGK">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-ANA">ANA</span><div><a href="anaheim.html">Anaheim Ducks</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-team"><span class="team-code-VGK">VGK</span><div><a href="vegas.html">Vegas Golden Knights</a><small>Domicile</small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>T-Mobile Arena</span><a href="https://www.nhl.com/gamecenter/ana-vs-vgk/2026/10/02/2026020021">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-02" data-teams="STL DAL">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-STL">STL</span><div><a href="stlouis.html">St. Louis Blues</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-team"><span class="team-code-DAL">DAL</span><div><a href="dallas.html">Dallas Stars</a><small>Domicile</small></div><strong class="match-score">0</strong></div>
+                <div class="match-bottom"><span>American Airlines Center</span><a href="https://www.nhl.com/gamecenter/stl-vs-dal/2026/10/02/2026020020">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-02" data-teams="BOS WPG">
+                <div class="match-top"><span class="match-status">Après prolongation</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-BOS">BOS</span><div><a href="boston.html">Boston Bruins</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-team"><span class="team-code-WPG">WPG</span><div><a href="winnipeg.html">Winnipeg Jets</a><small>Domicile</small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Canada Life Centre</span><a href="https://www.nhl.com/gamecenter/bos-vs-wpg/2026/10/02/2026020019">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-02" data-teams="WSH CAR">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-WSH">WSH</span><div><a href="washington.html">Washington Capitals</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-team"><span class="team-code-CAR">CAR</span><div><a href="carolina.html">Carolina Hurricanes</a><small>Domicile</small></div><strong class="match-score">2</strong></div>
+                <div class="match-bottom"><span>Lenovo Center</span><a href="https://www.nhl.com/gamecenter/wsh-vs-car/2026/10/02/2026020018">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-02" data-teams="NYR DET">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-NYR">NYR</span><div><a href="rangers.html">New York Rangers</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">2</strong></div>
+                <div class="match-team"><span class="team-code-DET">DET</span><div><a href="detroit.html">Detroit Red Wings</a><small>Domicile</small></div><strong class="match-score">0</strong></div>
+                <div class="match-bottom"><span>Little Caesars Arena</span><a href="https://www.nhl.com/gamecenter/nyr-vs-det/2026/10/02/2026020017">Fiche NHL ↗</a></div>
+            </article>
+        </div></section>
+        <section class="match-day"><h2><time datetime="2026-10-01">1 octobre 2026</time></h2><div class="matches-grid">
+            <article class="match-card" data-date="2026-10-01" data-teams="EDM VAN">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-EDM">EDM</span><div><a href="edmonton.html">Edmonton Oilers</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">9</strong></div>
+                <div class="match-team"><span class="team-code-VAN">VAN</span><div><a href="vancouver.html">Vancouver Canucks</a><small>Domicile</small></div><strong class="match-score">7</strong></div>
+                <div class="match-bottom"><span>Rogers Arena</span><a href="https://www.nhl.com/gamecenter/edm-vs-van/2026/10/01/2026020015">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-01" data-teams="FLA SJS">
+                <div class="match-top"><span class="match-status">Après prolongation</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-FLA">FLA</span><div><a href="florida.html">Florida Panthers</a><small>Extérieur</small></div><strong class="match-score">3</strong></div>
+                <div class="match-team winner"><span class="team-code-SJS">SJS</span><div><a href="sanjose.html">San Jose Sharks</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">4</strong></div>
+                <div class="match-bottom"><span>SAP Center at San Jose</span><a href="https://www.nhl.com/gamecenter/fla-vs-sjs/2026/10/01/2026020016">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-01" data-teams="CHI UTA">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-CHI">CHI</span><div><a href="chicago.html">Chicago Blackhawks</a><small>Extérieur</small></div><strong class="match-score">0</strong></div>
+                <div class="match-team winner"><span class="team-code-UTA">UTA</span><div><a href="utah.html">Utah Mammoth</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">6</strong></div>
+                <div class="match-bottom"><span>Delta Center</span><a href="https://www.nhl.com/gamecenter/chi-vs-uta/2026/10/01/2026020013">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-01" data-teams="SEA CGY">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-SEA">SEA</span><div><a href="seattle.html">Seattle Kraken</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">6</strong></div>
+                <div class="match-team"><span class="team-code-CGY">CGY</span><div><a href="calgary.html">Calgary Flames</a><small>Domicile</small></div><strong class="match-score">1</strong></div>
+                <div class="match-bottom"><span>Scotiabank Saddledome</span><a href="https://www.nhl.com/gamecenter/sea-vs-cgy/2026/10/01/2026020014">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-01" data-teams="MIN NSH">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team winner"><span class="team-code-MIN">MIN</span><div><a href="minnesota.html">Minnesota Wild</a><small>Extérieur <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-team"><span class="team-code-NSH">NSH</span><div><a href="nashville.html">Nashville Predators</a><small>Domicile</small></div><strong class="match-score">1</strong></div>
+                <div class="match-bottom"><span>Bridgestone Arena</span><a href="https://www.nhl.com/gamecenter/min-vs-nsh/2026/10/01/2026020012">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-01" data-teams="PHI NJD">
+                <div class="match-top"><span class="match-status">Après prolongation</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-PHI">PHI</span><div><a href="philadelphia.html">Philadelphia Flyers</a><small>Extérieur</small></div><strong class="match-score">2</strong></div>
+                <div class="match-team winner"><span class="team-code-NJD">NJD</span><div><a href="newjersey.html">New Jersey Devils</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">3</strong></div>
+                <div class="match-bottom"><span>Prudential Center</span><a href="https://www.nhl.com/gamecenter/phi-vs-njd/2026/10/01/2026020009">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-01" data-teams="TBL NYR">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-TBL">TBL</span><div><a href="tampabay.html">Tampa Bay Lightning</a><small>Extérieur</small></div><strong class="match-score">1</strong></div>
+                <div class="match-team winner"><span class="team-code-NYR">NYR</span><div><a href="rangers.html">New York Rangers</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">5</strong></div>
+                <div class="match-bottom"><span>Madison Square Garden</span><a href="https://www.nhl.com/gamecenter/tbl-vs-nyr/2026/10/01/2026020010">Fiche NHL ↗</a></div>
+            </article>
+            <article class="match-card" data-date="2026-10-01" data-teams="BUF CBJ">
+                <div class="match-top"><span class="match-status">Terminé</span><span>Saison régulière</span></div>
+                <div class="match-team"><span class="team-code-BUF">BUF</span><div><a href="buffalo.html">Buffalo Sabres</a><small>Extérieur</small></div><strong class="match-score">3</strong></div>
+                <div class="match-team winner"><span class="team-code-CBJ">CBJ</span><div><a href="columbus.html">Columbus Blue Jackets</a><small>Domicile <span class="winner-badge">Victoire</span></small></div><strong class="match-score">6</strong></div>
+                <div class="match-bottom"><span>Nationwide Arena</span><a href="https://www.nhl.com/gamecenter/buf-vs-cbj/2026/10/01/2026020011">Fiche NHL ↗</a></div>
+            </article>
+        </div></section>
+    </div>
+    <p id="matches-empty" class="matches-empty" hidden>Aucun match terminé ne correspond à ces filtres sur la période disponible.</p>
+    <p class="matches-source">Source : <a href="https://www.nhl.com/scores">NHL.com</a> · Relevé du 13 octobre 2026. Les résultats sont enregistrés et ne s’actualisent pas automatiquement.</p>
+</main>
+<footer>
+    <div class="footer-title">NHL <span>Zone</span></div>
+    <div class="footer-menu"><p>Site de fans indépendant</p><p>Non affilié à la NHL</p></div>
+</footer>
+<script src="../script/matches.js" defer></script>
+</body>
+</html>

@@ -210,7 +210,8 @@ footer{
 }
 
 .atlantic-title h2{
-    border-bottom: 2px solid #39BDE0;
+    padding-left: 10px;
+    border-left: 4px solid #39BDE0;
 }
 
 .atlantic-title p{
@@ -410,7 +411,8 @@ footer{
 }
 
 .metropolitan-title h2{
-    border-bottom: 2px solid #39BDE0;
+    padding-left: 10px;
+    border-left: 2px solid #39BDE0;
 }
 
 .metropolitan-title p{
@@ -491,7 +493,8 @@ footer{
 }
 
 .central-title h2{
-    border-bottom: 2px solid #39BDE0;
+    padding-left: 10px;
+    border-left: 4px solid #39BDE0;
 }
 
 .central-title p{
@@ -572,8 +575,8 @@ footer{
 }
 
 .pacific-title h2{
-    border-bottom: 2px solid #39BDE0;
-    line-height: 0.5;
+    padding-left: 10px;
+    border-left: 4px solid #39BDE0;   
 }
 
 .pacific-title p{

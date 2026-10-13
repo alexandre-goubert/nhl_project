@@ -225,8 +225,10 @@ footer{
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
-    padding: 0 30%;
-    
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
 }
 
 .quiz-answers button{
