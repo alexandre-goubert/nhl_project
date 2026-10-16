@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f6a2136e94.js" crossorigin="anonymous"></script>
     <title>NHL Zone</title>
 </head>
 <body>
@@ -16,33 +17,45 @@
 
         </div>
 
-        <div class="header-menu">
+        <div class="selectors-mode">
+            <p class="dark-mode"><i class="fas fa-moon"></i>Dark</p>
+            <p class="light-mode"><i class="fas fa-sun"></i>Light</p>
+        </div>
 
+        <div class="header-menu"> <!-- Menu de navigation -->
+
+            
             <div class="header-home">
 
-                <a href="../index.html"><p>Accueil</p></a>
+                <a href="./../index.html"><p><i class="fas fa-home"></i>Accueil</p></a>
 
             </div>
 
             <div class="header-teams">
 
-                <a href="teams.html"><p>Equipes</p></a>
+                <a href="teams.html"><p><i class="fas fa-users"></i>Equipes</p></a>
 
             </div>
 
             <div class="header-matches">
 
-                <a href="matches.html"><p>Matchs</p></a>
+                <a href="matches.html"><p><i class="fas fa-hockey-puck"></i>Matchs</p></a>
 
             </div>
 
             <div class="header-rankings">
 
-                <a href="rankings.html"><p>Classements</p></a>
+                <a href="rankings.html"><p><i class="fas fa-trophy"></i>Classements</p></a>
 
             </div>
 
-    </div>
+            <div class="header-quiz">
+
+                <a href="quiz.html"><p><i class="fas fa-question-circle"></i>Quiz</p></a>
+
+            </div>
+
+        </div>
 
 </header>
 
@@ -70,7 +83,7 @@
     <div id="nhl" class="ranking" role="region" aria-labelledby="caption-nhl" tabindex="0">
 
         <table>
-            <caption id="caption-nhl">Classement NHL</caption>
+            <caption id="caption-nhl"><i class="fas fa-trophy"></i>Classement NHL</caption>
             <thead>
                 <tr>
                     <th>R</th>
@@ -1208,5 +1221,6 @@
 </footer>
 
 <script src="../script/rankings.js"></script>
+<script src="../script/color-mode.js"></script>
 </body>
 </html>

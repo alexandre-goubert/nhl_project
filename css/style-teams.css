@@ -2,12 +2,25 @@
     box-sizing: border-box;
 }
 
+html{
+    --bg-color-dark: #0B1220;
+    --bg-color-light: white;
+    --bg-body-light: #F1F5F9;
+    --text-color: #101C30;
+    --card-color-dark: #f3eed8;
+
+    --bg-color: var(--bg-color-light);
+    --text-color: var(--text-color);
+    --card-color: var(--bg-color-light);
+    --bg-body: var(--bg-body-light);
+}
+
 body{
     margin: 0;
     padding: 0;
     width: 100%;
     font-family: 'Barlow', sans-serif;
-    background-color: #F1F5F9;
+    background-color: var(--bg-body);
 }
 header{
     background-color:#101C30;
@@ -20,9 +33,13 @@ header{
 }
 
 h1{
-    color: #101C30;
+    color: var(--text-color);
     font-size:64px;
     text-align: center;   
+}
+
+i{
+    margin-right: 10px;
 }
 
 a{
@@ -61,6 +78,18 @@ footer{
     color: #39BDE0;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.selectors-mode{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.selectors-mode p{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .header-menu{
@@ -212,6 +241,7 @@ footer{
 .atlantic-title h2{
     padding-left: 10px;
     border-left: 4px solid #39BDE0;
+    color: var(--text-color);
 }
 
 .atlantic-title p{
@@ -274,7 +304,7 @@ footer{
 .franchise31,
 .franchise32{
     width: 300px;
-    background-color: white;
+    background-color: var(--card-color);
     border: 1px solid #E2E8F0;
     border-radius: 10px;
     transition: box-shadow 0.3s , transform 0.3s ease;
@@ -413,6 +443,7 @@ footer{
 .metropolitan-title h2{
     padding-left: 10px;
     border-left: 2px solid #39BDE0;
+    color: var(--text-color);
 }
 
 .metropolitan-title p{
@@ -495,6 +526,7 @@ footer{
 .central-title h2{
     padding-left: 10px;
     border-left: 4px solid #39BDE0;
+    color: var(--text-color);
 }
 
 .central-title p{
@@ -577,6 +609,7 @@ footer{
 .pacific-title h2{
     padding-left: 10px;
     border-left: 4px solid #39BDE0;   
+    color: var(--text-color);
 }
 
 .pacific-title p{
@@ -781,4 +814,15 @@ img{
         justify-content: center;
         gap: 8px 16px;
     }
+}
+
+/* Sélecteurs de mode (Dark/Light) */
+
+.dark-mode{
+    color: black;
+    --bg-color: var(--bg-color-dark);
+    --description-text: var(--color-text);
+    --text-color: var(--bg-color-light);
+    --card-color: var(--card-color-dark);
+    --bg-body: var(--bg-color-dark);
 }

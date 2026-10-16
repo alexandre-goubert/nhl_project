@@ -1,12 +1,24 @@
 *{
     box-sizing: border-box;
 }
+html{
+    --bg-color-dark: #0B1220;
+    --bg-color-light: white;
+    --bg-body-light: #F1F5F9;
+    --text-color: #101C30;
+    --card-color-dark: #f3eed8;
+
+    --bg-color: var(--bg-color-light);
+    --text-color: var(--text-color);
+    --card-color: var(--bg-color-light);
+    --bg-body: var(--bg-body-light);
+}
 
 body{
     margin: 0;
     font-family: 'Barlow', sans-serif;
     color: #101C30;
-    background: #F1F5F9;
+    background: var(--bg-body);
 }
 
 header{
@@ -34,6 +46,18 @@ header{
     color: #39BDE0;
 }
 
+.selectors-mode{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.selectors-mode p{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .header-menu{
     display: flex;
     align-items: center;
@@ -41,6 +65,10 @@ header{
     padding: 20px;
     color: white;
     font-weight: bold;
+}
+
+i{
+    margin-right: 10px;
 }
 
 a{
@@ -63,17 +91,11 @@ main{
     padding: 40px 32px;
 }
 
-.matches-intro{
-    padding: 40px;
-    color: white;
-    background: linear-gradient(120deg, #101C30, #064493);
-    border-radius: 16px;
-    border-top: 3px solid #39BDE0;
-}
-
 h1{
     margin: 16px 0;
-    font-size: clamp(32px, 4vw, 52px);
+    font-size: 52px;
+    text-align: center;
+    color: var(--text-color);
 }
 
 .matches-intro > p:not(.eyebrow){
@@ -82,11 +104,9 @@ h1{
 }
 
 .matches-summary{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px 24px;
-    margin-top: 28px;
-    font-size: 14px;
+    margin: 0 0 32px;
+    text-align: center;
+    color: var(--text-color);
 }
 
 .matches-filters{
@@ -96,7 +116,7 @@ h1{
     gap: 20px;
     margin: 28px 0;
     padding: 24px;
-    background: white;
+    background: var(--card-color);
     border: 1px solid #E2E8F0;
     border-radius: 12px;
 }
@@ -140,12 +160,11 @@ button:hover{
 #matches-count{
     font-size: 22px;
     font-weight: 700;
+    color: var(--text-color);
 }
 
 .matches-note, .matches-source{
-    color: #52647C;
-    font-size: 14px;
-    line-height: 1.6;
+    color: var(--text-color);
 }
 
 .match-day{
@@ -156,6 +175,7 @@ button:hover{
     padding-left: 12px;
     border-left: 4px solid #39BDE0;
     font-size: 22px;
+    color: var(--text-color);
 }
 
 .matches-grid{
@@ -166,7 +186,7 @@ button:hover{
 
 .match-card{
     padding: 24px;
-    background: white;
+    background: var(--card-color);
     border: 1px solid #E2E8F0;
     border-radius: 14px;
     box-shadow: 0 6px 22px rgb(16 28 48 / 6%);
@@ -184,6 +204,11 @@ button:hover{
 
 .match-top{
     margin-bottom: 20px;
+}
+
+.match-top span{
+    color: #52647C;
+    font-weight: 600;
 }
 
 .match-status{
@@ -579,6 +604,12 @@ button:hover{
     border-top: 1px solid #E2E8F0;
 }
 
+.match-bottom span{
+    color: #52647C;
+    font-weight: 600;
+    font-style: italic;
+}
+
 .match-bottom a, .matches-source a{
     color: #087DA0;
     font-weight: 600;
@@ -666,4 +697,15 @@ footer{
     .footer-menu{
         justify-content: center;
     }
+}
+
+/* Sélecteurs de mode (Dark/Light) */
+
+.dark-mode{
+    color: black;
+    --bg-color: var(--bg-color-dark);
+    --description-text: var(--color-text);
+    --text-color: var(--bg-color-light);
+    --card-color: var(--card-color-dark);
+    --bg-body: var(--bg-color-dark);
 }

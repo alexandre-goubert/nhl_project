@@ -1,679 +1,1323 @@
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../css/style-team.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Graduate&amp;display=swap" rel="stylesheet">
+
     <title>NHL Zone</title>
+
+    <script src="https://kit.fontawesome.com/f6a2136e94.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
+
 
 <header>
 
+
+
         <div class="header-title">Nhl <span>Zone</span>
 
+
+
+        </div>
+
+
+
+        <div class="selectors-mode">
+            <p class="dark-mode"><i class="fas fa-moon"></i>Dark</p>
+            <p class="light-mode"><i class="fas fa-sun"></i>Light</p>
         </div>
 
         <div class="header-menu"> <!-- Menu de navigation -->
 
+
+
             <div class="header-home">
 
-                <a href="../index.html"><p>Accueil</p></a>
+
+
+                <a href="../index.html"><p><i class="fas fa-home" aria-hidden="true"></i>Accueil</p></a>
+
+
 
             </div>
+
+
 
             <div class="header-teams">
 
-                <a href="teams.html"><p>Equipes</p></a>
+
+
+                <a href="teams.html"><p><i class="fas fa-users" aria-hidden="true"></i>Equipes</p></a>
+
+
 
             </div>
+
+
 
             <div class="header-matches">
 
-                <a href="matches.html"><p>Matchs</p></a>
+
+
+                <a href="matches.html"><p><i class="fas fa-hockey-puck" aria-hidden="true"></i>Matchs</p></a>
+
+
 
             </div>
+
+
 
             <div class="header-rankings">
 
-                <a href="rankings.html"><p>Classements</p></a>
 
+
+                <a href="rankings.html"><p><i class="fas fa-trophy" aria-hidden="true"></i>Classements</p></a>
+
+
+
+            </div>
+
+            <div class="header-quiz">
+
+                <a href="quiz.html"><p><i class="fas fa-question-circle" aria-hidden="true"></i>Quiz</p></a>
+
             </div>
+
+
 
     </div>
 
+
+
 </header>
 
+
+
 <main>
+
         <div class="team-container nsh-team"> <!-- Conteneur principal de l'équipe -->
+
+
 
             <div class="color-container">
 
+
+
                 <p>NSH</p>
 
+
+
             </div>
+
+
 
             <div class="team-presentation-container">
 
+
+
                 <h1 class="equipe-nom">Nashville Predators</h1>
+
+
 
                 <p class="equipe-ville">Nashville, Tennessee</p>
 
+
+
                 <div class="conference">
+
+
 
                 <p>Conférence Ouest - Division Central</p>
 
+
+
                 </div>
+
+
 
                 <div class="equipe-actions">
 
+
+
                 <a href="#historique" class="bouton">Voir l'historique</a>
+
+
 
                 <a href="#squad" class="bouton">Voir l’effectif</a>
 
+
+
                 </div>
+
+
 
             </div>
 
+
+
         </div>
+
+
 
         <div class="stats-container nsh-team"> <!-- Conteneur des statistiques de l'équipe -->
 
+
+
             <div class="matchs">
 
+
+
                 <p>Matchs joués</p>
+
                 <p>5</p>
 
+
+
             </div>
+
+
 
             <div class="wins">
 
+
+
                 <p>Victoires</p>
+
                 <p>2</p>
 
+
+
             </div>
+
+
 
             <div class="losses">
 
+
+
                 <p>Défaites</p>
+
                 <p>3</p>
 
+
+
             </div>
+
+
 
             <div class="points">
 
+
+
                 <p>Points</p>
+
                 <p>6</p>
+
+
 
             </div>
 
+
+
         </div>
 
-        <p class="team-stats-note">Saison 2026–2027 · Statistiques au <time datetime="2026-10-12">12 octobre 2026</time>.
-            Défaites : 1 dans le temps réglementaire et 2 en prolongation ou aux tirs au but.
-            <a href="https://api-web.nhle.com/v1/standings/2026-10-12">Source NHL</a> · Données non actualisées automatiquement.</p>
-
+
+
+        <p class="team-stats-note">Saison 2026–2027 · Statistiques au <time datetime="2026-10-12">12 octobre 2026</time>.
+            Défaites : 1 dans le temps réglementaire et 2 en prolongation ou aux tirs au but.
+            <a href="https://api-web.nhle.com/v1/standings/2026-10-12">Source NHL</a> · Données non actualisées automatiquement.</p>
+
     <div class="miscelleanous-container nsh-team"> <!-- Conteneur des informations diverses de l'équipe -->
+
+
 
         <div class="palmares">
 
+
+
                 <h2>Palmarès</h2>
-                <p class="honour"><strong class="honour-count">0</strong><span class="honour-label">Coupes Stanley</span></p>
-<p class="honour"><strong class="honour-count">1</strong><span class="honour-label">Titres de conférence</span><span class="honour-years">2016–17</span></p>
-<p class="honour"><strong class="honour-count">2</strong><span class="honour-label">Titres de division</span><span class="honour-years">2017–18, 2018–19</span></p>
+
+                <p class="honour"><strong class="honour-count">0</strong><span class="honour-label">Coupes Stanley</span></p>
+<p class="honour"><strong class="honour-count">1</strong><span class="honour-label">Titres de conférence</span><span class="honour-years">2016–17</span></p>
+<p class="honour"><strong class="honour-count">2</strong><span class="honour-label">Titres de division</span><span class="honour-years">2017–18, 2018–19</span></p>
 </div>
+
+
 
             <div class="color-club">
 
+
+
                 <h2>Les couleurs de la franchise</h2>
+
+
 
             <div class="colors">
 
+
+
                 <div class="first-color"></div>
+
                 <div class="second-color"></div>
 
-            </div>
+
 
             </div>
+
+
+
+            </div>
+
+
 
         
 
-    <div class="minimap-container"> <h2>Localisation</h2>
-<p>Nashville, Tennessee</p>
+
+
+    <div class="minimap-container"> <h2>Localisation</h2>
+<p>Nashville, Tennessee</p>
 <!-- Conteneur de la mini-carte -->
+
+
 
                     <img src="../images/minimaps/localisation-nsh.png" alt="Localisation Nashville" width="900">
 
+
+
             </div>
+
+
 
         </div>
 
+
+
                 <h2 class="section-title" id="squad">L'effectif</h2>
+
+
 
         <div class="squad nsh-team"> <!-- Conteneur de l'effectif de l'équipe -->
 
-            <section class="roster-group"><h3 class="roster-title">Attaquants</h3>
-<div class="roster-grid">
+
+
+            <section class="roster-group"><h3 class="roster-title">Attaquants</h3>
+<div class="roster-grid">
 <div class="player">
+
+
 
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>22</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Mavrik Bourque</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>79</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Ross Colton</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>18</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Jack Drury</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>84</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Adam Edstrom</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>9</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Filip Forsberg</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>21</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Nils Hoglander</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>14</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Alexander Kerfoot</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>81</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Jonathan Marchessault</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>90</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Ryan O'Reilly</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>51</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Vitali Pinchuk</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>49</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Reid Schaefer</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>91</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Steven Stamkos</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>71</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Matthew Wood</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
 
-            </div></section><section class="roster-group"><h3 class="roster-title">Défenseurs</h3>
-<div class="roster-grid">
+
+
+            </div></section><section class="roster-group"><h3 class="roster-title">Défenseurs</h3>
+<div class="roster-grid">
 <div class="player">
+
+
 
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>47</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Jack Ahcan</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>41</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Nicolas Hague</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>59</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Roman Josi</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>46</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Ilya Lyubushkin</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>48</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Nick Perbix</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>76</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Brady Skjei</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>85</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>William Trudeau</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>2</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Adam Wilsby</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
 
-            </div></section><section class="roster-group"><h3 class="roster-title">Gardiens</h3>
-<div class="roster-grid">
+
+
+            </div></section><section class="roster-group"><h3 class="roster-title">Gardiens</h3>
+<div class="roster-grid">
 <div class="player">
+
+
 
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>29</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Justus Annunen</h4>
+
                 <p>Gardien</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/NSH.png">
+
+
 
                     <p>32</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Matt Murray</h4>
+
                 <p>Gardien</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
+
+
 
                     <img src="../images/shirts/NSH.png">
 
+
+
                     <p>74</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Juuse Saros</h4>
+
                 <p>Gardien</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             
 
 
-        </div></section>
+
+
+
+        </div></section>
 </div>
+
+
 
         <section class="last-container" id="historique">
 
-            <div class="history-container" tabindex="0" role="region" aria-label="Historique des saisons, tableau défilant">
-<table class="season-history">
-<caption>Historique des saisons</caption>
-<thead><tr>
-<th scope="col">Saison</th>
-<th scope="col">Division</th>
-<th scope="col">Bilan V–D–DP</th>
-<th scope="col">Séries éliminatoires</th>
-</tr></thead>
-<tbody>
-<tr>
-<th scope="row">2023-2024</th>
-<td>Central 4e</td>
-<td>47-30-5</td>
-<td><span class="playoff-badge">1er tour</span></td>
-</tr>
-<tr>
-<th scope="row">2024-2025</th>
-<td>Central 7e</td>
-<td>30-44-8</td>
-<td><span class="playoff-badge">Non qualifié</span></td>
-</tr>
-<tr>
-<th scope="row">2025-2026</th>
-<td>Central 6e</td>
-<td>38-34-10</td>
-<td><span class="playoff-badge">Non qualifié</span></td>
-</tr>
-</tbody>
-</table>
+
+
+            <div class="history-container" tabindex="0" role="region" aria-label="Historique des saisons, tableau défilant">
+<table class="season-history">
+<caption>Historique des saisons</caption>
+<thead><tr>
+<th scope="col">Saison</th>
+<th scope="col">Division</th>
+<th scope="col">Bilan V–D–DP</th>
+<th scope="col">Séries éliminatoires</th>
+</tr></thead>
+<tbody>
+<tr>
+<th scope="row">2023-2024</th>
+<td>Central 4e</td>
+<td>47-30-5</td>
+<td><span class="playoff-badge">1er tour</span></td>
+</tr>
+<tr>
+<th scope="row">2024-2025</th>
+<td>Central 7e</td>
+<td>30-44-8</td>
+<td><span class="playoff-badge">Non qualifié</span></td>
+</tr>
+<tr>
+<th scope="row">2025-2026</th>
+<td>Central 6e</td>
+<td>38-34-10</td>
+<td><span class="playoff-badge">Non qualifié</span></td>
+</tr>
+</tbody>
+</table>
 </div>
 
+
+
             </section>
+
 </main>
+
+
 
 <footer>
 
+
+
         <div class="footer-title">NHL <span>Zone</span>
 
+
+
         </div>
+
+
 
         <div class="footer-menu"> <!-- Menu du pied de page -->
 
+
+
             <p>Site de fans indépendant</p>
+
             <p>Non affilié à la NHL</p>
+
+
 
         </div>
 
+
+
 </footer>
+
     
+
+<script src="../script/color-mode.js" defer></script>
 </body>
-</html>
+
+</html>

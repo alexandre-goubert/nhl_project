@@ -1,658 +1,1281 @@
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../css/style-team.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Graduate&amp;display=swap" rel="stylesheet">
+
     <title>NHL Zone</title>
+
+    <script src="https://kit.fontawesome.com/f6a2136e94.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
+
 
 <header>
 
+
+
         <div class="header-title">Nhl <span>Zone</span>
 
+
+
+        </div>
+
+
+
+        <div class="selectors-mode">
+            <p class="dark-mode"><i class="fas fa-moon"></i>Dark</p>
+            <p class="light-mode"><i class="fas fa-sun"></i>Light</p>
         </div>
 
         <div class="header-menu"> <!-- Menu de navigation -->
 
+
+
             <div class="header-home">
 
-                <a href="../index.html"><p>Accueil</p></a>
+
+
+                <a href="../index.html"><p><i class="fas fa-home" aria-hidden="true"></i>Accueil</p></a>
+
+
 
             </div>
+
+
 
             <div class="header-teams">
 
-                <a href="teams.html"><p>Equipes</p></a>
+
+
+                <a href="teams.html"><p><i class="fas fa-users" aria-hidden="true"></i>Equipes</p></a>
+
+
 
             </div>
+
+
 
             <div class="header-matches">
 
-                <a href="matches.html"><p>Matchs</p></a>
+
+
+                <a href="matches.html"><p><i class="fas fa-hockey-puck" aria-hidden="true"></i>Matchs</p></a>
+
+
 
             </div>
+
+
 
             <div class="header-rankings">
 
-                <a href="rankings.html"><p>Classements</p></a>
 
+
+                <a href="rankings.html"><p><i class="fas fa-trophy" aria-hidden="true"></i>Classements</p></a>
+
+
+
+            </div>
+
+            <div class="header-quiz">
+
+                <a href="quiz.html"><p><i class="fas fa-question-circle" aria-hidden="true"></i>Quiz</p></a>
+
             </div>
+
+
 
     </div>
 
+
+
 </header>
 
+
+
 <main>
+
         <div class="team-container tor-team"> <!-- Conteneur principal de l'équipe -->
+
+
 
             <div class="color-container">
 
+
+
                 <p>TOR</p>
 
+
+
             </div>
+
+
 
             <div class="team-presentation-container">
 
+
+
                 <h1 class="equipe-nom">Toronto Maple Leafs</h1>
+
+
 
                 <p class="equipe-ville">Toronto, Ontario</p>
 
+
+
                 <div class="conference">
+
+
 
                 <p>Conférence Est - Division Atlantic</p>
 
+
+
                 </div>
+
+
 
                 <div class="equipe-actions">
 
+
+
                 <a href="#historique" class="bouton">Voir l'historique</a>
+
+
 
                 <a href="#squad" class="bouton">Voir l’effectif</a>
 
+
+
                 </div>
+
+
 
             </div>
 
+
+
         </div>
+
+
 
         <div class="stats-container tor-team"> <!-- Conteneur des statistiques de l'équipe -->
 
+
+
             <div class="matchs">
 
+
+
                 <p>Matchs joués</p>
+
                 <p>6</p>
 
+
+
             </div>
+
+
 
             <div class="wins">
 
+
+
                 <p>Victoires</p>
+
                 <p>3</p>
 
+
+
             </div>
+
+
 
             <div class="losses">
 
+
+
                 <p>Défaites</p>
+
                 <p>3</p>
 
+
+
             </div>
+
+
 
             <div class="points">
 
+
+
                 <p>Points</p>
+
                 <p>7</p>
+
+
 
             </div>
 
+
+
         </div>
 
-        <p class="team-stats-note">Saison 2026–2027 · Statistiques au <time datetime="2026-10-12">12 octobre 2026</time>.
-            Défaites : 2 dans le temps réglementaire et 1 en prolongation ou aux tirs au but.
-            <a href="https://api-web.nhle.com/v1/standings/2026-10-12">Source NHL</a> · Données non actualisées automatiquement.</p>
-
+
+
+        <p class="team-stats-note">Saison 2026–2027 · Statistiques au <time datetime="2026-10-12">12 octobre 2026</time>.
+            Défaites : 2 dans le temps réglementaire et 1 en prolongation ou aux tirs au but.
+            <a href="https://api-web.nhle.com/v1/standings/2026-10-12">Source NHL</a> · Données non actualisées automatiquement.</p>
+
     <div class="miscelleanous-container tor-team"> <!-- Conteneur des informations diverses de l'équipe -->
+
+
 
         <div class="palmares">
 
+
+
                 <h2>Palmarès</h2>
-                <p class="honour"><strong class="honour-count">13</strong><span class="honour-label">Coupes Stanley</span><span class="honour-years">1917–18, 1921–22, 1931–32, 1941–42, 1944–45, 1946–47, 1947–48, 1948–49, 1950–51, 1961–62, 1962–63, 1963–64, 1966–67</span></p>
-<p class="honour"><strong class="honour-count">0</strong><span class="honour-label">Titres de conférence</span></p>
-<p class="honour"><strong class="honour-count">7</strong><span class="honour-label">Titres de division</span><span class="honour-years">1932–33, 1933–34, 1934–35, 1937–38, 1999–2000, 2020–21, 2024–25</span></p>
+
+                <p class="honour"><strong class="honour-count">13</strong><span class="honour-label">Coupes Stanley</span><span class="honour-years">1917–18, 1921–22, 1931–32, 1941–42, 1944–45, 1946–47, 1947–48, 1948–49, 1950–51, 1961–62, 1962–63, 1963–64, 1966–67</span></p>
+<p class="honour"><strong class="honour-count">0</strong><span class="honour-label">Titres de conférence</span></p>
+<p class="honour"><strong class="honour-count">7</strong><span class="honour-label">Titres de division</span><span class="honour-years">1932–33, 1933–34, 1934–35, 1937–38, 1999–2000, 2020–21, 2024–25</span></p>
 </div>
+
+
 
             <div class="color-club">
 
+
+
                 <h2>Les couleurs de la franchise</h2>
+
+
 
             <div class="colors">
 
+
+
                 <div class="first-color"></div>
+
                 <div class="second-color"></div>
 
-            </div>
+
 
             </div>
+
+
+
+            </div>
+
+
 
         
 
-    <div class="minimap-container"> <h2>Localisation</h2>
-<p>Toronto, Ontario</p>
+
+
+    <div class="minimap-container"> <h2>Localisation</h2>
+<p>Toronto, Ontario</p>
 <!-- Conteneur de la mini-carte -->
+
+
 
                     <img src="../images/minimaps/localisation-tor.png" alt="Localisation Toronto" width="900">
 
+
+
             </div>
+
+
 
         </div>
 
+
+
                 <h2 class="section-title" id="squad">L'effectif</h2>
+
+
 
         <div class="squad tor-team"> <!-- Conteneur de l'effectif de l'équipe -->
 
-            <section class="roster-group"><h3 class="roster-title">Attaquants</h3>
-<div class="roster-grid">
+
+
+            <section class="roster-group"><h3 class="roster-title">Attaquants</h3>
+<div class="roster-grid">
 <div class="player">
+
+
 
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>34</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Auston Matthews</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>91</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>John Tavares</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>88</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>William Nylander</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>72</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Gavin McKenna</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>86</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Kirill Marchenko</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>96</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Jack Roslovic</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>20</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Nick Paul</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>73</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Teddy Blueger</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>53</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Easton Cowan</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>15</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Colton Sissons</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>29</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Bo Groulx</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>24</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Brandon Duhaime</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>19</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Zack MacEwen</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>43</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Luke Haymes</h4>
+
                 <p>Attaquant</p>
+
+
 
                 </div>
 
+
+
             </div>
 
-            </div></section><section class="roster-group"><h3 class="roster-title">Défenseurs</h3>
-<div class="roster-grid">
+
+
+            </div></section><section class="roster-group"><h3 class="roster-title">Défenseurs</h3>
+<div class="roster-grid">
 <div class="player">
+
+
 
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>8</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Christopher Tanev</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>28</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Troy Stecher</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>44</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Morgan Rielly</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>43</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Darren Raddysh</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>22</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Jake McCabe</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>95</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Oliver Ekman-Larsson</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>3</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Nick Blankenburg</h4>
+
                 <p>Défenseur</p>
+
+
 
                 </div>
 
+
+
             </div>
 
-            </div></section><section class="roster-group"><h3 class="roster-title">Gardiens</h3>
-<div class="roster-grid">
+
+
+            </div></section><section class="roster-group"><h3 class="roster-title">Gardiens</h3>
+<div class="roster-grid">
 <div class="player">
+
+
 
                 <div class="shirt-container">
 
+
+
                     <img src="../images/shirts/TOR.png">
+
+
 
                     <p>41</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Anthony Stolarz</h4>
+
                 <p>Gardien</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             <div class="player">
 
+
+
                 <div class="shirt-container">
+
+
 
                     <img src="../images/shirts/TOR.png">
 
+
+
                     <p>72</p>
 
+
+
                 </div>
+
+
 
                 <div class="player-container">
 
+
+
                 <h4>Sergei Bobrovsky</h4>
+
                 <p>Gardien</p>
+
+
 
                 </div>
 
+
+
             </div>
+
+
 
             
 
 
-        </div></section>
+
+
+
+        </div></section>
 </div>
+
+
 
         <section class="last-container" id="historique">
 
-            <div class="history-container" tabindex="0" role="region" aria-label="Historique des saisons, tableau défilant">
-<table class="season-history">
-<caption>Historique des saisons</caption>
-<thead><tr>
-<th scope="col">Saison</th>
-<th scope="col">Division</th>
-<th scope="col">Bilan V–D–DP</th>
-<th scope="col">Séries éliminatoires</th>
-</tr></thead>
-<tbody>
-<tr>
-<th scope="row">2023-2024</th>
-<td>Atlantic 3e</td>
-<td>46-26-10</td>
-<td><span class="playoff-badge">1er tour</span></td>
-</tr>
-<tr>
-<th scope="row">2024-2025</th>
-<td>Atlantic 1er</td>
-<td>52-26-4</td>
-<td><span class="playoff-badge">2e tour</span></td>
-</tr>
-<tr>
-<th scope="row">2025-2026</th>
-<td>Atlantic 8e</td>
-<td>32-36-14</td>
-<td><span class="playoff-badge">Non qualifié</span></td>
-</tr>
-</tbody>
-</table>
+
+
+            <div class="history-container" tabindex="0" role="region" aria-label="Historique des saisons, tableau défilant">
+<table class="season-history">
+<caption>Historique des saisons</caption>
+<thead><tr>
+<th scope="col">Saison</th>
+<th scope="col">Division</th>
+<th scope="col">Bilan V–D–DP</th>
+<th scope="col">Séries éliminatoires</th>
+</tr></thead>
+<tbody>
+<tr>
+<th scope="row">2023-2024</th>
+<td>Atlantic 3e</td>
+<td>46-26-10</td>
+<td><span class="playoff-badge">1er tour</span></td>
+</tr>
+<tr>
+<th scope="row">2024-2025</th>
+<td>Atlantic 1er</td>
+<td>52-26-4</td>
+<td><span class="playoff-badge">2e tour</span></td>
+</tr>
+<tr>
+<th scope="row">2025-2026</th>
+<td>Atlantic 8e</td>
+<td>32-36-14</td>
+<td><span class="playoff-badge">Non qualifié</span></td>
+</tr>
+</tbody>
+</table>
 </div>
 
+
+
             </section>
+
 </main>
+
+
 
 <footer>
 
+
+
         <div class="footer-title">NHL <span>Zone</span>
+
+
 
         </div>
 
+
+
         <div class="footer-menu"> <!-- Menu du pied de page -->
 
+
+
             <p>Site de fans indépendant</p>
+
             <p>Non affilié à la NHL</p>
+
         </div>    
+
 </footer>
+
     
+
+<script src="../script/color-mode.js" defer></script>
 </body>
-</html>
+
+</html>

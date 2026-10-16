@@ -2,12 +2,24 @@
     box-sizing: border-box;
 }
 
+html{
+    --bg-color-dark: #0B1220;
+    --bg-color-light: white;
+    --bg-body-light: #F1F5F9;
+    --text-color: #101C30;
+    --card-color-dark: #f3eed8;
+
+    --bg-color: var(--bg-color-light);
+    --card-color: var(--bg-color-light);
+    --bg-body: var(--bg-body-light);
+}
+
 body{
     margin: 0;
     padding: 0;
     width: 100%;
     font-family: 'Barlow', sans-serif;
-    background-color: #F1F5F9;
+    background-color: var(--bg-body);
 }
 header{
     background-color:#101C30;
@@ -20,7 +32,7 @@ header{
 }
 
 h1{
-    color: #101C30;
+    color: var(--text-color);
     font-size:64px;
     text-align: center;   
 }
@@ -40,7 +52,7 @@ h1{
 }
 
 h2{
-    color: #101C30;
+    color: var(--text-color);
     font-size: 32px;
     text-align: center;   
 }
@@ -57,6 +69,10 @@ a:visited{
 a:hover{
     color: white;
     transition: 0.3s;
+}
+
+i{
+    margin-right: 10px;
 }
 
 main{
@@ -89,6 +105,18 @@ footer{
     display:flex;
     gap: 30px;
     padding: 20px;
+}
+
+.selectors-mode{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.selectors-mode p{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .header-menu a:visited{
@@ -128,7 +156,7 @@ footer{
 }
 
 .quiz-card{
-    background-color: white;
+    background-color: var(--card-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -424,4 +452,32 @@ img{
         justify-content: center;
         gap: 8px 16px;
     }
+}
+
+/* Sélecteurs de mode (Dark/Light) */
+
+.dark-mode{
+    color: black;
+    --bg-color: var(--bg-color-dark);
+    --description-text: var(--color-text);
+    --text-color: var(--bg-color-light);
+    --card-color: var(--card-color-dark);
+    --bg-body: var(--bg-color-dark);
+}
+
+/* Textes du quiz sur le fond de page */
+body.dark-mode .quiz-game{
+    color: #F1F5F9;
+}
+
+body.dark-mode #quiz-description,
+body.dark-mode #question-counter,
+body.dark-mode #final-score,
+body.dark-mode #quiz-feedback,
+body.dark-mode #result-title{
+    color: #B8C7DC;
+}
+
+body.dark-mode .quiz-back:visited{
+    color: #39BDE0;
 }

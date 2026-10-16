@@ -2,13 +2,26 @@
     box-sizing: border-box;
 }
 
+html{
+    --bg-color-dark: #0B1220;
+    --bg-color-light: white;
+    --bg-body-light: #F1F5F9;
+    --text-color: #101C30;
+    --card-color-dark: #f3eed8;
+
+    --bg-color: var(--bg-color-light);
+    --text-color: var(--text-color);
+    --card-color: var(--bg-color-light);
+    --bg-body: var(--bg-body-light);
+}
+
 body{
     margin: 0;
 
     font-family: 'Barlow', sans-serif;
     color: #101C30;
 
-    background: #F1F5F9;
+    background: var(--bg-body);
 }
 
 header{
@@ -38,6 +51,18 @@ header{
     color: #39BDE0;
 }
 
+.selectors-mode{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.selectors-mode p{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .header-menu{
     display: flex;
     align-items: center;
@@ -58,26 +83,27 @@ a:hover{
     color: #39BDE0;
 }
 
+i{
+    margin-right: 10px;
+}
+
 main{
     max-width: 1280px;
-
     margin-inline: auto;
     padding: 48px 32px;
 }
 
 h1{
     margin: 0 0 12px;
-
-    font-size: clamp(36px, 5vw, 56px);
+    font-size: 52px;
     text-align: center;
+    color: var(--text-color);
 }
 
 .standings-meta{
     margin: 0 0 32px;
-
     text-align: center;
-    color: #52647C;
-    line-height: 1.6;
+    color: var(--text-color);
 }
 
 .rankings-menu{
@@ -264,7 +290,7 @@ tbody tr:last-child td{
 .standings-legend{
     margin: 18px 4px 0;
 
-    color: #52647C;
+    color: var(--text-color);
     font-size: 14px;
     line-height: 1.8;
 }
@@ -444,4 +470,15 @@ img{
         justify-content: center;
         gap: 8px 16px;
     }
+}
+
+/* Sélecteurs de mode (Dark/Light) */
+
+.dark-mode{
+    color: black;
+    --bg-color: var(--bg-color-dark);
+    --description-text: var(--color-text);
+    --text-color: var(--bg-color-light);
+    --card-color: var(--card-color-dark);
+    --bg-body: var(--bg-color-dark);
 }
