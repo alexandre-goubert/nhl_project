@@ -1,5 +1,527 @@
 [
   {
+    "date": "2026-10-18",
+    "dateLabel": "18 octobre 2026",
+    "teams": [
+      "CAR",
+      "CGY"
+    ],
+    "status": "Terminé",
+    "venue": "Scotiabank Saddledome",
+    "nhlUrl": "https://www.nhl.com/gamecenter/car-vs-cgy/2026/10/18/2026020136",
+    "sides": [
+      {
+        "code": "CAR",
+        "slug": "carolina",
+        "name": "Carolina Hurricanes",
+        "score": 2,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "CGY",
+        "slug": "calgary",
+        "name": "Calgary Flames",
+        "score": 3,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "dateLabel": "18 octobre 2026",
+    "teams": [
+      "CBJ",
+      "MIN"
+    ],
+    "status": "Terminé",
+    "venue": "Grand Casino Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/cbj-vs-min/2026/10/18/2026020135",
+    "sides": [
+      {
+        "code": "CBJ",
+        "slug": "columbus",
+        "name": "Columbus Blue Jackets",
+        "score": 1,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "MIN",
+        "slug": "minnesota",
+        "name": "Minnesota Wild",
+        "score": 2,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "dateLabel": "17 octobre 2026",
+    "teams": [
+      "EDM",
+      "UTA"
+    ],
+    "status": "Terminé",
+    "venue": "Delta Center",
+    "nhlUrl": "https://www.nhl.com/gamecenter/edm-vs-uta/2026/10/17/2026020133",
+    "sides": [
+      {
+        "code": "EDM",
+        "slug": "edmonton",
+        "name": "Edmonton Oilers",
+        "score": 6,
+        "home": false,
+        "winner": true
+      },
+      {
+        "code": "UTA",
+        "slug": "utah",
+        "name": "Utah Mammoth",
+        "score": 2,
+        "home": true,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "dateLabel": "17 octobre 2026",
+    "teams": [
+      "PIT",
+      "VGK"
+    ],
+    "status": "Terminé",
+    "venue": "T-Mobile Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/pit-vs-vgk/2026/10/17/2026020134",
+    "sides": [
+      {
+        "code": "PIT",
+        "slug": "pittsburgh",
+        "name": "Pittsburgh Penguins",
+        "score": 2,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "VGK",
+        "slug": "vegas",
+        "name": "Vegas Golden Knights",
+        "score": 6,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "dateLabel": "17 octobre 2026",
+    "teams": [
+      "BOS",
+      "LAK"
+    ],
+    "status": "Terminé",
+    "venue": "Crypto.com Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/bos-vs-lak/2026/10/17/2026020132",
+    "sides": [
+      {
+        "code": "BOS",
+        "slug": "boston",
+        "name": "Boston Bruins",
+        "score": 4,
+        "home": false,
+        "winner": true
+      },
+      {
+        "code": "LAK",
+        "slug": "losangeles",
+        "name": "Los Angeles Kings",
+        "score": 1,
+        "home": true,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "dateLabel": "17 octobre 2026",
+    "teams": [
+      "STL",
+      "NSH"
+    ],
+    "status": "Terminé",
+    "venue": "Bridgestone Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/stl-vs-nsh/2026/10/17/2026020131",
+    "sides": [
+      {
+        "code": "STL",
+        "slug": "stlouis",
+        "name": "St. Louis Blues",
+        "score": 2,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "NSH",
+        "slug": "nashville",
+        "name": "Nashville Predators",
+        "score": 5,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "dateLabel": "17 octobre 2026",
+    "teams": [
+      "NYI",
+      "TOR"
+    ],
+    "status": "Terminé",
+    "venue": "Scotiabank Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/nyi-vs-tor/2026/10/17/2026020125",
+    "sides": [
+      {
+        "code": "NYI",
+        "slug": "islanders",
+        "name": "New York Islanders",
+        "score": 4,
+        "home": false,
+        "winner": true
+      },
+      {
+        "code": "TOR",
+        "slug": "toronto",
+        "name": "Toronto Maple Leafs",
+        "score": 1,
+        "home": true,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "dateLabel": "17 octobre 2026",
+    "teams": [
+      "BUF",
+      "MTL"
+    ],
+    "status": "Après prolongation",
+    "venue": "Centre Bell",
+    "nhlUrl": "https://www.nhl.com/gamecenter/buf-vs-mtl/2026/10/17/2026020126",
+    "sides": [
+      {
+        "code": "BUF",
+        "slug": "buffalo",
+        "name": "Buffalo Sabres",
+        "score": 3,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "MTL",
+        "slug": "montreal",
+        "name": "MontrÃ©al Canadiens",
+        "score": 4,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "dateLabel": "17 octobre 2026",
+    "teams": [
+      "SJS",
+      "DET"
+    ],
+    "status": "Après tirs au but",
+    "venue": "Little Caesars Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/sjs-vs-det/2026/10/17/2026020127",
+    "sides": [
+      {
+        "code": "SJS",
+        "slug": "sanjose",
+        "name": "San Jose Sharks",
+        "score": 3,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "DET",
+        "slug": "detroit",
+        "name": "Detroit Red Wings",
+        "score": 4,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "dateLabel": "17 octobre 2026",
+    "teams": [
+      "OTT",
+      "PHI"
+    ],
+    "status": "Terminé",
+    "venue": "Xfinity Mobile Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/ott-vs-phi/2026/10/17/2026020128",
+    "sides": [
+      {
+        "code": "OTT",
+        "slug": "ottawa",
+        "name": "Ottawa Senators",
+        "score": 1,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "PHI",
+        "slug": "philadelphia",
+        "name": "Philadelphia Flyers",
+        "score": 3,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "dateLabel": "17 octobre 2026",
+    "teams": [
+      "NYR",
+      "CBJ"
+    ],
+    "status": "Après prolongation",
+    "venue": "Nationwide Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/nyr-vs-cbj/2026/10/17/2026020129",
+    "sides": [
+      {
+        "code": "NYR",
+        "slug": "rangers",
+        "name": "New York Rangers",
+        "score": 0,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "CBJ",
+        "slug": "columbus",
+        "name": "Columbus Blue Jackets",
+        "score": 1,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "dateLabel": "17 octobre 2026",
+    "teams": [
+      "DAL",
+      "CHI"
+    ],
+    "status": "Terminé",
+    "venue": "United Center",
+    "nhlUrl": "https://www.nhl.com/gamecenter/dal-vs-chi/2026/10/17/2026020130",
+    "sides": [
+      {
+        "code": "DAL",
+        "slug": "dallas",
+        "name": "Dallas Stars",
+        "score": 4,
+        "home": false,
+        "winner": true
+      },
+      {
+        "code": "CHI",
+        "slug": "chicago",
+        "name": "Chicago Blackhawks",
+        "score": 0,
+        "home": true,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "dateLabel": "17 octobre 2026",
+    "teams": [
+      "SEA",
+      "FLA"
+    ],
+    "status": "Terminé",
+    "venue": "Amerant Bank Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/sea-vs-fla/2026/10/17/2026020124",
+    "sides": [
+      {
+        "code": "SEA",
+        "slug": "seattle",
+        "name": "Seattle Kraken",
+        "score": 3,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "FLA",
+        "slug": "florida",
+        "name": "Florida Panthers",
+        "score": 8,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "dateLabel": "17 octobre 2026",
+    "teams": [
+      "VAN",
+      "TBL"
+    ],
+    "status": "Terminé",
+    "venue": "Benchmark International Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/van-vs-tbl/2026/10/17/2026020123",
+    "sides": [
+      {
+        "code": "VAN",
+        "slug": "vancouver",
+        "name": "Vancouver Canucks",
+        "score": 2,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "TBL",
+        "slug": "tampabay",
+        "name": "Tampa Bay Lightning",
+        "score": 4,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "dateLabel": "17 octobre 2026",
+    "teams": [
+      "CAR",
+      "WPG"
+    ],
+    "status": "Terminé",
+    "venue": "Canada Life Centre",
+    "nhlUrl": "https://www.nhl.com/gamecenter/car-vs-wpg/2026/10/17/2026020122",
+    "sides": [
+      {
+        "code": "CAR",
+        "slug": "carolina",
+        "name": "Carolina Hurricanes",
+        "score": 3,
+        "home": false,
+        "winner": true
+      },
+      {
+        "code": "WPG",
+        "slug": "winnipeg",
+        "name": "Winnipeg Jets",
+        "score": 2,
+        "home": true,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "dateLabel": "17 octobre 2026",
+    "teams": [
+      "NJD",
+      "WSH"
+    ],
+    "status": "Terminé",
+    "venue": "Capital One Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/njd-vs-wsh/2026/10/17/2026020121",
+    "sides": [
+      {
+        "code": "NJD",
+        "slug": "newjersey",
+        "name": "New Jersey Devils",
+        "score": 2,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "WSH",
+        "slug": "washington",
+        "name": "Washington Capitals",
+        "score": 4,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "dateLabel": "16 octobre 2026",
+    "teams": [
+      "BOS",
+      "ANA"
+    ],
+    "status": "Terminé",
+    "venue": "Honda Center",
+    "nhlUrl": "https://www.nhl.com/gamecenter/bos-vs-ana/2026/10/16/2026020120",
+    "sides": [
+      {
+        "code": "BOS",
+        "slug": "boston",
+        "name": "Boston Bruins",
+        "score": 4,
+        "home": false,
+        "winner": true
+      },
+      {
+        "code": "ANA",
+        "slug": "anaheim",
+        "name": "Anaheim Ducks",
+        "score": 2,
+        "home": true,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "dateLabel": "16 octobre 2026",
+    "teams": [
+      "PIT",
+      "COL"
+    ],
+    "status": "Terminé",
+    "venue": "Ball Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/pit-vs-col/2026/10/16/2026020119",
+    "sides": [
+      {
+        "code": "PIT",
+        "slug": "pittsburgh",
+        "name": "Pittsburgh Penguins",
+        "score": 2,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "COL",
+        "slug": "colorado",
+        "name": "Colorado Avalanche",
+        "score": 5,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
     "date": "2026-10-15",
     "dateLabel": "15 octobre 2026",
     "teams": [
@@ -361,7 +883,7 @@
       {
         "code": "MTL",
         "slug": "montreal",
-        "name": "Montréal Canadiens",
+        "name": "MontrÃ©al Canadiens",
         "score": 4,
         "home": false,
         "winner": false
@@ -775,7 +1297,7 @@
       {
         "code": "MTL",
         "slug": "montreal",
-        "name": "Montréal Canadiens",
+        "name": "MontrÃ©al Canadiens",
         "score": 4,
         "home": true,
         "winner": true
@@ -1152,7 +1674,7 @@
       {
         "code": "MTL",
         "slug": "montreal",
-        "name": "Montréal Canadiens",
+        "name": "MontrÃ©al Canadiens",
         "score": 1,
         "home": true,
         "winner": true
@@ -1732,7 +2254,7 @@
       {
         "code": "MTL",
         "slug": "montreal",
-        "name": "Montréal Canadiens",
+        "name": "MontrÃ©al Canadiens",
         "score": 2,
         "home": true,
         "winner": false
@@ -2080,7 +2602,7 @@
       {
         "code": "MTL",
         "slug": "montreal",
-        "name": "Montréal Canadiens",
+        "name": "MontrÃ©al Canadiens",
         "score": 4,
         "home": true,
         "winner": false
@@ -2739,7 +3261,7 @@
       {
         "code": "MTL",
         "slug": "montreal",
-        "name": "Montréal Canadiens",
+        "name": "MontrÃ©al Canadiens",
         "score": 5,
         "home": false,
         "winner": false
@@ -3186,6 +3708,238 @@
         "score": 6,
         "home": true,
         "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "dateLabel": "30 septembre 2026",
+    "teams": [
+      "LAK",
+      "COL"
+    ],
+    "status": "Terminé",
+    "venue": "Ball Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/lak-vs-col/2026/09/30/2026020007",
+    "sides": [
+      {
+        "code": "LAK",
+        "slug": "losangeles",
+        "name": "Los Angeles Kings",
+        "score": 4,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "COL",
+        "slug": "colorado",
+        "name": "Colorado Avalanche",
+        "score": 8,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "dateLabel": "30 septembre 2026",
+    "teams": [
+      "PIT",
+      "PHI"
+    ],
+    "status": "Terminé",
+    "venue": "Xfinity Mobile Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/pit-vs-phi/2026/09/30/2026020006",
+    "sides": [
+      {
+        "code": "PIT",
+        "slug": "pittsburgh",
+        "name": "Pittsburgh Penguins",
+        "score": 7,
+        "home": false,
+        "winner": true
+      },
+      {
+        "code": "PHI",
+        "slug": "philadelphia",
+        "name": "Philadelphia Flyers",
+        "score": 0,
+        "home": true,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "dateLabel": "30 septembre 2026",
+    "teams": [
+      "NYI",
+      "TOR"
+    ],
+    "status": "Terminé",
+    "venue": "Scotiabank Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/nyi-vs-tor/2026/09/30/2026020008",
+    "sides": [
+      {
+        "code": "NYI",
+        "slug": "islanders",
+        "name": "New York Islanders",
+        "score": 1,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "TOR",
+        "slug": "toronto",
+        "name": "Toronto Maple Leafs",
+        "score": 2,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "dateLabel": "29 septembre 2026",
+    "teams": [
+      "CHI",
+      "VGK"
+    ],
+    "status": "Terminé",
+    "venue": "T-Mobile Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/chi-vs-vgk/2026/09/29/2026020005",
+    "sides": [
+      {
+        "code": "CHI",
+        "slug": "chicago",
+        "name": "Chicago Blackhawks",
+        "score": 2,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "VGK",
+        "slug": "vegas",
+        "name": "Vegas Golden Knights",
+        "score": 5,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "dateLabel": "29 septembre 2026",
+    "teams": [
+      "VAN",
+      "EDM"
+    ],
+    "status": "Après prolongation",
+    "venue": "Rogers Place",
+    "nhlUrl": "https://www.nhl.com/gamecenter/van-vs-edm/2026/09/29/2026020004",
+    "sides": [
+      {
+        "code": "VAN",
+        "slug": "vancouver",
+        "name": "Vancouver Canucks",
+        "score": 6,
+        "home": false,
+        "winner": true
+      },
+      {
+        "code": "EDM",
+        "slug": "edmonton",
+        "name": "Edmonton Oilers",
+        "score": 5,
+        "home": true,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "dateLabel": "29 septembre 2026",
+    "teams": [
+      "NYR",
+      "BOS"
+    ],
+    "status": "Terminé",
+    "venue": "TD Garden",
+    "nhlUrl": "https://www.nhl.com/gamecenter/nyr-vs-bos/2026/09/29/2026020003",
+    "sides": [
+      {
+        "code": "NYR",
+        "slug": "rangers",
+        "name": "New York Rangers",
+        "score": 0,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "BOS",
+        "slug": "boston",
+        "name": "Boston Bruins",
+        "score": 3,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "dateLabel": "29 septembre 2026",
+    "teams": [
+      "MTL",
+      "TOR"
+    ],
+    "status": "Terminé",
+    "venue": "Scotiabank Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/mtl-vs-tor/2026/09/29/2026020002",
+    "sides": [
+      {
+        "code": "MTL",
+        "slug": "montreal",
+        "name": "MontrÃ©al Canadiens",
+        "score": 3,
+        "home": false,
+        "winner": true
+      },
+      {
+        "code": "TOR",
+        "slug": "toronto",
+        "name": "Toronto Maple Leafs",
+        "score": 2,
+        "home": true,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "dateLabel": "29 septembre 2026",
+    "teams": [
+      "FLA",
+      "CAR"
+    ],
+    "status": "Après prolongation",
+    "venue": "Lenovo Center",
+    "nhlUrl": "https://www.nhl.com/gamecenter/fla-vs-car/2026/09/29/2026020001",
+    "sides": [
+      {
+        "code": "FLA",
+        "slug": "florida",
+        "name": "Florida Panthers",
+        "score": 1,
+        "home": false,
+        "winner": true
+      },
+      {
+        "code": "CAR",
+        "slug": "carolina",
+        "name": "Carolina Hurricanes",
+        "score": 0,
+        "home": true,
+        "winner": false
       }
     ]
   }

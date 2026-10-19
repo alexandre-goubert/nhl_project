@@ -4,6 +4,8 @@
     import matches from '#lib/data/matches.json';
     import { teams } from '#lib/data/teams.js';
 
+    const teamImageBase = asset('images/logos/TOR.png').replace(/TOR\.png$/, '');
+
     let dateFilter = $state('');
     let teamFilter = $state('');
 
@@ -32,12 +34,12 @@
 
 <main class="matches-page">
     <h1>Matchs</h1>
-    <div class="matches-summary">Résultats du 1 au 16 octobre 2026</div>
+    <div class="matches-summary">Résultats du 29 septembre au 18 octobre 2026 · Vérifiés le 19 octobre 2026</div>
 
     <form class="matches-filters" onsubmit={(event) => event.preventDefault()}>
         <div>
             <label for="match-date">Journée</label>
-            <input id="match-date" type="date" min="2026-10-01" max="2026-10-16" bind:value={dateFilter} />
+            <input id="match-date" type="date" min="2026-09-29" max="2026-10-18" bind:value={dateFilter} />
         </div>
         <div>
             <label for="match-team">Franchise</label>
@@ -69,7 +71,10 @@
                             </div>
                             {#each match.sides as side (side.code)}
                                 <div class:winner={side.winner} class="match-team">
-                                    <span class={`team-code-${side.code}`}>{side.code}</span>
+                                    <span
+                                        class={`team-code-${side.code}`}
+                                        style:background-image={`url("${teamImageBase}${side.code}.png")`}
+                                    >{side.code}</span>
                                     <div>
                                         <a href={resolve('/[slug]', { slug: side.slug })}>{side.name}</a>
                                         <small>

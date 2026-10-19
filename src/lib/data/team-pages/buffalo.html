@@ -1,379 +1,753 @@
-<main>
-        <div class="team-container buf-team"> <!-- Conteneur principal de l'équipe -->
-            <div class="color-container">
-                <p>BUF</p>
-            </div>
-            <div class="team-presentation-container">
-                <h1 class="equipe-nom">Buffalo Sabres</h1>
-                <p class="equipe-ville">Buffalo, New York</p>
-                <div class="conference">
-                    <p>Conférence Est - Division Atlantic</p>
-                </div>
-                <div class="equipe-actions">
-                    <a href="#historique" class="bouton">Voir l'historique</a>
-                    <a href="#squad" class="bouton">Voir l’effectif</a>
-                </div>
-            </div>
-        </div>
-        <div class="stats-container buf-team"> <!-- Conteneur des statistiques de l'équipe -->
-            <div class="matchs">
-                <p>Matchs joués</p>
-                <p>8</p>
-            </div>
-            <div class="wins">
-                <p>Victoires</p>
-                <p>4</p>
-            </div>
-            <div class="losses">
-                <p>Défaites</p>
-                <p>4</p>
-            </div>
-            <div class="points">
-                <p>Points</p>
-                <p>9</p>
-            </div>
-        </div>
-        <p class="team-stats-note">Saison 2026–2027 · Statistiques au <time datetime="2026-10-15">15 octobre 2026</time>.
-            Défaites : 3 dans le temps réglementaire et 1 en prolongation ou aux tirs au but.
-            <a href="https://api-web.nhle.com/v1/standings/2026-10-15">Source NHL</a> · Données non actualisées automatiquement.
-        </p>
-        <div class="miscelleanous-container buf-team"> <!-- Conteneur des informations diverses de l'équipe -->
-            <div class="palmares">
-                <!-- Source : https://en.wikipedia.org/wiki/Buffalo_Sabres ; consulté le 06/10/2026. -->
-                <h2>Palmarès</h2>
-                <p class="honour"><strong class="honour-count">0</strong><span class="honour-label">Coupes
-                        Stanley</span></p>
-                <p class="honour"><strong class="honour-count">3</strong><span class="honour-label">Titres de
-                        conférence</span><span class="honour-years">1974–75, 1979–80, 1998–99</span></p>
-                <p class="honour"><strong class="honour-count">7</strong><span class="honour-label">Titres de
-                        division</span><span class="honour-years">1974–75, 1979–80, 1980–81, 1996–97, 2006–07, 2009–10,
-                        2025–26</span></p>
-            </div>
-            <div class="color-club">
-                <h2>Les couleurs de la franchise</h2>
-                <div class="colors">
-                    <div class="first-color"></div>
-                    <div class="second-color"></div>
-                </div>
-            </div>
-            <div class="minimap-container">
-                <h2>Localisation</h2>
-                <p>Buffalo, New York</p>
-                <!-- Conteneur de la mini-carte -->
-                <img src="../images/minimaps/localisation-buf.png" alt="Localisation Buffalo" width="900">
-            </div>
-        </div>
-        <!-- Effectif NHL consulté le 06/10/2026 : https://api-web.nhle.com/v1/roster/buf/current -->
-        <h2 class="section-title" id="squad">L'effectif</h2>
-        <div class="squad buf-team"> <!-- Conteneur de l'effectif de l'équipe -->
-            <section class="roster-group">
-                <h3 class="roster-title">Attaquants</h3>
-                <div class="roster-grid">
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>6</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Zach Benson</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>10</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Sam Carrick</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>15</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Justin Danforth</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>91</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Josh Doan</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>94</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Konsta Helenius</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>48</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Tyson Kozak</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>19</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Peyton Krebs</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>20</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Jiri Kulich</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>29</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Beck Malenstyn</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>71</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Ryan McLeod</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>9</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Josh Norris</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>86</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Noah Ostlund</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>22</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Jack Quinn</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>72</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Tage Thompson</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="roster-group">
-                <h3 class="roster-title">Défenseurs</h3>
-                <div class="roster-grid">
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>46</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Louis Crevier</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>26</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Rasmus Dahlin</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>24</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Matt Grzelcyk</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>73</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Zach Metsa</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>25</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Owen Power</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>23</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Mattias Samuelsson</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>21</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Conor Timmins</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>8</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Olen Zellweger</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="roster-group">
-                <h3 class="roster-title">Gardiens</h3>
-                <div class="roster-grid">
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>92</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Colten Ellis</h4>
-                            <p>Gardien</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>1</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Ukko-Pekka Luukkonen</h4>
-                            <p>Gardien</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BUF.png" alt="">
-                            <p>34</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Alex Lyon</h4>
-                            <p>Gardien</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <section class="last-container" id="historique">
-            <div class="history-container" tabindex="0" role="region"
-                aria-label="Historique des saisons, tableau défilant">
-                <table class="season-history">
-                    <caption>Historique des saisons</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Saison</th>
-                            <th scope="col">Division</th>
-                            <th scope="col">Bilan V–D–DP</th>
-                            <th scope="col">Séries éliminatoires</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">2023-2024</th>
-                            <td>Atlantic 6e</td>
-                            <td>39-37-6</td>
-                            <td><span class="playoff-badge">Non qualifié</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2024-2025</th>
-                            <td>Atlantic 7e</td>
-                            <td>36-39-7</td>
-                            <td><span class="playoff-badge">Non qualifié</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2025-2026</th>
-                            <td>Atlantic 1er</td>
-                            <td>50-23-9</td>
-                            <td><span class="playoff-badge">2e tour</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-title">NHL <span>Zone</span>
-        </div>
-        <div class="footer-menu"> <!-- Menu du pied de page -->
-            <p>Site de fans indépendant</p>
-            <p>Non affilié à la NHL</p>
-        </div>
+<main>
+
+        <div class="team-container buf-team"> <!-- Conteneur principal de l'équipe -->
+
+            <div class="color-container" style="background-image: url('../images/logos/BUF.png')">
+                <p>BUF</p>
+
+            </div>
+
+            <div class="team-presentation-container">
+
+                <h1 class="equipe-nom">Buffalo Sabres</h1>
+
+                <p class="equipe-ville">Buffalo, New York</p>
+
+                <div class="conference">
+
+                    <p>Conférence Est - Division Atlantic</p>
+
+                </div>
+
+                <div class="equipe-actions">
+
+                    <a href="#historique" class="bouton">Voir l'historique</a>
+
+                    <a href="#squad" class="bouton">Voir l’effectif</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="stats-container buf-team"> <!-- Conteneur des statistiques de l'équipe -->
+
+            <div class="matchs">
+
+                <p>Matchs joués</p>
+
+                <p>9</p>
+
+            </div>
+
+            <div class="wins">
+
+                <p>Victoires</p>
+
+                <p>4</p>
+
+            </div>
+
+            <div class="losses">
+
+                <p>Défaites</p>
+
+                <p>5</p>
+
+            </div>
+
+            <div class="points">
+
+                <p>Points</p>
+
+                <p>10</p>
+
+            </div>
+
+        </div>
+
+        <p class="team-stats-note">Saison 2026–2027 · Statistiques au <time datetime="2026-10-19">19 octobre 2026</time>.
+            Défaites : 3 dans le temps réglementaire et 2 en prolongation ou aux tirs au but.
+            <a href="https://api-web.nhle.com/v1/standings/2026-10-19">Source NHL</a> · Données non actualisées automatiquement.
+        </p>
+
+        <div class="miscelleanous-container buf-team"> <!-- Conteneur des informations diverses de l'équipe -->
+
+            <div class="palmares">
+
+                <!-- Source : https://en.wikipedia.org/wiki/Buffalo_Sabres ; consulté le 06/10/2026. -->
+
+                <h2>Palmarès</h2>
+
+                <p class="honour"><strong class="honour-count">0</strong><span class="honour-label">Coupes
+
+                        Stanley</span></p>
+
+                <p class="honour"><strong class="honour-count">3</strong><span class="honour-label">Titres de
+
+                        conférence</span><span class="honour-years">1974–75, 1979–80, 1998–99</span></p>
+
+                <p class="honour"><strong class="honour-count">7</strong><span class="honour-label">Titres de
+
+                        division</span><span class="honour-years">1974–75, 1979–80, 1980–81, 1996–97, 2006–07, 2009–10,
+
+                        2025–26</span></p>
+
+            </div>
+
+            <div class="color-club">
+
+                <h2>Les couleurs de la franchise</h2>
+
+                <div class="colors">
+
+                    <div class="first-color"></div>
+
+                    <div class="second-color"></div>
+
+                </div>
+
+            </div>
+
+            <div class="minimap-container">
+
+                <h2>Localisation</h2>
+
+                <p>Buffalo, New York</p>
+
+                <!-- Conteneur de la mini-carte -->
+
+                <img src="../images/minimaps/localisation-buf.png" alt="Localisation Buffalo" width="900">
+
+            </div>
+
+        </div>
+
+        <!-- Effectif NHL consulté le 06/10/2026 : https://api-web.nhle.com/v1/roster/buf/current -->
+
+        <h2 class="section-title" id="squad">L'effectif</h2>
+
+        <div class="squad buf-team"> <!-- Conteneur de l'effectif de l'équipe -->
+
+            <section class="roster-group">
+
+                <h3 class="roster-title">Attaquants</h3>
+
+                <div class="roster-grid">
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>6</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Zach Benson</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>10</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Sam Carrick</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>15</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Justin Danforth</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>91</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Josh Doan</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>94</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Konsta Helenius</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>48</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Tyson Kozak</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>19</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Peyton Krebs</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>20</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Jiri Kulich</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>29</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Beck Malenstyn</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>71</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Ryan McLeod</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>9</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Josh Norris</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>86</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Noah Ostlund</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>22</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Jack Quinn</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>72</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Tage Thompson</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="roster-group">
+
+                <h3 class="roster-title">Défenseurs</h3>
+
+                <div class="roster-grid">
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>46</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Louis Crevier</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>26</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Rasmus Dahlin</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>24</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Matt Grzelcyk</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>73</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Zach Metsa</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>25</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Owen Power</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>23</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Mattias Samuelsson</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>21</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Conor Timmins</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>8</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Olen Zellweger</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="roster-group">
+
+                <h3 class="roster-title">Gardiens</h3>
+
+                <div class="roster-grid">
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>92</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Colten Ellis</h4>
+
+                            <p>Gardien</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>1</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Ukko-Pekka Luukkonen</h4>
+
+                            <p>Gardien</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BUF.png" alt="">
+
+                            <p>34</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Alex Lyon</h4>
+
+                            <p>Gardien</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <section class="last-container" id="historique">
+
+            <div class="history-container" tabindex="0" role="region"
+
+                aria-label="Historique des saisons, tableau défilant">
+
+                <table class="season-history">
+
+                    <caption>Historique des saisons</caption>
+
+                    <thead>
+
+                        <tr>
+
+                            <th scope="col">Saison</th>
+
+                            <th scope="col">Division</th>
+
+                            <th scope="col">Bilan V–D–DP</th>
+
+                            <th scope="col">Séries éliminatoires</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <th scope="row">2023-2024</th>
+
+                            <td>Atlantic 6e</td>
+
+                            <td>39-37-6</td>
+
+                            <td><span class="playoff-badge">Non qualifié</span></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th scope="row">2024-2025</th>
+
+                            <td>Atlantic 7e</td>
+
+                            <td>36-39-7</td>
+
+                            <td><span class="playoff-badge">Non qualifié</span></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th scope="row">2025-2026</th>
+
+                            <td>Atlantic 1er</td>
+
+                            <td>50-23-9</td>
+
+                            <td><span class="playoff-badge">2e tour</span></td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-title">NHL <span>Zone</span>
+
+        </div>
+
+        <div class="footer-menu"> <!-- Menu du pied de page -->
+
+            <p>Site de fans indépendant</p>
+
+            <p>Non affilié à la NHL</p>
+
+        </div>
+
     </footer>

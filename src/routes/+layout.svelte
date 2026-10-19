@@ -1,5 +1,5 @@
 <script>
-	import favicon from '#lib/assets/favicon.svg';
+	import favicon from '#lib/assets/nhl-zone-favicon.png';
 
 	/** @type {{children: import('svelte').Snippet}} */
 	let { children } = $props();
@@ -9,7 +9,7 @@
 
 <svelte:head>
 	<script src="https://kit.fontawesome.com/f6a2136e94.js" crossorigin="anonymous"></script>
-	<link rel="icon" href={favicon} />
+	<link rel="icon" type="image/png" href={favicon} />
 </svelte:head>
 
 <Header />

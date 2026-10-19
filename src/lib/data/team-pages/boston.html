@@ -1,363 +1,721 @@
-<main>
-        <div class="team-container bos-team"> <!-- Conteneur principal de l'équipe -->
-            <div class="color-container">
-                <p>BOS</p>
-            </div>
-            <div class="team-presentation-container">
-                <h1 class="equipe-nom">Boston Bruins</h1>
-                <p class="equipe-ville">Boston, Massachusetts</p>
-                <div class="conference">
-                    <p>Conférence Est - Division Atlantic</p>
-                </div>
-                <div class="equipe-actions">
-                    <a href="#historique" class="bouton">Voir l'historique</a>
-                    <a href="#squad" class="bouton">Voir l’effectif</a>
-                </div>
-            </div>
-        </div>
-        <div class="stats-container bos-team"> <!-- Conteneur des statistiques de l'équipe -->
-            <div class="matchs">
-                <p>Matchs joués</p>
-                <p>7</p>
-            </div>
-            <div class="wins">
-                <p>Victoires</p>
-                <p>5</p>
-            </div>
-            <div class="losses">
-                <p>Défaites</p>
-                <p>2</p>
-            </div>
-            <div class="points">
-                <p>Points</p>
-                <p>10</p>
-            </div>
-        </div>
-        <p class="team-stats-note">Saison 2026–2027 · Statistiques au <time datetime="2026-10-15">15 octobre 2026</time>.
+<main>
+
+        <div class="team-container bos-team"> <!-- Conteneur principal de l'équipe -->
+
+            <div class="color-container" style="background-image: url('../images/logos/BOS.png')">
+                <p>BOS</p>
+
+            </div>
+
+            <div class="team-presentation-container">
+
+                <h1 class="equipe-nom">Boston Bruins</h1>
+
+                <p class="equipe-ville">Boston, Massachusetts</p>
+
+                <div class="conference">
+
+                    <p>Conférence Est - Division Atlantic</p>
+
+                </div>
+
+                <div class="equipe-actions">
+
+                    <a href="#historique" class="bouton">Voir l'historique</a>
+
+                    <a href="#squad" class="bouton">Voir l’effectif</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="stats-container bos-team"> <!-- Conteneur des statistiques de l'équipe -->
+
+            <div class="matchs">
+
+                <p>Matchs joués</p>
+
+                <p>9</p>
+
+            </div>
+
+            <div class="wins">
+
+                <p>Victoires</p>
+
+                <p>7</p>
+
+            </div>
+
+            <div class="losses">
+
+                <p>Défaites</p>
+
+                <p>2</p>
+
+            </div>
+
+            <div class="points">
+
+                <p>Points</p>
+
+                <p>14</p>
+
+            </div>
+
+        </div>
+
+        <p class="team-stats-note">Saison 2026–2027 · Statistiques au <time datetime="2026-10-19">19 octobre 2026</time>.
             Défaites : 2 dans le temps réglementaire et 0 en prolongation ou aux tirs au but.
-            <a href="https://api-web.nhle.com/v1/standings/2026-10-15">Source NHL</a> · Données non actualisées automatiquement.
-        </p>
-        <div class="miscelleanous-container bos-team"> <!-- Conteneur des informations diverses de l'équipe -->
-            <div class="palmares">
-                <!-- Source : https://en.wikipedia.org/wiki/Boston_Bruins ; consulté le 06/10/2026. -->
-                <h2>Palmarès</h2>
-                <p class="honour"><strong class="honour-count">6</strong><span class="honour-label">Coupes
-                        Stanley</span><span class="honour-years">1928–29, 1938–39, 1940–41, 1969–70, 1971–72,
-                        2010–11</span></p>
-                <p class="honour"><strong class="honour-count">5</strong><span class="honour-label">Titres de
-                        conférence</span><span class="honour-years">1987–88, 1989–90, 2010–11, 2012–13, 2018–19</span>
-                </p>
-                <p class="honour"><strong class="honour-count">27</strong><span class="honour-label">Titres de
-                        division</span><span class="honour-years">1927–28, 1928–29, 1929–30, 1930–31, 1932–33, 1934–35,
-                        1937–38, 1970–71, 1971–72, 1973–74, 1975–76, 1976–77, 1977–78, 1978–79, 1982–83, 1983–84,
-                        1989–90, 1990–91, 1992–93, 2001–02, 2003–04, 2008–09, 2010–11, 2011–12, 2013–14, 2019–20,
-                        2022–23</span></p>
-            </div>
-            <div class="color-club">
-                <h2>Les couleurs de la franchise</h2>
-                <div class="colors">
-                    <div class="first-color"></div>
-                    <div class="second-color"></div>
-                </div>
-            </div>
-            <div class="minimap-container">
-                <h2>Localisation</h2>
-                <p>Boston, Massachusetts</p>
-                <!-- Conteneur de la mini-carte -->
-                <img src="../images/minimaps/localisation-bos.png" alt="Localisation Boston" width="900">
-            </div>
-        </div>
-        <!-- Effectif NHL consulté le 06/10/2026 : https://api-web.nhle.com/v1/roster/bos/current -->
-        <h2 class="section-title" id="squad">L'effectif</h2>
-        <div class="squad bos-team"> <!-- Conteneur de l'effectif de l'équipe -->
-            <section class="roster-group">
-                <h3 class="roster-title">Attaquants</h3>
-                <div class="roster-grid">
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>39</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Morgan Geekie</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>44</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>James Hagens</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>84</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Tanner Jeannot</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>47</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Mark Kastelic</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>92</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Marat Khusnutdinov</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>52</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Sean Kuraly</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>28</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Elias Lindholm</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>93</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Fraser Minten</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>11</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Casey Mittelstadt</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>88</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>David Pastrnak</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>10</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>JJ Peterka</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>51</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Matthew Poitras</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>18</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Pavel Zacha</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="roster-group">
-                <h3 class="roster-title">Défenseurs</h3>
-                <div class="roster-grid">
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>45</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Jonathan Aspirot</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>17</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Will Borgen</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>42</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Frederic Brunet</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>75</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Connor Clifton</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>27</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Hampus Lindholm</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>6</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Mason Lohrei</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>73</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Charlie McAvoy</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>91</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Nikita Zadorov</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="roster-group">
-                <h3 class="roster-title">Gardiens</h3>
-                <div class="roster-grid">
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>30</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Michael DiPietro</h4>
-                            <p>Gardien</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/BOS.png" alt="">
-                            <p>1</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Jeremy Swayman</h4>
-                            <p>Gardien</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <section class="last-container" id="historique">
-            <div class="history-container" tabindex="0" role="region"
-                aria-label="Historique des saisons, tableau défilant">
-                <table class="season-history">
-                    <caption>Historique des saisons</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Saison</th>
-                            <th scope="col">Division</th>
-                            <th scope="col">Bilan V–D–DP</th>
-                            <th scope="col">Séries éliminatoires</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">2023-2024</th>
-                            <td>Atlantic 2e</td>
-                            <td>47-20-15</td>
-                            <td><span class="playoff-badge">2e tour</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2024-2025</th>
-                            <td>Atlantic 8e</td>
-                            <td>33-39-10</td>
-                            <td><span class="playoff-badge">Non qualifié</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2025-2026</th>
-                            <td>Atlantic 4e</td>
-                            <td>45-27-10</td>
-                            <td><span class="playoff-badge">1er tour</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-title">NHL <span>Zone</span>
-        </div>
-        <div class="footer-menu"> <!-- Menu du pied de page -->
-            <p>Site de fans indépendant</p>
-            <p>Non affilié à la NHL</p>
-        </div>
+            <a href="https://api-web.nhle.com/v1/standings/2026-10-19">Source NHL</a> · Données non actualisées automatiquement.
+        </p>
+
+        <div class="miscelleanous-container bos-team"> <!-- Conteneur des informations diverses de l'équipe -->
+
+            <div class="palmares">
+
+                <!-- Source : https://en.wikipedia.org/wiki/Boston_Bruins ; consulté le 06/10/2026. -->
+
+                <h2>Palmarès</h2>
+
+                <p class="honour"><strong class="honour-count">6</strong><span class="honour-label">Coupes
+
+                        Stanley</span><span class="honour-years">1928–29, 1938–39, 1940–41, 1969–70, 1971–72,
+
+                        2010–11</span></p>
+
+                <p class="honour"><strong class="honour-count">5</strong><span class="honour-label">Titres de
+
+                        conférence</span><span class="honour-years">1987–88, 1989–90, 2010–11, 2012–13, 2018–19</span>
+
+                </p>
+
+                <p class="honour"><strong class="honour-count">27</strong><span class="honour-label">Titres de
+
+                        division</span><span class="honour-years">1927–28, 1928–29, 1929–30, 1930–31, 1932–33, 1934–35,
+
+                        1937–38, 1970–71, 1971–72, 1973–74, 1975–76, 1976–77, 1977–78, 1978–79, 1982–83, 1983–84,
+
+                        1989–90, 1990–91, 1992–93, 2001–02, 2003–04, 2008–09, 2010–11, 2011–12, 2013–14, 2019–20,
+
+                        2022–23</span></p>
+
+            </div>
+
+            <div class="color-club">
+
+                <h2>Les couleurs de la franchise</h2>
+
+                <div class="colors">
+
+                    <div class="first-color"></div>
+
+                    <div class="second-color"></div>
+
+                </div>
+
+            </div>
+
+            <div class="minimap-container">
+
+                <h2>Localisation</h2>
+
+                <p>Boston, Massachusetts</p>
+
+                <!-- Conteneur de la mini-carte -->
+
+                <img src="../images/minimaps/localisation-bos.png" alt="Localisation Boston" width="900">
+
+            </div>
+
+        </div>
+
+        <!-- Effectif NHL consulté le 06/10/2026 : https://api-web.nhle.com/v1/roster/bos/current -->
+
+        <h2 class="section-title" id="squad">L'effectif</h2>
+
+        <div class="squad bos-team"> <!-- Conteneur de l'effectif de l'équipe -->
+
+            <section class="roster-group">
+
+                <h3 class="roster-title">Attaquants</h3>
+
+                <div class="roster-grid">
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>39</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Morgan Geekie</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>44</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>James Hagens</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>84</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Tanner Jeannot</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>47</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Mark Kastelic</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>92</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Marat Khusnutdinov</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>52</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Sean Kuraly</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>28</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Elias Lindholm</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>93</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Fraser Minten</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>11</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Casey Mittelstadt</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>88</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>David Pastrnak</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>10</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>JJ Peterka</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>51</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Matthew Poitras</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>18</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Pavel Zacha</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="roster-group">
+
+                <h3 class="roster-title">Défenseurs</h3>
+
+                <div class="roster-grid">
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>45</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Jonathan Aspirot</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>17</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Will Borgen</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>42</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Frederic Brunet</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>75</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Connor Clifton</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>27</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Hampus Lindholm</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>6</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Mason Lohrei</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>73</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Charlie McAvoy</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>91</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Nikita Zadorov</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="roster-group">
+
+                <h3 class="roster-title">Gardiens</h3>
+
+                <div class="roster-grid">
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>30</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Michael DiPietro</h4>
+
+                            <p>Gardien</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/BOS.png" alt="">
+
+                            <p>1</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Jeremy Swayman</h4>
+
+                            <p>Gardien</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <section class="last-container" id="historique">
+
+            <div class="history-container" tabindex="0" role="region"
+
+                aria-label="Historique des saisons, tableau défilant">
+
+                <table class="season-history">
+
+                    <caption>Historique des saisons</caption>
+
+                    <thead>
+
+                        <tr>
+
+                            <th scope="col">Saison</th>
+
+                            <th scope="col">Division</th>
+
+                            <th scope="col">Bilan V–D–DP</th>
+
+                            <th scope="col">Séries éliminatoires</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <th scope="row">2023-2024</th>
+
+                            <td>Atlantic 2e</td>
+
+                            <td>47-20-15</td>
+
+                            <td><span class="playoff-badge">2e tour</span></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th scope="row">2024-2025</th>
+
+                            <td>Atlantic 8e</td>
+
+                            <td>33-39-10</td>
+
+                            <td><span class="playoff-badge">Non qualifié</span></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th scope="row">2025-2026</th>
+
+                            <td>Atlantic 4e</td>
+
+                            <td>45-27-10</td>
+
+                            <td><span class="playoff-badge">1er tour</span></td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-title">NHL <span>Zone</span>
+
+        </div>
+
+        <div class="footer-menu"> <!-- Menu du pied de page -->
+
+            <p>Site de fans indépendant</p>
+
+            <p>Non affilié à la NHL</p>
+
+        </div>
+
     </footer>

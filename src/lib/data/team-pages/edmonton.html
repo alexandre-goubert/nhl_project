@@ -1,398 +1,791 @@
-<main>
-        <div class="team-container edm-team"> <!-- Conteneur principal de l'équipe -->
-            <div class="color-container">
-                <p>EDM</p>
-            </div>
-            <div class="team-presentation-container">
-                <h1 class="equipe-nom">Edmonton Oilers</h1>
-                <p class="equipe-ville">Edmonton, Alberta</p>
-                <div class="conference">
-                    <p>Conférence Ouest - Division Pacific</p>
-                </div>
-                <div class="equipe-actions">
-                    <a href="#historique" class="bouton">Voir les matchs</a>
-                    <a href="#squad" class="bouton">Voir l’effectif</a>
-                </div>
-            </div>
-        </div>
-        <div class="stats-container edm-team"> <!-- Conteneur des statistiques de l'équipe -->
-            <div class="matchs">
-                <p>Matchs joués</p>
-                <p>7</p>
-            </div>
-            <div class="wins">
-                <p>Victoires</p>
-                <p>5</p>
-            </div>
-            <div class="losses">
-                <p>Défaites</p>
-                <p>2</p>
-            </div>
-            <div class="points">
-                <p>Points</p>
-                <p>11</p>
-            </div>
-        </div>
-        <p class="team-stats-note">Saison 2026–2027 · Statistiques au <time datetime="2026-10-15">15 octobre 2026</time>.
+<main>
+
+        <div class="team-container edm-team"> <!-- Conteneur principal de l'équipe -->
+
+            <div class="color-container" style="background-image: url('../images/logos/EDM.png')">
+                <p>EDM</p>
+
+            </div>
+
+            <div class="team-presentation-container">
+
+                <h1 class="equipe-nom">Edmonton Oilers</h1>
+
+                <p class="equipe-ville">Edmonton, Alberta</p>
+
+                <div class="conference">
+
+                    <p>Conférence Ouest - Division Pacific</p>
+
+                </div>
+
+                <div class="equipe-actions">
+
+                    <a href="#historique" class="bouton">Voir les matchs</a>
+
+                    <a href="#squad" class="bouton">Voir l’effectif</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="stats-container edm-team"> <!-- Conteneur des statistiques de l'équipe -->
+
+            <div class="matchs">
+
+                <p>Matchs joués</p>
+
+                <p>8</p>
+
+            </div>
+
+            <div class="wins">
+
+                <p>Victoires</p>
+
+                <p>6</p>
+
+            </div>
+
+            <div class="losses">
+
+                <p>Défaites</p>
+
+                <p>2</p>
+
+            </div>
+
+            <div class="points">
+
+                <p>Points</p>
+
+                <p>13</p>
+
+            </div>
+
+        </div>
+
+        <p class="team-stats-note">Saison 2026–2027 · Statistiques au <time datetime="2026-10-19">19 octobre 2026</time>.
             Défaites : 1 dans le temps réglementaire et 1 en prolongation ou aux tirs au but.
-            <a href="https://api-web.nhle.com/v1/standings/2026-10-15">Source NHL</a> · Données non actualisées automatiquement.
-        </p>
-        <div class="miscelleanous-container edm-team"> <!-- Conteneur des informations diverses de l'équipe -->
-            <div class="palmares">
-                <h2>Palmarès</h2>
-                <p class="honour"><strong class="honour-count">5</strong><span class="honour-label">Coupes
-                        Stanley</span><span class="honour-years">1983–84, 1984–85, 1986–87, 1987–88, 1989–90</span></p>
-                <p class="honour"><strong class="honour-count">9</strong><span class="honour-label">Titres de
-                        conférence</span><span class="honour-years">1982–83, 1983–84, 1984–85, 1986–87, 1987–88,
-                        1989–90, 2005–06, 2023–24, 2024–25</span></p>
-                <p class="honour"><strong class="honour-count">6</strong><span class="honour-label">Titres de
-                        division</span><span class="honour-years">1981–82, 1982–83, 1983–84, 1984–85, 1985–86,
-                        1986–87</span></p>
-            </div>
-            <div class="color-club">
-                <h2>Les couleurs de la franchise</h2>
-                <div class="colors">
-                    <div class="first-color"></div>
-                    <div class="second-color"></div>
-                </div>
-            </div>
-            <div class="minimap-container">
-                <h2>Localisation</h2>
-                <p>Edmonton, Alberta</p>
-                <!-- Conteneur de la mini-carte -->
-                <img src="../images/minimaps/localisation-edm.png" alt="Localisation Edmonton" width="900">
-            </div>
-        </div>
-        <h2 class="section-title">L'effectif</h2>
-        <div class="squad edm-team" id="squad"> <!-- Conteneur de l'effectif de l'équipe -->
-            <section class="roster-group">
-                <h3 class="roster-title">Attaquants</h3>
-                <div class="roster-grid">
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>97</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Connor McDavid</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>29</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Leon Draisaitl</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>18</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Zach Hyman</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>34</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Colton Dach</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>26</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Alex Formenton</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>10</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Trent Frederic</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>53</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Isaac Howard</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>13</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Mathias Janmark</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>46</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Max Jones</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>21</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Mathieu Joseph</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>42</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Kasperi Kapanen</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>43</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Owen Michaels</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>93</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Ryan Nugent-Hopkins</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>92</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Vasily Podkolzin</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>22</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Matt Savoie</h4>
-                            <p>Attaquant</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="roster-group">
-                <h3 class="roster-title">Défenseurs</h3>
-                <div class="roster-grid">
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>2</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Evan Bouchard</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>14</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Mathias Ekholm</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>49</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Ty Emberson</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>85</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Shakir Mukhamadullin</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>5</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Connor Murphy</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>75</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Alec Regula</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>6</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Ryan Shea</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>24</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Spencer Stastney</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>96</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Jake Walman</h4>
-                            <p>Défenseur</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="roster-group">
-                <h3 class="roster-title">Gardiens</h3>
-                <div class="roster-grid">
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>30</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Frederik Andersen</h4>
-                            <p>Gardien</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>35</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Tristan Jarry</h4>
-                            <p>Gardien</p>
-                        </div>
-                    </div>
-                    <div class="player">
-                        <div class="shirt-container">
-                            <img src="../images/shirts/EDM.png">
-                            <p>27</p>
-                        </div>
-                        <div class="player-container">
-                            <h4>Devon Levi</h4>
-                            <p>Gardien</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <section class="last-container" id="historique">
-            <div class="history-container" tabindex="0" role="region"
-                aria-label="Historique des saisons, tableau défilant">
-                <table class="season-history">
-                    <caption>Historique des saisons</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Saison</th>
-                            <th scope="col">Division</th>
-                            <th scope="col">Bilan V–D–DP</th>
-                            <th scope="col">Séries éliminatoires</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">2023-2024</th>
-                            <td>Pacific 2e</td>
-                            <td>49-27-6</td>
-                            <td><span class="playoff-badge">1er tour</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2024-2025</th>
-                            <td>Pacific 3e</td>
-                            <td>48-29-5</td>
-                            <td><span class="playoff-badge">2e tour</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2025-2026</th>
-                            <td>Pacific 2e</td>
-                            <td>41-30-11</td>
-                            <td><span class="playoff-badge">Non qualifié</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-title">NHL <span>Zone</span>
-        </div>
-        <div class="footer-menu"> <!-- Menu du pied de page -->
-            <p>Site de fans indépendant</p>
-            <p>Non affilié à la NHL</p>
-        </div>
+            <a href="https://api-web.nhle.com/v1/standings/2026-10-19">Source NHL</a> · Données non actualisées automatiquement.
+        </p>
+
+        <div class="miscelleanous-container edm-team"> <!-- Conteneur des informations diverses de l'équipe -->
+
+            <div class="palmares">
+
+                <h2>Palmarès</h2>
+
+                <p class="honour"><strong class="honour-count">5</strong><span class="honour-label">Coupes
+
+                        Stanley</span><span class="honour-years">1983–84, 1984–85, 1986–87, 1987–88, 1989–90</span></p>
+
+                <p class="honour"><strong class="honour-count">9</strong><span class="honour-label">Titres de
+
+                        conférence</span><span class="honour-years">1982–83, 1983–84, 1984–85, 1986–87, 1987–88,
+
+                        1989–90, 2005–06, 2023–24, 2024–25</span></p>
+
+                <p class="honour"><strong class="honour-count">6</strong><span class="honour-label">Titres de
+
+                        division</span><span class="honour-years">1981–82, 1982–83, 1983–84, 1984–85, 1985–86,
+
+                        1986–87</span></p>
+
+            </div>
+
+            <div class="color-club">
+
+                <h2>Les couleurs de la franchise</h2>
+
+                <div class="colors">
+
+                    <div class="first-color"></div>
+
+                    <div class="second-color"></div>
+
+                </div>
+
+            </div>
+
+            <div class="minimap-container">
+
+                <h2>Localisation</h2>
+
+                <p>Edmonton, Alberta</p>
+
+                <!-- Conteneur de la mini-carte -->
+
+                <img src="../images/minimaps/localisation-edm.png" alt="Localisation Edmonton" width="900">
+
+            </div>
+
+        </div>
+
+        <h2 class="section-title">L'effectif</h2>
+
+        <div class="squad edm-team" id="squad"> <!-- Conteneur de l'effectif de l'équipe -->
+
+            <section class="roster-group">
+
+                <h3 class="roster-title">Attaquants</h3>
+
+                <div class="roster-grid">
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>97</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Connor McDavid</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>29</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Leon Draisaitl</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>18</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Zach Hyman</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>34</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Colton Dach</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>26</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Alex Formenton</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>10</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Trent Frederic</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>53</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Isaac Howard</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>13</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Mathias Janmark</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>46</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Max Jones</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>21</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Mathieu Joseph</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>42</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Kasperi Kapanen</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>43</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Owen Michaels</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>93</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Ryan Nugent-Hopkins</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>92</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Vasily Podkolzin</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>22</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Matt Savoie</h4>
+
+                            <p>Attaquant</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="roster-group">
+
+                <h3 class="roster-title">Défenseurs</h3>
+
+                <div class="roster-grid">
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>2</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Evan Bouchard</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>14</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Mathias Ekholm</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>49</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Ty Emberson</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>85</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Shakir Mukhamadullin</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>5</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Connor Murphy</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>75</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Alec Regula</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>6</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Ryan Shea</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>24</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Spencer Stastney</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>96</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Jake Walman</h4>
+
+                            <p>Défenseur</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="roster-group">
+
+                <h3 class="roster-title">Gardiens</h3>
+
+                <div class="roster-grid">
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>30</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Frederik Andersen</h4>
+
+                            <p>Gardien</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>35</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Tristan Jarry</h4>
+
+                            <p>Gardien</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="player">
+
+                        <div class="shirt-container">
+
+                            <img src="../images/shirts/EDM.png">
+
+                            <p>27</p>
+
+                        </div>
+
+                        <div class="player-container">
+
+                            <h4>Devon Levi</h4>
+
+                            <p>Gardien</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <section class="last-container" id="historique">
+
+            <div class="history-container" tabindex="0" role="region"
+
+                aria-label="Historique des saisons, tableau défilant">
+
+                <table class="season-history">
+
+                    <caption>Historique des saisons</caption>
+
+                    <thead>
+
+                        <tr>
+
+                            <th scope="col">Saison</th>
+
+                            <th scope="col">Division</th>
+
+                            <th scope="col">Bilan V–D–DP</th>
+
+                            <th scope="col">Séries éliminatoires</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <th scope="row">2023-2024</th>
+
+                            <td>Pacific 2e</td>
+
+                            <td>49-27-6</td>
+
+                            <td><span class="playoff-badge">1er tour</span></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th scope="row">2024-2025</th>
+
+                            <td>Pacific 3e</td>
+
+                            <td>48-29-5</td>
+
+                            <td><span class="playoff-badge">2e tour</span></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th scope="row">2025-2026</th>
+
+                            <td>Pacific 2e</td>
+
+                            <td>41-30-11</td>
+
+                            <td><span class="playoff-badge">Non qualifié</span></td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-title">NHL <span>Zone</span>
+
+        </div>
+
+        <div class="footer-menu"> <!-- Menu du pied de page -->
+
+            <p>Site de fans indépendant</p>
+
+            <p>Non affilié à la NHL</p>
+
+        </div>
+
     </footer>

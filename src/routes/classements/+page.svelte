@@ -32,7 +32,7 @@
 
 <main class="standings-page">
     <h1>Classements</h1>
-    <p class="standings-meta">Saison 2026–2027 · Données au 15 octobre 2026</p>
+    <p class="standings-meta">Saison 2026–2027 · Données au 19 octobre 2026</p>
     <nav class="rankings-menu" aria-label="Choisir un classement">
         <div class="rankings-filter-group">
             {#each categories.slice(0, 3) as category (category.id)}
@@ -95,7 +95,7 @@
         </table>
     </section>
     <p class="standings-meta">
-        Source : <a href="https://api-web.nhle.com/v1/standings/2026-10-15">classement NHL au 15 octobre 2026</a>.
+        Source : <a href="https://api-web.nhle.com/v1/standings/2026-10-19">classement NHL au 19 octobre 2026</a>.
         Données statiques, sans actualisation automatique.
     </p>
 </main>

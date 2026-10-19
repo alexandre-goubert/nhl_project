@@ -1,5 +1,5 @@
 <script>
-import { resolve } from '$app/paths';
+import { asset, resolve } from '$app/paths';
     let theme = $state('light');
 
     /** @param {'light' | 'dark'} nextTheme */
@@ -11,7 +11,7 @@ import { resolve } from '$app/paths';
 
 <header>
     <a class="header-title" href={resolve('/')}>
-        Nhl <span>Zone</span>
+        <img class="header-logo" src={asset('images/brand/nhl-zone-logo.png')} alt="NHL Zone — Accueil" width="2078" height="757" />
     </a>
 
     <div class="selectors-mode" aria-label="Choisir le thème">
@@ -56,16 +56,22 @@ import { resolve } from '$app/paths';
     }
 
     .header-title {
-        color: white;
-        font-size: 40px;
-        font-weight: 800;
-        text-transform: uppercase;
-        padding: 20px;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        padding: 12px 20px;
     }
 
-    .header-title span {
-        color: #39BDE0;
-        font-weight: 800;
+    .header-logo {
+        display: block;
+        width: 220px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .header-title:focus-visible {
+        outline: 3px solid #39BDE0;
+        outline-offset: -4px;
     }
 
     .selectors-mode {
@@ -140,8 +146,11 @@ import { resolve } from '$app/paths';
         }
 
         .header-title {
-            font-size: 30px;
-            padding: 16px;
+            padding: 12px 16px;
+        }
+
+        .header-logo {
+            width: 190px;
         }
 
         .header-menu {

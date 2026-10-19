@@ -102,10 +102,10 @@
             <section class="ranking-panel" aria-labelledby="ranking-title">
                 <div class="panel-heading">
                     <h2 id="ranking-title">En tête du classement</h2>
-                    <p class="section-note">Données au <time datetime="2026-10-15">15 octobre 2026</time> · Mise à jour manuelle</p>
+                    <p class="section-note">Données au <time datetime="2026-10-19">19 octobre 2026</time> · Mise à jour manuelle</p>
                 </div>
                 <table>
-                    <caption class="sr-only">Les cinq premières équipes du classement NHL au 15 octobre 2026</caption>
+                    <caption class="sr-only">Les cinq premières équipes du classement NHL au 19 octobre 2026</caption>
                     <thead><tr><th scope="col">Rang</th><th scope="col">Équipe</th><th scope="col">Points</th></tr></thead>
                     <tbody>
                         {#each leaders as team (team.slug)}
@@ -164,15 +164,6 @@
         padding-right: 40px;
     }
 
-    .eyebrow {
-        margin: 0 0 16px;
-        color: #39bde0;
-        font-size: 13px;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-    }
-
     h1 {
         margin: 0;
         padding: 0;
@@ -208,7 +199,7 @@
     }
 
     a:hover {
-        text-decoration: underline;
+        color:#39bde0;
     }
 
     a:focus-visible {
@@ -380,9 +371,6 @@
         padding: 28px;
     }
 
-    .panel-heading .eyebrow {
-        color: var(--link-color, #087b9b);
-    }
 
     table {
         width: 100%;
@@ -432,9 +420,6 @@
         margin: 16px 0 24px;
     }
 
-    .quiz-content .eyebrow {
-        color: var(--link-color, #087b9b);
-    }
 
     .sr-only {
         position: absolute;
