@@ -1,4 +1,47 @@
 <script>
+    import { onNavigate } from '$app/navigation';
+    import { asset } from '$app/paths';
+
+    // Attend le CSS des pages héritées avant d'afficher leur contenu.
+    const pageStyles = new Map([
+        ['/[slug]', asset('team-style.css')],
+        ['/matchs', asset('legacy-style-matches.css')],
+        ['/classements', asset('legacy-style-rankings.css')],
+        ['/quiz', asset('legacy-style-quiz.css')],
+        ['/quiz/[id]', asset('legacy-style-quiz.css')]
+    ]);
+
+    onNavigate(({ to }) => {
+        const href = pageStyles.get(to?.route.id ?? '');
+        if (!href) return;
+
+        const url = new URL(href, document.baseURI).href;
+        const alreadyLoaded = Array.from(document.styleSheets).some((sheet) => sheet.href === url);
+        if (alreadyLoaded) return;
+
+        return new Promise((resolve) => {
+            const stylesheet = document.createElement('link');
+            stylesheet.rel = 'stylesheet';
+            stylesheet.href = href;
+            // Télécharge le fichier sans modifier la page encore affichée.
+            stylesheet.media = 'not all';
+
+            const finish = () => {
+                clearTimeout(timeout);
+                stylesheet.onload = null;
+                stylesheet.onerror = null;
+                stylesheet.media = 'all';
+                // Svelte ajoute ensuite le lien normal dans le head de la nouvelle page.
+                resolve(() => stylesheet.remove());
+            };
+
+            const timeout = setTimeout(finish, 8000);
+            stylesheet.onload = finish;
+            stylesheet.onerror = finish;
+            document.head.appendChild(stylesheet);
+        });
+    });
+
 	import favicon from '#lib/assets/nhl-zone-favicon.png';
 
 	/** @type {{children: import('svelte').Snippet}} */
@@ -8,6 +51,9 @@
 </script>
 
 <svelte:head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&amp;family=Graduate&amp;display=swap" rel="stylesheet" />
 	<script src="https://kit.fontawesome.com/f6a2136e94.js" crossorigin="anonymous"></script>
 	<link rel="icon" type="image/png" href={favicon} />
 </svelte:head>

@@ -34,12 +34,6 @@
 <svelte:head>
     <title>Quiz — NHL Zone</title>
     <meta name="description" content="Testez vos connaissances sur la NHL avec quatre quiz interactifs." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    />
     <link rel="stylesheet" href={asset('legacy-style-quiz.css')} />
 </svelte:head>
 

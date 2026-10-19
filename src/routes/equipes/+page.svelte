@@ -14,9 +14,6 @@
 <svelte:head>
     <title>Les équipes — NHL Zone</title>
     <meta name="description" content="Découvre les 32 franchises NHL, regroupées par division et conférence." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet" />
 </svelte:head>
 
 <main class="teams-page">

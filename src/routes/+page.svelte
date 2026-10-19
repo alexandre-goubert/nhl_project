@@ -8,7 +8,10 @@
     import { onMount } from 'svelte';
 
     const recentMatches = [...matches].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
-    const leaders = rankings.nhl.rows.slice(0, 5);
+    const conferenceRankings = [
+        { id: 'eastern', label: 'Conférence Est', rows: rankings.eastern.rows.slice(0, 5) },
+        { id: 'western', label: 'Conférence Ouest', rows: rankings.western.rows.slice(0, 5) }
+    ];
     const teamImageBase = asset('images/logos/TOR.png').replace(/TOR\.png$/, '');
 
     /** @type {typeof teams} */
@@ -31,9 +34,6 @@
 <svelte:head>
     <title>NHL Zone — Toute la passion de la NHL</title>
     <meta name="description" content="Explorez les franchises NHL, consultez les derniers résultats et classements disponibles, et testez vos connaissances avec nos quiz." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </svelte:head>
 
 <main class="home-page">
@@ -99,25 +99,32 @@
         </section>
 
         <div class="discovery-grid">
-            <section class="ranking-panel" aria-labelledby="ranking-title">
+            <section class="conference-rankings" aria-labelledby="ranking-title">
                 <div class="panel-heading">
-                    <h2 id="ranking-title">En tête du classement</h2>
+                    <h2 id="ranking-title">Classements par conférence</h2>
                     <p class="section-note">Données au <time datetime="2026-10-19">19 octobre 2026</time> · Mise à jour manuelle</p>
                 </div>
-                <table>
-                    <caption class="sr-only">Les cinq premières équipes du classement NHL au 19 octobre 2026</caption>
-                    <thead><tr><th scope="col">Rang</th><th scope="col">Équipe</th><th scope="col">Points</th></tr></thead>
-                    <tbody>
-                        {#each leaders as team (team.slug)}
-                            <tr>
-                                <td>{team.rank}</td>
-                                <th scope="row"><a href={resolve('/[slug]', { slug: team.slug })}>{team.name}</a></th>
-                                <td class="points">{team.points}</td>
-                            </tr>
-                        {/each}
-                    </tbody>
-                </table>
-                <a class="panel-link" href={resolve('/classements')}>Voir le classement complet →</a>
+                {#each conferenceRankings as conference (conference.id)}
+                    <section class="ranking-panel conference-ranking" aria-labelledby={`ranking-${conference.id}`}>
+                        <div class="panel-heading">
+                            <h3 id={`ranking-${conference.id}`}>{conference.label}</h3>
+                        </div>
+                        <table>
+                            <caption class="sr-only">Les cinq premières équipes de la {conference.label} au 19 octobre 2026</caption>
+                            <thead><tr><th scope="col">Rang</th><th scope="col">Équipe</th><th scope="col">Points</th></tr></thead>
+                            <tbody>
+                                {#each conference.rows as team (team.slug)}
+                                    <tr>
+                                        <td>{team.rank}</td>
+                                        <th scope="row"><a href={resolve('/[slug]', { slug: team.slug })}>{team.name}</a></th>
+                                        <td class="points">{team.points}</td>
+                                    </tr>
+                                {/each}
+                            </tbody>
+                        </table>
+                    </section>
+                {/each}
+                <a class="panel-link" href={resolve('/classements')}>Voir tous les classements →</a>
             </section>
 
             <section class="quiz-panel" aria-labelledby="quiz-title">
@@ -367,10 +374,35 @@
         align-items: start;
     }
 
+    .conference-rankings {
+        display: grid;
+        grid-column: 1 / -1;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+        gap: 24px;
+    }
+
+    .conference-rankings > .panel-heading,
+    .conference-rankings > .panel-link {
+        grid-column: 1 / -1;
+    }
+
     .panel-heading, .quiz-content {
         padding: 28px;
     }
 
+    .conference-ranking h3 {
+        margin: 0;
+        color: var(--text-color, #101c30);
+        font-size: 18px;
+    }
+
+    .quiz-panel {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 100%;
+        max-width: 900px;
+    }
 
     table {
         width: 100%;
@@ -436,8 +468,14 @@
             padding: 40px 24px;
         }
 
-        .results-grid, .discovery-grid {
+        .results-grid, .discovery-grid, .conference-rankings {
             grid-template-columns: 1fr;
+        }
+
+        .conference-rankings > .panel-heading,
+        .conference-rankings > .panel-link,
+        .quiz-panel {
+            grid-column: 1;
         }
 
         .teams-grid {

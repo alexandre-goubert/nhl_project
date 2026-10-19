@@ -23,12 +23,6 @@
 <svelte:head>
     <title>Matchs — NHL Zone</title>
     <meta name="description" content="Consultez les résultats des matchs NHL et filtrez par date ou équipe." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    />
     <link rel="stylesheet" href={asset('legacy-style-matches.css')} />
 </svelte:head>
 
