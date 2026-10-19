@@ -9,8 +9,8 @@
 
     const recentMatches = [...matches].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
     const conferenceRankings = [
-        { id: 'eastern', label: 'Conférence Est', rows: rankings.eastern.rows.slice(0, 5) },
-        { id: 'western', label: 'Conférence Ouest', rows: rankings.western.rows.slice(0, 5) }
+        { id: 'eastern', label: 'Conférence Est', rows: rankings.eastern.rows.slice(0, 8) },
+        { id: 'western', label: 'Conférence Ouest', rows: rankings.western.rows.slice(0, 8) }
     ];
     const teamImageBase = asset('images/logos/TOR.png').replace(/TOR\.png$/, '');
 
@@ -110,7 +110,7 @@
                             <h3 id={`ranking-${conference.id}`}>{conference.label}</h3>
                         </div>
                         <table>
-                            <caption class="sr-only">Les cinq premières équipes de la {conference.label} au 19 octobre 2026</caption>
+                            <caption class="sr-only">Les huit premières équipes de la {conference.label} au 19 octobre 2026</caption>
                             <thead><tr><th scope="col">Rang</th><th scope="col">Équipe</th><th scope="col">Points</th></tr></thead>
                             <tbody>
                                 {#each conference.rows as team (team.slug)}
@@ -395,6 +395,8 @@
         margin: 0;
         color: var(--text-color, #101c30);
         font-size: 18px;
+        border-left: 4px solid var(--link-color, #39bde0);
+        padding-left: 5px;
     }
 
     .quiz-panel {
