@@ -1,21 +1,23 @@
-# Dépendances JavaScript
-node_modules/
+node_modules
 
-# Variables d’environnement et clés privées
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
 .env
 .env.*
 !.env.example
+!.env.test
 
-# Fichiers du système
-.DS_Store
-Thumbs.db
-Desktop.ini
-
-# Fichiers temporaires et journaux
-*.log
-*.tmp
-*~
-
-# Réglages personnels des éditeurs
-.vscode/
-.idea/
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

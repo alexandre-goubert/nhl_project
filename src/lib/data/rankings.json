@@ -1,0 +1,1093 @@
+{
+  "nhl": {
+    "title": "Classement NHL",
+    "rows": [
+      {
+        "rank": 1,
+        "name": "Vegas Golden Knights",
+        "slug": "vegas",
+        "gp": 9,
+        "wins": 7,
+        "losses": 2,
+        "ot": 0,
+        "points": 14,
+        "streak": "W2"
+      },
+      {
+        "rank": 2,
+        "name": "Carolina Hurricanes",
+        "slug": "carolina",
+        "gp": 8,
+        "wins": 6,
+        "losses": 1,
+        "ot": 1,
+        "points": 13,
+        "streak": "W6"
+      },
+      {
+        "rank": 3,
+        "name": "Utah Mammoth",
+        "slug": "utah",
+        "gp": 8,
+        "wins": 6,
+        "losses": 2,
+        "ot": 0,
+        "points": 12,
+        "streak": "W3"
+      },
+      {
+        "rank": 4,
+        "name": "Ottawa Senators",
+        "slug": "ottawa",
+        "gp": 8,
+        "wins": 6,
+        "losses": 2,
+        "ot": 0,
+        "points": 12,
+        "streak": "W1"
+      },
+      {
+        "rank": 5,
+        "name": "New York Rangers",
+        "slug": "rangers",
+        "gp": 9,
+        "wins": 6,
+        "losses": 3,
+        "ot": 0,
+        "points": 12,
+        "streak": "L1"
+      },
+      {
+        "rank": 6,
+        "name": "Edmonton Oilers",
+        "slug": "edmonton",
+        "gp": 7,
+        "wins": 5,
+        "losses": 1,
+        "ot": 1,
+        "points": 11,
+        "streak": "L1"
+      },
+      {
+        "rank": 7,
+        "name": "Minnesota Wild",
+        "slug": "minnesota",
+        "gp": 8,
+        "wins": 5,
+        "losses": 2,
+        "ot": 1,
+        "points": 11,
+        "streak": "W1"
+      },
+      {
+        "rank": 8,
+        "name": "Seattle Kraken",
+        "slug": "seattle",
+        "gp": 8,
+        "wins": 5,
+        "losses": 2,
+        "ot": 1,
+        "points": 11,
+        "streak": "OT1"
+      },
+      {
+        "rank": 9,
+        "name": "Boston Bruins",
+        "slug": "boston",
+        "gp": 7,
+        "wins": 5,
+        "losses": 2,
+        "ot": 0,
+        "points": 10,
+        "streak": "W3"
+      },
+      {
+        "rank": 10,
+        "name": "Tampa Bay Lightning",
+        "slug": "tampabay",
+        "gp": 7,
+        "wins": 5,
+        "losses": 2,
+        "ot": 0,
+        "points": 10,
+        "streak": "W1"
+      },
+      {
+        "rank": 11,
+        "name": "Winnipeg Jets",
+        "slug": "winnipeg",
+        "gp": 7,
+        "wins": 4,
+        "losses": 1,
+        "ot": 2,
+        "points": 10,
+        "streak": "OT1"
+      },
+      {
+        "rank": 12,
+        "name": "Florida Panthers",
+        "slug": "florida",
+        "gp": 8,
+        "wins": 4,
+        "losses": 2,
+        "ot": 2,
+        "points": 10,
+        "streak": "W2"
+      },
+      {
+        "rank": 13,
+        "name": "Colorado Avalanche",
+        "slug": "colorado",
+        "gp": 7,
+        "wins": 4,
+        "losses": 2,
+        "ot": 1,
+        "points": 9,
+        "streak": "OT1"
+      },
+      {
+        "rank": 14,
+        "name": "Buffalo Sabres",
+        "slug": "buffalo",
+        "gp": 8,
+        "wins": 4,
+        "losses": 3,
+        "ot": 1,
+        "points": 9,
+        "streak": "W1"
+      },
+      {
+        "rank": 15,
+        "name": "Anaheim Ducks",
+        "slug": "anaheim",
+        "gp": 6,
+        "wins": 4,
+        "losses": 2,
+        "ot": 0,
+        "points": 8,
+        "streak": "L1"
+      },
+      {
+        "rank": 16,
+        "name": "Washington Capitals",
+        "slug": "washington",
+        "gp": 7,
+        "wins": 4,
+        "losses": 3,
+        "ot": 0,
+        "points": 8,
+        "streak": "W1"
+      },
+      {
+        "rank": 17,
+        "name": "New Jersey Devils",
+        "slug": "newjersey",
+        "gp": 7,
+        "wins": 4,
+        "losses": 3,
+        "ot": 0,
+        "points": 8,
+        "streak": "W2"
+      },
+      {
+        "rank": 18,
+        "name": "San Jose Sharks",
+        "slug": "sanjose",
+        "gp": 7,
+        "wins": 4,
+        "losses": 3,
+        "ot": 0,
+        "points": 8,
+        "streak": "W1"
+      },
+      {
+        "rank": 19,
+        "name": "Toronto Maple Leafs",
+        "slug": "toronto",
+        "gp": 8,
+        "wins": 3,
+        "losses": 3,
+        "ot": 2,
+        "points": 8,
+        "streak": "OT1"
+      },
+      {
+        "rank": 20,
+        "name": "New York Islanders",
+        "slug": "islanders",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "OT1"
+      },
+      {
+        "rank": 21,
+        "name": "St. Louis Blues",
+        "slug": "stlouis",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "L1"
+      },
+      {
+        "rank": 22,
+        "name": "Dallas Stars",
+        "slug": "dallas",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "W1"
+      },
+      {
+        "rank": 23,
+        "name": "Nashville Predators",
+        "slug": "nashville",
+        "gp": 7,
+        "wins": 2,
+        "losses": 2,
+        "ot": 3,
+        "points": 7,
+        "streak": "OT1"
+      },
+      {
+        "rank": 24,
+        "name": "Pittsburgh Penguins",
+        "slug": "pittsburgh",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "L1"
+      },
+      {
+        "rank": 25,
+        "name": "Montréal Canadiens",
+        "slug": "montreal",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "L1"
+      },
+      {
+        "rank": 26,
+        "name": "Detroit Red Wings",
+        "slug": "detroit",
+        "gp": 7,
+        "wins": 2,
+        "losses": 3,
+        "ot": 2,
+        "points": 6,
+        "streak": "W1"
+      },
+      {
+        "rank": 27,
+        "name": "Chicago Blackhawks",
+        "slug": "chicago",
+        "gp": 8,
+        "wins": 3,
+        "losses": 5,
+        "ot": 0,
+        "points": 6,
+        "streak": "W2"
+      },
+      {
+        "rank": 28,
+        "name": "Vancouver Canucks",
+        "slug": "vancouver",
+        "gp": 9,
+        "wins": 2,
+        "losses": 6,
+        "ot": 1,
+        "points": 5,
+        "streak": "OT1"
+      },
+      {
+        "rank": 29,
+        "name": "Columbus Blue Jackets",
+        "slug": "columbus",
+        "gp": 5,
+        "wins": 2,
+        "losses": 3,
+        "ot": 0,
+        "points": 4,
+        "streak": "L2"
+      },
+      {
+        "rank": 30,
+        "name": "Philadelphia Flyers",
+        "slug": "philadelphia",
+        "gp": 9,
+        "wins": 0,
+        "losses": 6,
+        "ot": 3,
+        "points": 3,
+        "streak": "L1"
+      },
+      {
+        "rank": 31,
+        "name": "Los Angeles Kings",
+        "slug": "losangeles",
+        "gp": 5,
+        "wins": 0,
+        "losses": 3,
+        "ot": 2,
+        "points": 2,
+        "streak": "L1"
+      },
+      {
+        "rank": 32,
+        "name": "Calgary Flames",
+        "slug": "calgary",
+        "gp": 7,
+        "wins": 1,
+        "losses": 6,
+        "ot": 0,
+        "points": 2,
+        "streak": "L1"
+      }
+    ]
+  },
+  "eastern": {
+    "title": "Classement Eastern Conference",
+    "rows": [
+      {
+        "rank": 1,
+        "name": "Carolina Hurricanes",
+        "slug": "carolina",
+        "gp": 8,
+        "wins": 6,
+        "losses": 1,
+        "ot": 1,
+        "points": 13,
+        "streak": "W6"
+      },
+      {
+        "rank": 2,
+        "name": "Ottawa Senators",
+        "slug": "ottawa",
+        "gp": 8,
+        "wins": 6,
+        "losses": 2,
+        "ot": 0,
+        "points": 12,
+        "streak": "W1"
+      },
+      {
+        "rank": 3,
+        "name": "New York Rangers",
+        "slug": "rangers",
+        "gp": 9,
+        "wins": 6,
+        "losses": 3,
+        "ot": 0,
+        "points": 12,
+        "streak": "L1"
+      },
+      {
+        "rank": 4,
+        "name": "Boston Bruins",
+        "slug": "boston",
+        "gp": 7,
+        "wins": 5,
+        "losses": 2,
+        "ot": 0,
+        "points": 10,
+        "streak": "W3"
+      },
+      {
+        "rank": 5,
+        "name": "Tampa Bay Lightning",
+        "slug": "tampabay",
+        "gp": 7,
+        "wins": 5,
+        "losses": 2,
+        "ot": 0,
+        "points": 10,
+        "streak": "W1"
+      },
+      {
+        "rank": 6,
+        "name": "Florida Panthers",
+        "slug": "florida",
+        "gp": 8,
+        "wins": 4,
+        "losses": 2,
+        "ot": 2,
+        "points": 10,
+        "streak": "W2"
+      },
+      {
+        "rank": 7,
+        "name": "Buffalo Sabres",
+        "slug": "buffalo",
+        "gp": 8,
+        "wins": 4,
+        "losses": 3,
+        "ot": 1,
+        "points": 9,
+        "streak": "W1"
+      },
+      {
+        "rank": 8,
+        "name": "Washington Capitals",
+        "slug": "washington",
+        "gp": 7,
+        "wins": 4,
+        "losses": 3,
+        "ot": 0,
+        "points": 8,
+        "streak": "W1"
+      },
+      {
+        "rank": 9,
+        "name": "New Jersey Devils",
+        "slug": "newjersey",
+        "gp": 7,
+        "wins": 4,
+        "losses": 3,
+        "ot": 0,
+        "points": 8,
+        "streak": "W2"
+      },
+      {
+        "rank": 10,
+        "name": "Toronto Maple Leafs",
+        "slug": "toronto",
+        "gp": 8,
+        "wins": 3,
+        "losses": 3,
+        "ot": 2,
+        "points": 8,
+        "streak": "OT1"
+      },
+      {
+        "rank": 11,
+        "name": "New York Islanders",
+        "slug": "islanders",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "OT1"
+      },
+      {
+        "rank": 12,
+        "name": "Pittsburgh Penguins",
+        "slug": "pittsburgh",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "L1"
+      },
+      {
+        "rank": 13,
+        "name": "Montréal Canadiens",
+        "slug": "montreal",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "L1"
+      },
+      {
+        "rank": 14,
+        "name": "Detroit Red Wings",
+        "slug": "detroit",
+        "gp": 7,
+        "wins": 2,
+        "losses": 3,
+        "ot": 2,
+        "points": 6,
+        "streak": "W1"
+      },
+      {
+        "rank": 15,
+        "name": "Columbus Blue Jackets",
+        "slug": "columbus",
+        "gp": 5,
+        "wins": 2,
+        "losses": 3,
+        "ot": 0,
+        "points": 4,
+        "streak": "L2"
+      },
+      {
+        "rank": 16,
+        "name": "Philadelphia Flyers",
+        "slug": "philadelphia",
+        "gp": 9,
+        "wins": 0,
+        "losses": 6,
+        "ot": 3,
+        "points": 3,
+        "streak": "L1"
+      }
+    ]
+  },
+  "western": {
+    "title": "Classement Western Conference",
+    "rows": [
+      {
+        "rank": 1,
+        "name": "Vegas Golden Knights",
+        "slug": "vegas",
+        "gp": 9,
+        "wins": 7,
+        "losses": 2,
+        "ot": 0,
+        "points": 14,
+        "streak": "W2"
+      },
+      {
+        "rank": 2,
+        "name": "Utah Mammoth",
+        "slug": "utah",
+        "gp": 8,
+        "wins": 6,
+        "losses": 2,
+        "ot": 0,
+        "points": 12,
+        "streak": "W3"
+      },
+      {
+        "rank": 3,
+        "name": "Edmonton Oilers",
+        "slug": "edmonton",
+        "gp": 7,
+        "wins": 5,
+        "losses": 1,
+        "ot": 1,
+        "points": 11,
+        "streak": "L1"
+      },
+      {
+        "rank": 4,
+        "name": "Minnesota Wild",
+        "slug": "minnesota",
+        "gp": 8,
+        "wins": 5,
+        "losses": 2,
+        "ot": 1,
+        "points": 11,
+        "streak": "W1"
+      },
+      {
+        "rank": 5,
+        "name": "Seattle Kraken",
+        "slug": "seattle",
+        "gp": 8,
+        "wins": 5,
+        "losses": 2,
+        "ot": 1,
+        "points": 11,
+        "streak": "OT1"
+      },
+      {
+        "rank": 6,
+        "name": "Winnipeg Jets",
+        "slug": "winnipeg",
+        "gp": 7,
+        "wins": 4,
+        "losses": 1,
+        "ot": 2,
+        "points": 10,
+        "streak": "OT1"
+      },
+      {
+        "rank": 7,
+        "name": "Colorado Avalanche",
+        "slug": "colorado",
+        "gp": 7,
+        "wins": 4,
+        "losses": 2,
+        "ot": 1,
+        "points": 9,
+        "streak": "OT1"
+      },
+      {
+        "rank": 8,
+        "name": "Anaheim Ducks",
+        "slug": "anaheim",
+        "gp": 6,
+        "wins": 4,
+        "losses": 2,
+        "ot": 0,
+        "points": 8,
+        "streak": "L1"
+      },
+      {
+        "rank": 9,
+        "name": "San Jose Sharks",
+        "slug": "sanjose",
+        "gp": 7,
+        "wins": 4,
+        "losses": 3,
+        "ot": 0,
+        "points": 8,
+        "streak": "W1"
+      },
+      {
+        "rank": 10,
+        "name": "St. Louis Blues",
+        "slug": "stlouis",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "L1"
+      },
+      {
+        "rank": 11,
+        "name": "Dallas Stars",
+        "slug": "dallas",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "W1"
+      },
+      {
+        "rank": 12,
+        "name": "Nashville Predators",
+        "slug": "nashville",
+        "gp": 7,
+        "wins": 2,
+        "losses": 2,
+        "ot": 3,
+        "points": 7,
+        "streak": "OT1"
+      },
+      {
+        "rank": 13,
+        "name": "Chicago Blackhawks",
+        "slug": "chicago",
+        "gp": 8,
+        "wins": 3,
+        "losses": 5,
+        "ot": 0,
+        "points": 6,
+        "streak": "W2"
+      },
+      {
+        "rank": 14,
+        "name": "Vancouver Canucks",
+        "slug": "vancouver",
+        "gp": 9,
+        "wins": 2,
+        "losses": 6,
+        "ot": 1,
+        "points": 5,
+        "streak": "OT1"
+      },
+      {
+        "rank": 15,
+        "name": "Los Angeles Kings",
+        "slug": "losangeles",
+        "gp": 5,
+        "wins": 0,
+        "losses": 3,
+        "ot": 2,
+        "points": 2,
+        "streak": "L1"
+      },
+      {
+        "rank": 16,
+        "name": "Calgary Flames",
+        "slug": "calgary",
+        "gp": 7,
+        "wins": 1,
+        "losses": 6,
+        "ot": 0,
+        "points": 2,
+        "streak": "L1"
+      }
+    ]
+  },
+  "atlantic": {
+    "title": "Classement Atlantic Division",
+    "rows": [
+      {
+        "rank": 1,
+        "name": "Ottawa Senators",
+        "slug": "ottawa",
+        "gp": 8,
+        "wins": 6,
+        "losses": 2,
+        "ot": 0,
+        "points": 12,
+        "streak": "W1"
+      },
+      {
+        "rank": 2,
+        "name": "Boston Bruins",
+        "slug": "boston",
+        "gp": 7,
+        "wins": 5,
+        "losses": 2,
+        "ot": 0,
+        "points": 10,
+        "streak": "W3"
+      },
+      {
+        "rank": 3,
+        "name": "Tampa Bay Lightning",
+        "slug": "tampabay",
+        "gp": 7,
+        "wins": 5,
+        "losses": 2,
+        "ot": 0,
+        "points": 10,
+        "streak": "W1"
+      },
+      {
+        "rank": 4,
+        "name": "Florida Panthers",
+        "slug": "florida",
+        "gp": 8,
+        "wins": 4,
+        "losses": 2,
+        "ot": 2,
+        "points": 10,
+        "streak": "W2"
+      },
+      {
+        "rank": 5,
+        "name": "Buffalo Sabres",
+        "slug": "buffalo",
+        "gp": 8,
+        "wins": 4,
+        "losses": 3,
+        "ot": 1,
+        "points": 9,
+        "streak": "W1"
+      },
+      {
+        "rank": 6,
+        "name": "Toronto Maple Leafs",
+        "slug": "toronto",
+        "gp": 8,
+        "wins": 3,
+        "losses": 3,
+        "ot": 2,
+        "points": 8,
+        "streak": "OT1"
+      },
+      {
+        "rank": 7,
+        "name": "Montréal Canadiens",
+        "slug": "montreal",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "L1"
+      },
+      {
+        "rank": 8,
+        "name": "Detroit Red Wings",
+        "slug": "detroit",
+        "gp": 7,
+        "wins": 2,
+        "losses": 3,
+        "ot": 2,
+        "points": 6,
+        "streak": "W1"
+      }
+    ]
+  },
+  "metropolitan": {
+    "title": "Classement Metropolitan Division",
+    "rows": [
+      {
+        "rank": 1,
+        "name": "Carolina Hurricanes",
+        "slug": "carolina",
+        "gp": 8,
+        "wins": 6,
+        "losses": 1,
+        "ot": 1,
+        "points": 13,
+        "streak": "W6"
+      },
+      {
+        "rank": 2,
+        "name": "New York Rangers",
+        "slug": "rangers",
+        "gp": 9,
+        "wins": 6,
+        "losses": 3,
+        "ot": 0,
+        "points": 12,
+        "streak": "L1"
+      },
+      {
+        "rank": 3,
+        "name": "Washington Capitals",
+        "slug": "washington",
+        "gp": 7,
+        "wins": 4,
+        "losses": 3,
+        "ot": 0,
+        "points": 8,
+        "streak": "W1"
+      },
+      {
+        "rank": 4,
+        "name": "New Jersey Devils",
+        "slug": "newjersey",
+        "gp": 7,
+        "wins": 4,
+        "losses": 3,
+        "ot": 0,
+        "points": 8,
+        "streak": "W2"
+      },
+      {
+        "rank": 5,
+        "name": "New York Islanders",
+        "slug": "islanders",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "OT1"
+      },
+      {
+        "rank": 6,
+        "name": "Pittsburgh Penguins",
+        "slug": "pittsburgh",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "L1"
+      },
+      {
+        "rank": 7,
+        "name": "Columbus Blue Jackets",
+        "slug": "columbus",
+        "gp": 5,
+        "wins": 2,
+        "losses": 3,
+        "ot": 0,
+        "points": 4,
+        "streak": "L2"
+      },
+      {
+        "rank": 8,
+        "name": "Philadelphia Flyers",
+        "slug": "philadelphia",
+        "gp": 9,
+        "wins": 0,
+        "losses": 6,
+        "ot": 3,
+        "points": 3,
+        "streak": "L1"
+      }
+    ]
+  },
+  "central": {
+    "title": "Classement Central Division",
+    "rows": [
+      {
+        "rank": 1,
+        "name": "Utah Mammoth",
+        "slug": "utah",
+        "gp": 8,
+        "wins": 6,
+        "losses": 2,
+        "ot": 0,
+        "points": 12,
+        "streak": "W3"
+      },
+      {
+        "rank": 2,
+        "name": "Minnesota Wild",
+        "slug": "minnesota",
+        "gp": 8,
+        "wins": 5,
+        "losses": 2,
+        "ot": 1,
+        "points": 11,
+        "streak": "W1"
+      },
+      {
+        "rank": 3,
+        "name": "Winnipeg Jets",
+        "slug": "winnipeg",
+        "gp": 7,
+        "wins": 4,
+        "losses": 1,
+        "ot": 2,
+        "points": 10,
+        "streak": "OT1"
+      },
+      {
+        "rank": 4,
+        "name": "Colorado Avalanche",
+        "slug": "colorado",
+        "gp": 7,
+        "wins": 4,
+        "losses": 2,
+        "ot": 1,
+        "points": 9,
+        "streak": "OT1"
+      },
+      {
+        "rank": 5,
+        "name": "St. Louis Blues",
+        "slug": "stlouis",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "L1"
+      },
+      {
+        "rank": 6,
+        "name": "Dallas Stars",
+        "slug": "dallas",
+        "gp": 7,
+        "wins": 3,
+        "losses": 3,
+        "ot": 1,
+        "points": 7,
+        "streak": "W1"
+      },
+      {
+        "rank": 7,
+        "name": "Nashville Predators",
+        "slug": "nashville",
+        "gp": 7,
+        "wins": 2,
+        "losses": 2,
+        "ot": 3,
+        "points": 7,
+        "streak": "OT1"
+      },
+      {
+        "rank": 8,
+        "name": "Chicago Blackhawks",
+        "slug": "chicago",
+        "gp": 8,
+        "wins": 3,
+        "losses": 5,
+        "ot": 0,
+        "points": 6,
+        "streak": "W2"
+      }
+    ]
+  },
+  "pacific": {
+    "title": "Classement Pacific Division",
+    "rows": [
+      {
+        "rank": 1,
+        "name": "Vegas Golden Knights",
+        "slug": "vegas",
+        "gp": 9,
+        "wins": 7,
+        "losses": 2,
+        "ot": 0,
+        "points": 14,
+        "streak": "W2"
+      },
+      {
+        "rank": 2,
+        "name": "Edmonton Oilers",
+        "slug": "edmonton",
+        "gp": 7,
+        "wins": 5,
+        "losses": 1,
+        "ot": 1,
+        "points": 11,
+        "streak": "L1"
+      },
+      {
+        "rank": 3,
+        "name": "Seattle Kraken",
+        "slug": "seattle",
+        "gp": 8,
+        "wins": 5,
+        "losses": 2,
+        "ot": 1,
+        "points": 11,
+        "streak": "OT1"
+      },
+      {
+        "rank": 4,
+        "name": "Anaheim Ducks",
+        "slug": "anaheim",
+        "gp": 6,
+        "wins": 4,
+        "losses": 2,
+        "ot": 0,
+        "points": 8,
+        "streak": "L1"
+      },
+      {
+        "rank": 5,
+        "name": "San Jose Sharks",
+        "slug": "sanjose",
+        "gp": 7,
+        "wins": 4,
+        "losses": 3,
+        "ot": 0,
+        "points": 8,
+        "streak": "W1"
+      },
+      {
+        "rank": 6,
+        "name": "Vancouver Canucks",
+        "slug": "vancouver",
+        "gp": 9,
+        "wins": 2,
+        "losses": 6,
+        "ot": 1,
+        "points": 5,
+        "streak": "OT1"
+      },
+      {
+        "rank": 7,
+        "name": "Los Angeles Kings",
+        "slug": "losangeles",
+        "gp": 5,
+        "wins": 0,
+        "losses": 3,
+        "ot": 2,
+        "points": 2,
+        "streak": "L1"
+      },
+      {
+        "rank": 8,
+        "name": "Calgary Flames",
+        "slug": "calgary",
+        "gp": 7,
+        "wins": 1,
+        "losses": 6,
+        "ot": 0,
+        "points": 2,
+        "streak": "L1"
+      }
+    ]
+  }
+}
