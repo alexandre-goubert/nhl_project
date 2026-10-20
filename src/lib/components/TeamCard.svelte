@@ -4,7 +4,7 @@
     let { nom, abreviation, ville, couleur, image, slug } = $props();
 </script>
 
-<article class="team-card">
+<a class="team-card" href={resolve('/[slug]', { slug })}>
     <div
         class="team-visual"
         style:background-color={couleur}
@@ -16,24 +16,29 @@
     <div class="team-info">
         <h3>{nom}</h3>
         <p>{ville}</p>
-        <a class="view-team" href={resolve('/[slug]', { slug })}>
-            Voir l’équipe →
-        </a>
     </div>
-</article>
+</a>
 
 <style>
     .team-card {
+        display: block;
         height: 100%;
         overflow: hidden;
         background-color: var(--card-color, white);
         border: 1px solid #E2E8F0;
         border-radius: 10px;
+        color: inherit;
+        text-decoration: none;
         transition: box-shadow 0.3s;
     }
 
     .team-card:hover {
         box-shadow: 0 6px 20px rgb(16 28 48 / 20%);
+    }
+
+    .team-card:focus-visible {
+        outline: 3px solid #087DA0;
+        outline-offset: 3px;
     }
 
     .team-visual {
@@ -50,18 +55,6 @@
 
     .team-info {
         padding: 20px;
-    }
-
-    .view-team {
-        display: inline-block;
-        margin-top: 16px;
-        color: var(--link-color, #087b9b);
-        font-weight: 600;
-        text-decoration: none;
-    }
-
-    .view-team:hover {
-        text-decoration: underline;
     }
 
     h3 {

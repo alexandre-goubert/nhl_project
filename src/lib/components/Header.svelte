@@ -17,10 +17,10 @@ import { asset, resolve } from '$app/paths';
 
     <div class="selectors-mode" aria-label="Choisir le thème">
         <button class="dark-mode-button" type="button" aria-pressed={theme === 'dark'} onclick={() => setTheme('dark')}>
-            <i class="fas fa-moon" aria-hidden="true"></i>Dark
+            <i class="fas fa-moon" aria-hidden="true"></i>Dark Mode
         </button>
         <button class="light-mode-button" type="button" aria-pressed={theme === 'light'} onclick={() => setTheme('light')}>
-            <i class="fas fa-sun" aria-hidden="true"></i>Light
+            <i class="fas fa-sun" aria-hidden="true"></i>Light Mode
         </button>
     </div>
 
@@ -208,6 +208,13 @@ import { asset, resolve } from '$app/paths';
     border-radius: 10px;
     background-color: #101C30;
     box-shadow: 0 12px 30px rgb(0 0 0 / 25%);
+}
+
+@media (max-width: 768px) {
+    .menu-equipes {
+        right: auto;
+        left: 0;
+    }
 }
 
 .menu-equipes[hidden] {

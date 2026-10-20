@@ -6,7 +6,7 @@
     const divisions = [
         { id: 'atlantic', nom: 'Atlantic', conference: 'Est' },
         { id: 'metropolitan', nom: 'Metropolitan', conference: 'Est' },
-        { id: 'central', nom: 'Central', conference: 'Ouest' },
+        { id: 'central', nom: ' Central', conference: 'Ouest' },
         { id: 'pacific', nom: 'Pacific', conference: 'Ouest' }
     ];
 
@@ -22,31 +22,41 @@
     <h1>Les équipes de la NHL</h1>
     <nav class="divisions-menu" aria-label="Aller à une division">
         {#each divisions as division (division.id)}
-            <a href={`#${division.id}`}>{division.nom} Division</a>
+            {@const divisionTeams = filteredTeams.filter(team => team.division === division.id)}
+            {#if divisionTeams.length > 0}
+                <a href={`#${division.id}`}>{division.nom} Division</a>
+            {/if}
         {/each}
-        <input type="text" placeholder="Rechercher une équipe" oninput={(event) => { const query = event.currentTarget.value.toLowerCase(); filteredTeams = teams.filter(team => team.nom.toLowerCase().includes(query)); }} />
+        <input type="text" placeholder="Rechercher une équipe..." oninput={(event) => { const query = event.currentTarget.value.toLowerCase(); filteredTeams = teams.filter(team => team.nom.toLowerCase().includes(query)); }} />
     </nav>
 
-    {#each divisions as division (division.id)}
-        <section id={division.id} aria-labelledby={`titre-${division.id}`}>
-            <div class="division-title">
-                <h2 id={`titre-${division.id}`}>Division {division.nom}</h2>
-                <span>Conférence {division.conference}</span>
-            </div>
+    {#if filteredTeams.length === 0}
+        <p class="no-results" role="status">Aucune équipe ne correspond à votre recherche.</p>
+    {/if}
 
-            <div class="teams-grid">
-                {#each filteredTeams.filter(team => team.division === division.id) as team (team.slug)}
-                    <TeamCard
-                        nom={team.nom}
-                        abreviation={team.abreviation}
-                        ville={team.ville}
-                        couleur={team.couleur}
-                        image={team.image}
-                        slug={team.slug}
-                    />
-                {/each}
-            </div>
-        </section>
+    {#each divisions as division (division.id)}
+        {@const divisionTeams = filteredTeams.filter(team => team.division === division.id)}
+        {#if divisionTeams.length > 0}
+            <section id={division.id} aria-labelledby={`titre-${division.id}`}>
+                <div class="division-title">
+                    <h2 id={`titre-${division.id}`}>Division {division.nom}</h2>
+                    <span>Conférence {division.conference}</span>
+                </div>
+
+                <div class="teams-grid">
+                    {#each divisionTeams as team (team.slug)}
+                        <TeamCard
+                            nom={team.nom}
+                            abreviation={team.abreviation}
+                            ville={team.ville}
+                            couleur={team.couleur}
+                            image={team.image}
+                            slug={team.slug}
+                        />
+                    {/each}
+                </div>
+            </section>
+        {/if}
     {/each}
 </main>
 
@@ -72,6 +82,11 @@
         justify-content: center;
         gap: 12px;
         margin: 48px;
+    }
+
+    .no-results {
+        margin: 0 0 48px;
+        text-align: center;
     }
 
     .divisions-menu a {
