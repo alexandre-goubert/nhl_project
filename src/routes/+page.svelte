@@ -1,4 +1,5 @@
 <script>
+    import nhlMeta from '#lib/data/nhl-meta.json';
     import { asset, resolve } from '$app/paths';
     import Footer from '#lib/components/Footer.svelte';
     import TeamCard from '#lib/components/TeamCard.svelte';
@@ -54,7 +55,6 @@
             <div class="section-heading">
                 <div>
                     <h2 id="results-title">Derniers résultats disponibles</h2>
-                    <p class="section-note">Résultats enregistrés dans le site · Sans actualisation automatique</p>
                 </div>
                 <a class="section-link" href={resolve('/matchs')}>Tous les matchs →</a>
             </div>
@@ -102,7 +102,7 @@
             <section class="conference-rankings" aria-labelledby="ranking-title">
                 <div class="panel-heading">
                     <h2 id="ranking-title">Classements par conférence</h2>
-                    <p class="section-note">Données au <time datetime="2026-10-19">19 octobre 2026</time> · Mise à jour manuelle</p>
+                    <p class="section-note">Données au <time datetime={nhlMeta.standingsDate}>{nhlMeta.standingsLabel}</time> · Source NHL</p>
                 </div>
                 {#each conferenceRankings as conference (conference.id)}
                     <section class="ranking-panel conference-ranking" aria-labelledby={`ranking-${conference.id}`}>
@@ -110,7 +110,7 @@
                             <h3 id={`ranking-${conference.id}`}>{conference.label}</h3>
                         </div>
                         <table>
-                            <caption class="sr-only">Les huit premières équipes de la {conference.label} au 19 octobre 2026</caption>
+                            <caption class="sr-only">Les huit premières équipes de la {conference.label} au {nhlMeta.standingsLabel}</caption>
                             <thead><tr><th scope="col">Rang</th><th scope="col">Équipe</th><th scope="col">Points</th></tr></thead>
                             <tbody>
                                 {#each conference.rows as team (team.slug)}

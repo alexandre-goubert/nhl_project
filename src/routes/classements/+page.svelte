@@ -1,4 +1,5 @@
 <script>
+    import nhlMeta from '#lib/data/nhl-meta.json';
     import { asset, resolve } from '$app/paths';
     import Footer from '#lib/components/Footer.svelte';
     import standings from '#lib/data/rankings.json';
@@ -13,6 +14,7 @@
         { id: 'central', label: 'Central' },
         { id: 'pacific', label: 'Pacific' }
     ];
+    const divisionIds = new Set(['atlantic', 'metropolitan', 'central', 'pacific']);
     /** @type {'nhl' | 'eastern' | 'western' | 'atlantic' | 'metropolitan' | 'central' | 'pacific'} */
     let selected = $state('nhl');
     let ranking = $derived(standings[selected]);
@@ -26,7 +28,7 @@
 
 <main class="standings-page">
     <h1>Classements</h1>
-    <p class="standings-meta">Saison 2026–2027 · Données au 19 octobre 2026</p>
+    <p class="standings-meta">Saison {nhlMeta.seasonLabel} · Données au {nhlMeta.standingsLabel}</p>
     <nav class="rankings-menu" aria-label="Choisir un classement">
         <div class="rankings-filter-group">
             {#each categories.slice(0, 3) as category (category.id)}
@@ -50,7 +52,13 @@
         </div>
     </nav>
 
-    <section id="ranking-table" class="ranking" aria-live="polite" aria-label={ranking.title}>
+    <section
+        id="ranking-table"
+        class="ranking"
+        data-division={divisionIds.has(selected) ? '' : undefined}
+        aria-live="polite"
+        aria-label={ranking.title}
+    >
         <table>
             <caption>{ranking.title}</caption>
             <thead>
@@ -89,8 +97,19 @@
         </table>
     </section>
     <p class="standings-meta">
-        Source : <a href="https://api-web.nhle.com/v1/standings/2026-10-19">classement NHL au 19 octobre 2026</a>.
-        Données statiques, sans actualisation automatique.
+        Source : <a href={nhlMeta.standingsSource}>classement NHL au {nhlMeta.standingsLabel}</a>.
+        Actualisées lors de la dernière synchronisation avec la NHL.
+    </p>
+    <p class ="standings-explain">
+        <span><strong>G</strong> : Nombre de matchs joués</span>
+        <span><strong>W</strong> : Victoires</span>
+        <span><strong>L</strong> : Défaites</span>
+        <span><strong>OT</strong> : Défaites en prolongation</span>
+        <span><strong>PTS</strong> : Points</span>
+        <span><strong>Streak</strong> : Série en cours</span>
+    </p>
+    <p class="standings-note">
+        <span><strong>Note</strong> : Les 3 premières équipes de chaque division sont qualifiées pour les séries éliminatoires.</span>
     </p>
 </main>
 

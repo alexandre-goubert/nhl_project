@@ -9,6 +9,8 @@
         { id: 'central', nom: 'Central', conference: 'Ouest' },
         { id: 'pacific', nom: 'Pacific', conference: 'Ouest' }
     ];
+
+    let filteredTeams = $state(teams);
 </script>
 
 <svelte:head>
@@ -22,6 +24,7 @@
         {#each divisions as division (division.id)}
             <a href={`#${division.id}`}>{division.nom} Division</a>
         {/each}
+        <input type="text" placeholder="Rechercher une équipe" oninput={(event) => { const query = event.currentTarget.value.toLowerCase(); filteredTeams = teams.filter(team => team.nom.toLowerCase().includes(query)); }} />
     </nav>
 
     {#each divisions as division (division.id)}
@@ -32,7 +35,7 @@
             </div>
 
             <div class="teams-grid">
-                {#each teams.filter(team => team.division === division.id) as team (team.slug)}
+                {#each filteredTeams.filter(team => team.division === division.id) as team (team.slug)}
                     <TeamCard
                         nom={team.nom}
                         abreviation={team.abreviation}
@@ -89,6 +92,21 @@
     .divisions-menu a:focus-visible {
         outline: 3px solid #087DA0;
         outline-offset: 4px;
+    }
+    input {
+        padding: 8px 12px;
+        border: 1px solid #39BDE0;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+    input:focus {
+        outline: 3px solid #087DA0;
+        outline-offset: 4px;
+    }
+    input::placeholder {
+        color: #087DA0;
+        opacity: 0.7;
+        font-style: italic;
     }
 
     section {

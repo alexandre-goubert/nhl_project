@@ -70,3 +70,20 @@ Site de fans indépendant, non affilié à la NHL.
 
 Les noms, marques et éventuels logos des équipes appartiennent
 à leurs propriétaires respectifs.
+
+## Actualisation des données NHL
+
+Exécuter `npm run update:nhl` (ou `npm.cmd run update:nhl` sous PowerShell).
+Le script utilise api-web.nhle.com sans clé et récupère les classements et les matchs
+terminés de saison régulière. Les effectifs et l’historique ne sont pas actualisés.
+Les pages équipes et l’accueil utilisent le même classement.
+
+Les fichiers générés sont dans src/lib/data : rankings.json, matches.json et nhl-meta.json.
+La date du classement vient de la NHL ; elle peut différer de la date de récupération.
+Le script vérifie les données avant de remplacer les fichiers. Une erreur API arrête
+la commande et le déploiement : le site déjà publié reste accessible.
+
+GitHub Actions lance cette commande avant chaque publication (push sur main ou
+lancement manuel du workflow). Ce n’est pas une actualisation en direct ni quotidienne.
+Les données générées dans Actions ne sont pas réécrites dans le dépôt Git.
+Pour actualiser également la copie locale, exécuter la commande ci-dessus.

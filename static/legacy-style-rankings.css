@@ -310,6 +310,16 @@ tbody tr:last-child td{
     margin-top: 0;
 }
 
+.standings-explain{
+    display: flex;
+    gap: 12px;
+}
+
+.standings-note span{
+    border-left: 4px solid #39BDE0;
+    padding-left: 8px;
+}
+
 footer{
     display: flex;
     justify-content: space-between;

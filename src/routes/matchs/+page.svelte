@@ -1,4 +1,5 @@
 <script>
+    import nhlMeta from '#lib/data/nhl-meta.json';
     import { asset, resolve } from '$app/paths';
     import Footer from '#lib/components/Footer.svelte';
     import matches from '#lib/data/matches.json';
@@ -28,12 +29,12 @@
 
 <main class="matches-page">
     <h1>Matchs</h1>
-    <div class="matches-summary">Résultats du 29 septembre au 18 octobre 2026 · Vérifiés le 19 octobre 2026</div>
+    <div class="matches-summary">Résultats du {nhlMeta.firstMatchLabel} au {nhlMeta.lastMatchLabel}</div>
 
     <form class="matches-filters" onsubmit={(event) => event.preventDefault()}>
         <div>
             <label for="match-date">Journée</label>
-            <input id="match-date" type="date" min="2026-09-29" max="2026-10-18" bind:value={dateFilter} />
+            <input id="match-date" type="date" min={nhlMeta.firstMatchDate} max={nhlMeta.lastMatchDate} bind:value={dateFilter} />
         </div>
         <div>
             <label for="match-team">Franchise</label>
@@ -93,7 +94,7 @@
     {#if filteredMatches.length === 0}
         <p class="matches-empty" role="status">Aucun match ne correspond à ces filtres.</p>
     {/if}
-    <p class="matches-note">Résultats statiques issus du projet NHL Zone ; ils ne sont pas actualisés automatiquement.</p>
+    <p class="matches-note">Résultats NHL · Dernière synchronisation : {new Date(nhlMeta.updatedAt).toLocaleString('fr-FR', { timeZone: 'Europe/Paris' })} (heure de Paris).</p>
 </main>
 
 <Footer />

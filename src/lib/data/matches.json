@@ -1,5 +1,121 @@
 [
   {
+    "date": "2026-10-19",
+    "dateLabel": "19 octobre 2026",
+    "teams": [
+      "PIT",
+      "UTA"
+    ],
+    "status": "Terminé",
+    "venue": "Delta Center",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020140",
+    "sides": [
+      {
+        "code": "PIT",
+        "slug": "pittsburgh",
+        "name": "Pittsburgh Penguins",
+        "score": 4,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "UTA",
+        "slug": "utah",
+        "name": "Utah Mammoth",
+        "score": 5,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-10-19",
+    "dateLabel": "19 octobre 2026",
+    "teams": [
+      "SJS",
+      "TOR"
+    ],
+    "status": "Terminé",
+    "venue": "Scotiabank Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020139",
+    "sides": [
+      {
+        "code": "SJS",
+        "slug": "sanjose",
+        "name": "San Jose Sharks",
+        "score": 1,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "TOR",
+        "slug": "toronto",
+        "name": "Toronto Maple Leafs",
+        "score": 3,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-10-19",
+    "dateLabel": "19 octobre 2026",
+    "teams": [
+      "ANA",
+      "NYR"
+    ],
+    "status": "Terminé",
+    "venue": "Madison Square Garden",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020137",
+    "sides": [
+      {
+        "code": "ANA",
+        "slug": "anaheim",
+        "name": "Anaheim Ducks",
+        "score": 2,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "NYR",
+        "slug": "rangers",
+        "name": "New York Rangers",
+        "score": 5,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
+    "date": "2026-10-19",
+    "dateLabel": "19 octobre 2026",
+    "teams": [
+      "COL",
+      "PHI"
+    ],
+    "status": "Terminé",
+    "venue": "Xfinity Mobile Arena",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020138",
+    "sides": [
+      {
+        "code": "COL",
+        "slug": "colorado",
+        "name": "Colorado Avalanche",
+        "score": 2,
+        "home": false,
+        "winner": false
+      },
+      {
+        "code": "PHI",
+        "slug": "philadelphia",
+        "name": "Philadelphia Flyers",
+        "score": 3,
+        "home": true,
+        "winner": true
+      }
+    ]
+  },
+  {
     "date": "2026-10-18",
     "dateLabel": "18 octobre 2026",
     "teams": [
@@ -8,7 +124,7 @@
     ],
     "status": "Terminé",
     "venue": "Scotiabank Saddledome",
-    "nhlUrl": "https://www.nhl.com/gamecenter/car-vs-cgy/2026/10/18/2026020136",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020136",
     "sides": [
       {
         "code": "CAR",
@@ -37,7 +153,7 @@
     ],
     "status": "Terminé",
     "venue": "Grand Casino Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/cbj-vs-min/2026/10/18/2026020135",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020135",
     "sides": [
       {
         "code": "CBJ",
@@ -66,7 +182,7 @@
     ],
     "status": "Terminé",
     "venue": "Delta Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/edm-vs-uta/2026/10/17/2026020133",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020133",
     "sides": [
       {
         "code": "EDM",
@@ -95,7 +211,7 @@
     ],
     "status": "Terminé",
     "venue": "T-Mobile Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/pit-vs-vgk/2026/10/17/2026020134",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020134",
     "sides": [
       {
         "code": "PIT",
@@ -124,7 +240,7 @@
     ],
     "status": "Terminé",
     "venue": "Crypto.com Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/bos-vs-lak/2026/10/17/2026020132",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020132",
     "sides": [
       {
         "code": "BOS",
@@ -153,7 +269,7 @@
     ],
     "status": "Terminé",
     "venue": "Bridgestone Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/stl-vs-nsh/2026/10/17/2026020131",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020131",
     "sides": [
       {
         "code": "STL",
@@ -182,7 +298,7 @@
     ],
     "status": "Terminé",
     "venue": "Scotiabank Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/nyi-vs-tor/2026/10/17/2026020125",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020125",
     "sides": [
       {
         "code": "NYI",
@@ -211,7 +327,7 @@
     ],
     "status": "Après prolongation",
     "venue": "Centre Bell",
-    "nhlUrl": "https://www.nhl.com/gamecenter/buf-vs-mtl/2026/10/17/2026020126",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020126",
     "sides": [
       {
         "code": "BUF",
@@ -224,7 +340,7 @@
       {
         "code": "MTL",
         "slug": "montreal",
-        "name": "MontrÃ©al Canadiens",
+        "name": "Montréal Canadiens",
         "score": 4,
         "home": true,
         "winner": true
@@ -240,7 +356,7 @@
     ],
     "status": "Après tirs au but",
     "venue": "Little Caesars Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/sjs-vs-det/2026/10/17/2026020127",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020127",
     "sides": [
       {
         "code": "SJS",
@@ -269,7 +385,7 @@
     ],
     "status": "Terminé",
     "venue": "Xfinity Mobile Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/ott-vs-phi/2026/10/17/2026020128",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020128",
     "sides": [
       {
         "code": "OTT",
@@ -298,7 +414,7 @@
     ],
     "status": "Après prolongation",
     "venue": "Nationwide Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/nyr-vs-cbj/2026/10/17/2026020129",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020129",
     "sides": [
       {
         "code": "NYR",
@@ -327,7 +443,7 @@
     ],
     "status": "Terminé",
     "venue": "United Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/dal-vs-chi/2026/10/17/2026020130",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020130",
     "sides": [
       {
         "code": "DAL",
@@ -356,7 +472,7 @@
     ],
     "status": "Terminé",
     "venue": "Amerant Bank Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/sea-vs-fla/2026/10/17/2026020124",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020124",
     "sides": [
       {
         "code": "SEA",
@@ -385,7 +501,7 @@
     ],
     "status": "Terminé",
     "venue": "Benchmark International Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/van-vs-tbl/2026/10/17/2026020123",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020123",
     "sides": [
       {
         "code": "VAN",
@@ -414,7 +530,7 @@
     ],
     "status": "Terminé",
     "venue": "Canada Life Centre",
-    "nhlUrl": "https://www.nhl.com/gamecenter/car-vs-wpg/2026/10/17/2026020122",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020122",
     "sides": [
       {
         "code": "CAR",
@@ -443,7 +559,7 @@
     ],
     "status": "Terminé",
     "venue": "Capital One Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/njd-vs-wsh/2026/10/17/2026020121",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020121",
     "sides": [
       {
         "code": "NJD",
@@ -472,7 +588,7 @@
     ],
     "status": "Terminé",
     "venue": "Honda Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/bos-vs-ana/2026/10/16/2026020120",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020120",
     "sides": [
       {
         "code": "BOS",
@@ -501,7 +617,7 @@
     ],
     "status": "Terminé",
     "venue": "Ball Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/pit-vs-col/2026/10/16/2026020119",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020119",
     "sides": [
       {
         "code": "PIT",
@@ -530,7 +646,7 @@
     ],
     "status": "Terminé",
     "venue": "T-Mobile Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/cgy-vs-vgk/2026/10/15/2026020118",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020118",
     "sides": [
       {
         "code": "CGY",
@@ -559,7 +675,7 @@
     ],
     "status": "Terminé",
     "venue": "Rogers Place",
-    "nhlUrl": "https://www.nhl.com/gamecenter/uta-vs-edm/2026/10/15/2026020117",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020117",
     "sides": [
       {
         "code": "UTA",
@@ -588,7 +704,7 @@
     ],
     "status": "Après prolongation",
     "venue": "United Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/wpg-vs-chi/2026/10/15/2026020114",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020114",
     "sides": [
       {
         "code": "WPG",
@@ -617,7 +733,7 @@
     ],
     "status": "Après tirs au but",
     "venue": "Bridgestone Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/sjs-vs-nsh/2026/10/15/2026020115",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020115",
     "sides": [
       {
         "code": "SJS",
@@ -646,7 +762,7 @@
     ],
     "status": "Terminé",
     "venue": "Grand Casino Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/stl-vs-min/2026/10/15/2026020116",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020116",
     "sides": [
       {
         "code": "STL",
@@ -675,7 +791,7 @@
     ],
     "status": "Terminé",
     "venue": "Little Caesars Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/phi-vs-det/2026/10/15/2026020110",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020110",
     "sides": [
       {
         "code": "PHI",
@@ -704,7 +820,7 @@
     ],
     "status": "Après prolongation",
     "venue": "Scotiabank Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/buf-vs-tor/2026/10/15/2026020108",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020108",
     "sides": [
       {
         "code": "BUF",
@@ -733,7 +849,7 @@
     ],
     "status": "Après tirs au but",
     "venue": "Canadian Tire Centre",
-    "nhlUrl": "https://www.nhl.com/gamecenter/nyi-vs-ott/2026/10/15/2026020109",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020109",
     "sides": [
       {
         "code": "NYI",
@@ -762,7 +878,7 @@
     ],
     "status": "Après prolongation",
     "venue": "Benchmark International Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/sea-vs-tbl/2026/10/15/2026020111",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020111",
     "sides": [
       {
         "code": "SEA",
@@ -791,7 +907,7 @@
     ],
     "status": "Après prolongation",
     "venue": "Amerant Bank Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/van-vs-fla/2026/10/15/2026020112",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020112",
     "sides": [
       {
         "code": "VAN",
@@ -820,7 +936,7 @@
     ],
     "status": "Terminé",
     "venue": "Prudential Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/nyr-vs-njd/2026/10/15/2026020113",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020113",
     "sides": [
       {
         "code": "NYR",
@@ -849,7 +965,7 @@
     ],
     "status": "Après tirs au but",
     "venue": "Ball Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/dal-vs-col/2026/10/14/2026020107",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020107",
     "sides": [
       {
         "code": "DAL",
@@ -878,12 +994,12 @@
     ],
     "status": "Terminé",
     "venue": "Capital One Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/mtl-vs-wsh/2026/10/14/2026020106",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020106",
     "sides": [
       {
         "code": "MTL",
         "slug": "montreal",
-        "name": "MontrÃ©al Canadiens",
+        "name": "Montréal Canadiens",
         "score": 4,
         "home": false,
         "winner": false
@@ -907,7 +1023,7 @@
     ],
     "status": "Terminé",
     "venue": "SAP Center at San Jose",
-    "nhlUrl": "https://www.nhl.com/gamecenter/bos-vs-sjs/2026/10/13/2026020105",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020105",
     "sides": [
       {
         "code": "BOS",
@@ -936,7 +1052,7 @@
     ],
     "status": "Terminé",
     "venue": "Crypto.com Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/edm-vs-lak/2026/10/13/2026020104",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020104",
     "sides": [
       {
         "code": "EDM",
@@ -965,7 +1081,7 @@
     ],
     "status": "Terminé",
     "venue": "Honda Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/cgy-vs-ana/2026/10/13/2026020103",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020103",
     "sides": [
       {
         "code": "CGY",
@@ -994,7 +1110,7 @@
     ],
     "status": "Terminé",
     "venue": "Delta Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/tor-vs-uta/2026/10/13/2026020102",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020102",
     "sides": [
       {
         "code": "TOR",
@@ -1023,7 +1139,7 @@
     ],
     "status": "Terminé",
     "venue": "Bridgestone Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/vgk-vs-nsh/2026/10/13/2026020101",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020101",
     "sides": [
       {
         "code": "VGK",
@@ -1052,7 +1168,7 @@
     ],
     "status": "Terminé",
     "venue": "American Airlines Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/col-vs-dal/2026/10/13/2026020100",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020100",
     "sides": [
       {
         "code": "COL",
@@ -1081,7 +1197,7 @@
     ],
     "status": "Terminé",
     "venue": "Canada Life Centre",
-    "nhlUrl": "https://www.nhl.com/gamecenter/min-vs-wpg/2026/10/13/2026020099",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020099",
     "sides": [
       {
         "code": "MIN",
@@ -1110,7 +1226,7 @@
     ],
     "status": "Terminé",
     "venue": "United Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/pit-vs-chi/2026/10/13/2026020098",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020098",
     "sides": [
       {
         "code": "PIT",
@@ -1139,7 +1255,7 @@
     ],
     "status": "Terminé",
     "venue": "UBS Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/van-vs-nyi/2026/10/13/2026020097",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020097",
     "sides": [
       {
         "code": "VAN",
@@ -1168,7 +1284,7 @@
     ],
     "status": "Terminé",
     "venue": "Canadian Tire Centre",
-    "nhlUrl": "https://www.nhl.com/gamecenter/stl-vs-ott/2026/10/13/2026020096",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020096",
     "sides": [
       {
         "code": "STL",
@@ -1197,7 +1313,7 @@
     ],
     "status": "Terminé",
     "venue": "Madison Square Garden",
-    "nhlUrl": "https://www.nhl.com/gamecenter/tbl-vs-nyr/2026/10/13/2026020095",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020095",
     "sides": [
       {
         "code": "TBL",
@@ -1226,7 +1342,7 @@
     ],
     "status": "Après tirs au but",
     "venue": "Xfinity Mobile Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/sea-vs-phi/2026/10/13/2026020094",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020094",
     "sides": [
       {
         "code": "SEA",
@@ -1255,7 +1371,7 @@
     ],
     "status": "Terminé",
     "venue": "Lenovo Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/wsh-vs-car/2026/10/13/2026020093",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020093",
     "sides": [
       {
         "code": "WSH",
@@ -1284,7 +1400,7 @@
     ],
     "status": "Après tirs au but",
     "venue": "Centre Bell",
-    "nhlUrl": "https://www.nhl.com/gamecenter/buf-vs-mtl/2026/10/13/2026020092",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020092",
     "sides": [
       {
         "code": "BUF",
@@ -1297,7 +1413,7 @@
       {
         "code": "MTL",
         "slug": "montreal",
-        "name": "MontrÃ©al Canadiens",
+        "name": "Montréal Canadiens",
         "score": 4,
         "home": true,
         "winner": true
@@ -1313,7 +1429,7 @@
     ],
     "status": "Terminé",
     "venue": "Nationwide Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/fla-vs-cbj/2026/10/13/2026020091",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020091",
     "sides": [
       {
         "code": "FLA",
@@ -1342,7 +1458,7 @@
     ],
     "status": "Après prolongation",
     "venue": "Little Caesars Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/njd-vs-det/2026/10/13/2026020090",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020090",
     "sides": [
       {
         "code": "NJD",
@@ -1371,7 +1487,7 @@
     ],
     "status": "Terminé",
     "venue": "Grand Casino Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/vgk-vs-min/2026/10/12/2026020089",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020089",
     "sides": [
       {
         "code": "VGK",
@@ -1400,7 +1516,7 @@
     ],
     "status": "Terminé",
     "venue": "Prudential Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/ott-vs-njd/2026/10/12/2026020088",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020088",
     "sides": [
       {
         "code": "OTT",
@@ -1429,7 +1545,7 @@
     ],
     "status": "Terminé",
     "venue": "KeyBank Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/fla-vs-buf/2026/10/12/2026020087",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020087",
     "sides": [
       {
         "code": "FLA",
@@ -1458,7 +1574,7 @@
     ],
     "status": "Terminé",
     "venue": "Xfinity Mobile Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/car-vs-phi/2026/10/11/2026020086",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020086",
     "sides": [
       {
         "code": "CAR",
@@ -1487,7 +1603,7 @@
     ],
     "status": "Terminé",
     "venue": "Madison Square Garden",
-    "nhlUrl": "https://www.nhl.com/gamecenter/van-vs-nyr/2026/10/11/2026020085",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020085",
     "sides": [
       {
         "code": "VAN",
@@ -1516,7 +1632,7 @@
     ],
     "status": "Terminé",
     "venue": "Capital One Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/sea-vs-wsh/2026/10/11/2026020084",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020084",
     "sides": [
       {
         "code": "SEA",
@@ -1545,7 +1661,7 @@
     ],
     "status": "Terminé",
     "venue": "Scotiabank Saddledome",
-    "nhlUrl": "https://www.nhl.com/gamecenter/ana-vs-cgy/2026/10/10/2026020082",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020082",
     "sides": [
       {
         "code": "ANA",
@@ -1574,7 +1690,7 @@
     ],
     "status": "Après prolongation",
     "venue": "T-Mobile Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/lak-vs-vgk/2026/10/10/2026020083",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020083",
     "sides": [
       {
         "code": "LAK",
@@ -1603,7 +1719,7 @@
     ],
     "status": "Terminé",
     "venue": "UBS Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/tbl-vs-nyi/2026/10/10/2026020081",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020081",
     "sides": [
       {
         "code": "TBL",
@@ -1632,7 +1748,7 @@
     ],
     "status": "Terminé",
     "venue": "KeyBank Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/uta-vs-buf/2026/10/10/2026020074",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020074",
     "sides": [
       {
         "code": "UTA",
@@ -1661,7 +1777,7 @@
     ],
     "status": "Après tirs au but",
     "venue": "Centre Bell",
-    "nhlUrl": "https://www.nhl.com/gamecenter/det-vs-mtl/2026/10/10/2026020075",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020075",
     "sides": [
       {
         "code": "DET",
@@ -1674,7 +1790,7 @@
       {
         "code": "MTL",
         "slug": "montreal",
-        "name": "MontrÃ©al Canadiens",
+        "name": "Montréal Canadiens",
         "score": 1,
         "home": true,
         "winner": true
@@ -1690,7 +1806,7 @@
     ],
     "status": "Après tirs au but",
     "venue": "Canadian Tire Centre",
-    "nhlUrl": "https://www.nhl.com/gamecenter/nsh-vs-ott/2026/10/10/2026020076",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020076",
     "sides": [
       {
         "code": "NSH",
@@ -1719,7 +1835,7 @@
     ],
     "status": "Après tirs au but",
     "venue": "PPG Paints Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/dal-vs-pit/2026/10/10/2026020077",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020077",
     "sides": [
       {
         "code": "DAL",
@@ -1748,7 +1864,7 @@
     ],
     "status": "Terminé",
     "venue": "United Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/car-vs-chi/2026/10/10/2026020078",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020078",
     "sides": [
       {
         "code": "CAR",
@@ -1777,7 +1893,7 @@
     ],
     "status": "Terminé",
     "venue": "Enterprise Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/cbj-vs-stl/2026/10/10/2026020079",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020079",
     "sides": [
       {
         "code": "CBJ",
@@ -1806,7 +1922,7 @@
     ],
     "status": "Terminé",
     "venue": "Ball Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/tor-vs-col/2026/10/10/2026020080",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020080",
     "sides": [
       {
         "code": "TOR",
@@ -1835,7 +1951,7 @@
     ],
     "status": "Terminé",
     "venue": "Amerant Bank Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/min-vs-fla/2026/10/10/2026020073",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020073",
     "sides": [
       {
         "code": "MIN",
@@ -1864,7 +1980,7 @@
     ],
     "status": "Terminé",
     "venue": "SAP Center at San Jose",
-    "nhlUrl": "https://www.nhl.com/gamecenter/edm-vs-sjs/2026/10/10/2026020072",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020072",
     "sides": [
       {
         "code": "EDM",
@@ -1893,7 +2009,7 @@
     ],
     "status": "Terminé",
     "venue": "Prudential Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/van-vs-njd/2026/10/10/2026020071",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020071",
     "sides": [
       {
         "code": "VAN",
@@ -1922,7 +2038,7 @@
     ],
     "status": "Terminé",
     "venue": "TD Garden",
-    "nhlUrl": "https://www.nhl.com/gamecenter/phi-vs-bos/2026/10/10/2026020070",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020070",
     "sides": [
       {
         "code": "PHI",
@@ -1951,7 +2067,7 @@
     ],
     "status": "Terminé",
     "venue": "Canada Life Centre",
-    "nhlUrl": "https://www.nhl.com/gamecenter/ana-vs-wpg/2026/10/09/2026020069",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020069",
     "sides": [
       {
         "code": "ANA",
@@ -1980,7 +2096,7 @@
     ],
     "status": "Terminé",
     "venue": "Little Caesars Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/sea-vs-det/2026/10/09/2026020066",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020066",
     "sides": [
       {
         "code": "SEA",
@@ -2009,7 +2125,7 @@
     ],
     "status": "Terminé",
     "venue": "Capital One Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/nyr-vs-wsh/2026/10/09/2026020067",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020067",
     "sides": [
       {
         "code": "NYR",
@@ -2038,7 +2154,7 @@
     ],
     "status": "Après tirs au but",
     "venue": "Nationwide Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/pit-vs-cbj/2026/10/09/2026020068",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020068",
     "sides": [
       {
         "code": "PIT",
@@ -2067,7 +2183,7 @@
     ],
     "status": "Après tirs au but",
     "venue": "T-Mobile Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/tor-vs-vgk/2026/10/08/2026020065",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020065",
     "sides": [
       {
         "code": "TOR",
@@ -2096,7 +2212,7 @@
     ],
     "status": "Terminé",
     "venue": "Scotiabank Saddledome",
-    "nhlUrl": "https://www.nhl.com/gamecenter/col-vs-cgy/2026/10/08/2026020064",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020064",
     "sides": [
       {
         "code": "COL",
@@ -2125,7 +2241,7 @@
     ],
     "status": "Après prolongation",
     "venue": "Enterprise Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/sjs-vs-stl/2026/10/08/2026020063",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020063",
     "sides": [
       {
         "code": "SJS",
@@ -2154,7 +2270,7 @@
     ],
     "status": "Terminé",
     "venue": "UBS Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/chi-vs-nyi/2026/10/08/2026020062",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020062",
     "sides": [
       {
         "code": "CHI",
@@ -2183,7 +2299,7 @@
     ],
     "status": "Terminé",
     "venue": "TD Garden",
-    "nhlUrl": "https://www.nhl.com/gamecenter/uta-vs-bos/2026/10/08/2026020056",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020056",
     "sides": [
       {
         "code": "UTA",
@@ -2212,7 +2328,7 @@
     ],
     "status": "Terminé",
     "venue": "KeyBank Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/dal-vs-buf/2026/10/08/2026020057",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020057",
     "sides": [
       {
         "code": "DAL",
@@ -2241,7 +2357,7 @@
     ],
     "status": "Terminé",
     "venue": "Centre Bell",
-    "nhlUrl": "https://www.nhl.com/gamecenter/nsh-vs-mtl/2026/10/08/2026020058",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020058",
     "sides": [
       {
         "code": "NSH",
@@ -2254,7 +2370,7 @@
       {
         "code": "MTL",
         "slug": "montreal",
-        "name": "MontrÃ©al Canadiens",
+        "name": "Montréal Canadiens",
         "score": 2,
         "home": true,
         "winner": false
@@ -2270,7 +2386,7 @@
     ],
     "status": "Terminé",
     "venue": "Canadian Tire Centre",
-    "nhlUrl": "https://www.nhl.com/gamecenter/phi-vs-ott/2026/10/08/2026020059",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020059",
     "sides": [
       {
         "code": "PHI",
@@ -2299,7 +2415,7 @@
     ],
     "status": "Terminé",
     "venue": "Benchmark International Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/min-vs-tbl/2026/10/08/2026020060",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020060",
     "sides": [
       {
         "code": "MIN",
@@ -2328,7 +2444,7 @@
     ],
     "status": "Terminé",
     "venue": "Lenovo Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/van-vs-car/2026/10/08/2026020061",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020061",
     "sides": [
       {
         "code": "VAN",
@@ -2357,7 +2473,7 @@
     ],
     "status": "Terminé",
     "venue": "Honda Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/edm-vs-ana/2026/10/07/2026020055",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020055",
     "sides": [
       {
         "code": "EDM",
@@ -2386,7 +2502,7 @@
     ],
     "status": "Terminé",
     "venue": "Capital One Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/pit-vs-wsh/2026/10/07/2026020053",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020053",
     "sides": [
       {
         "code": "PIT",
@@ -2415,7 +2531,7 @@
     ],
     "status": "Terminé",
     "venue": "Canada Life Centre",
-    "nhlUrl": "https://www.nhl.com/gamecenter/col-vs-wpg/2026/10/07/2026020054",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020054",
     "sides": [
       {
         "code": "COL",
@@ -2444,7 +2560,7 @@
     ],
     "status": "Terminé",
     "venue": "Crypto.com Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/fla-vs-lak/2026/10/06/2026020052",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020052",
     "sides": [
       {
         "code": "FLA",
@@ -2473,7 +2589,7 @@
     ],
     "status": "Terminé",
     "venue": "Climate Pledge Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/vgk-vs-sea/2026/10/06/2026020051",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020051",
     "sides": [
       {
         "code": "VGK",
@@ -2502,7 +2618,7 @@
     ],
     "status": "Terminé",
     "venue": "United Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/stl-vs-chi/2026/10/06/2026020050",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020050",
     "sides": [
       {
         "code": "STL",
@@ -2531,7 +2647,7 @@
     ],
     "status": "Terminé",
     "venue": "Madison Square Garden",
-    "nhlUrl": "https://www.nhl.com/gamecenter/nyi-vs-nyr/2026/10/06/2026020048",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020048",
     "sides": [
       {
         "code": "NYI",
@@ -2560,7 +2676,7 @@
     ],
     "status": "Après prolongation",
     "venue": "Scotiabank Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/nsh-vs-tor/2026/10/06/2026020044",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020044",
     "sides": [
       {
         "code": "NSH",
@@ -2589,7 +2705,7 @@
     ],
     "status": "Terminé",
     "venue": "Centre Bell",
-    "nhlUrl": "https://www.nhl.com/gamecenter/car-vs-mtl/2026/10/06/2026020045",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020045",
     "sides": [
       {
         "code": "CAR",
@@ -2602,7 +2718,7 @@
       {
         "code": "MTL",
         "slug": "montreal",
-        "name": "MontrÃ©al Canadiens",
+        "name": "Montréal Canadiens",
         "score": 4,
         "home": true,
         "winner": false
@@ -2618,7 +2734,7 @@
     ],
     "status": "Terminé",
     "venue": "Little Caesars Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/ott-vs-det/2026/10/06/2026020046",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020046",
     "sides": [
       {
         "code": "OTT",
@@ -2647,7 +2763,7 @@
     ],
     "status": "Terminé",
     "venue": "Prudential Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/uta-vs-njd/2026/10/06/2026020047",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020047",
     "sides": [
       {
         "code": "UTA",
@@ -2676,7 +2792,7 @@
     ],
     "status": "Après prolongation",
     "venue": "KeyBank Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/min-vs-buf/2026/10/06/2026020049",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020049",
     "sides": [
       {
         "code": "MIN",
@@ -2705,7 +2821,7 @@
     ],
     "status": "Terminé",
     "venue": "American Airlines Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/sjs-vs-dal/2026/10/05/2026020043",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020043",
     "sides": [
       {
         "code": "SJS",
@@ -2734,7 +2850,7 @@
     ],
     "status": "Terminé",
     "venue": "TD Garden",
-    "nhlUrl": "https://www.nhl.com/gamecenter/ott-vs-bos/2026/10/05/2026020041",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020041",
     "sides": [
       {
         "code": "OTT",
@@ -2763,7 +2879,7 @@
     ],
     "status": "Terminé",
     "venue": "PPG Paints Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/wpg-vs-pit/2026/10/05/2026020042",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020042",
     "sides": [
       {
         "code": "WPG",
@@ -2792,7 +2908,7 @@
     ],
     "status": "Terminé",
     "venue": "Benchmark International Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/phi-vs-tbl/2026/10/05/2026020040",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020040",
     "sides": [
       {
         "code": "PHI",
@@ -2821,7 +2937,7 @@
     ],
     "status": "Terminé",
     "venue": "Rogers Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/vgk-vs-van/2026/10/04/2026020039",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020039",
     "sides": [
       {
         "code": "VGK",
@@ -2850,7 +2966,7 @@
     ],
     "status": "Après prolongation",
     "venue": "Honda Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/fla-vs-ana/2026/10/04/2026020037",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020037",
     "sides": [
       {
         "code": "FLA",
@@ -2879,7 +2995,7 @@
     ],
     "status": "Terminé",
     "venue": "Climate Pledge Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/cgy-vs-sea/2026/10/04/2026020038",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020038",
     "sides": [
       {
         "code": "CGY",
@@ -2908,7 +3024,7 @@
     ],
     "status": "Terminé",
     "venue": "Madison Square Garden",
-    "nhlUrl": "https://www.nhl.com/gamecenter/uta-vs-nyr/2026/10/04/2026020036",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020036",
     "sides": [
       {
         "code": "UTA",
@@ -2937,7 +3053,7 @@
     ],
     "status": "Terminé",
     "venue": "Little Caesars Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/wpg-vs-det/2026/10/04/2026020035",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020035",
     "sides": [
       {
         "code": "WPG",
@@ -2966,7 +3082,7 @@
     ],
     "status": "Terminé",
     "venue": "Rogers Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/cgy-vs-van/2026/10/03/2026020033",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020033",
     "sides": [
       {
         "code": "CGY",
@@ -2995,7 +3111,7 @@
     ],
     "status": "Après prolongation",
     "venue": "SAP Center at San Jose",
-    "nhlUrl": "https://www.nhl.com/gamecenter/lak-vs-sjs/2026/10/03/2026020034",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020034",
     "sides": [
       {
         "code": "LAK",
@@ -3024,7 +3140,7 @@
     ],
     "status": "Terminé",
     "venue": "Ball Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/stl-vs-col/2026/10/03/2026020032",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020032",
     "sides": [
       {
         "code": "STL",
@@ -3053,7 +3169,7 @@
     ],
     "status": "Terminé",
     "venue": "Bridgestone Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/dal-vs-nsh/2026/10/03/2026020030",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020030",
     "sides": [
       {
         "code": "DAL",
@@ -3082,7 +3198,7 @@
     ],
     "status": "Terminé",
     "venue": "Grand Casino Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/bos-vs-min/2026/10/03/2026020031",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020031",
     "sides": [
       {
         "code": "BOS",
@@ -3111,7 +3227,7 @@
     ],
     "status": "Terminé",
     "venue": "UBS Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/njd-vs-nyi/2026/10/03/2026020029",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020029",
     "sides": [
       {
         "code": "NJD",
@@ -3140,7 +3256,7 @@
     ],
     "status": "Terminé",
     "venue": "KeyBank Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/chi-vs-buf/2026/10/03/2026020022",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020022",
     "sides": [
       {
         "code": "CHI",
@@ -3169,7 +3285,7 @@
     ],
     "status": "Terminé",
     "venue": "Scotiabank Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/ott-vs-tor/2026/10/03/2026020023",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020023",
     "sides": [
       {
         "code": "OTT",
@@ -3198,7 +3314,7 @@
     ],
     "status": "Terminé",
     "venue": "Benchmark International Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/wsh-vs-tbl/2026/10/03/2026020024",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020024",
     "sides": [
       {
         "code": "WSH",
@@ -3227,7 +3343,7 @@
     ],
     "status": "Après prolongation",
     "venue": "Xfinity Mobile Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/car-vs-phi/2026/10/03/2026020025",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020025",
     "sides": [
       {
         "code": "CAR",
@@ -3256,12 +3372,12 @@
     ],
     "status": "Après prolongation",
     "venue": "PPG Paints Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/mtl-vs-pit/2026/10/03/2026020026",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020026",
     "sides": [
       {
         "code": "MTL",
         "slug": "montreal",
-        "name": "MontrÃ©al Canadiens",
+        "name": "Montréal Canadiens",
         "score": 5,
         "home": false,
         "winner": false
@@ -3285,7 +3401,7 @@
     ],
     "status": "Terminé",
     "venue": "Nationwide Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/uta-vs-cbj/2026/10/03/2026020027",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020027",
     "sides": [
       {
         "code": "UTA",
@@ -3314,7 +3430,7 @@
     ],
     "status": "Terminé",
     "venue": "Rogers Place",
-    "nhlUrl": "https://www.nhl.com/gamecenter/sea-vs-edm/2026/10/03/2026020028",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020028",
     "sides": [
       {
         "code": "SEA",
@@ -3343,7 +3459,7 @@
     ],
     "status": "Terminé",
     "venue": "T-Mobile Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/ana-vs-vgk/2026/10/02/2026020021",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020021",
     "sides": [
       {
         "code": "ANA",
@@ -3372,7 +3488,7 @@
     ],
     "status": "Terminé",
     "venue": "American Airlines Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/stl-vs-dal/2026/10/02/2026020020",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020020",
     "sides": [
       {
         "code": "STL",
@@ -3401,7 +3517,7 @@
     ],
     "status": "Après prolongation",
     "venue": "Canada Life Centre",
-    "nhlUrl": "https://www.nhl.com/gamecenter/bos-vs-wpg/2026/10/02/2026020019",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020019",
     "sides": [
       {
         "code": "BOS",
@@ -3430,7 +3546,7 @@
     ],
     "status": "Terminé",
     "venue": "Lenovo Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/wsh-vs-car/2026/10/02/2026020018",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020018",
     "sides": [
       {
         "code": "WSH",
@@ -3459,7 +3575,7 @@
     ],
     "status": "Terminé",
     "venue": "Little Caesars Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/nyr-vs-det/2026/10/02/2026020017",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020017",
     "sides": [
       {
         "code": "NYR",
@@ -3488,7 +3604,7 @@
     ],
     "status": "Terminé",
     "venue": "Rogers Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/edm-vs-van/2026/10/01/2026020015",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020015",
     "sides": [
       {
         "code": "EDM",
@@ -3517,7 +3633,7 @@
     ],
     "status": "Après prolongation",
     "venue": "SAP Center at San Jose",
-    "nhlUrl": "https://www.nhl.com/gamecenter/fla-vs-sjs/2026/10/01/2026020016",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020016",
     "sides": [
       {
         "code": "FLA",
@@ -3546,7 +3662,7 @@
     ],
     "status": "Terminé",
     "venue": "Delta Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/chi-vs-uta/2026/10/01/2026020013",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020013",
     "sides": [
       {
         "code": "CHI",
@@ -3575,7 +3691,7 @@
     ],
     "status": "Terminé",
     "venue": "Scotiabank Saddledome",
-    "nhlUrl": "https://www.nhl.com/gamecenter/sea-vs-cgy/2026/10/01/2026020014",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020014",
     "sides": [
       {
         "code": "SEA",
@@ -3604,7 +3720,7 @@
     ],
     "status": "Terminé",
     "venue": "Bridgestone Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/min-vs-nsh/2026/10/01/2026020012",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020012",
     "sides": [
       {
         "code": "MIN",
@@ -3633,7 +3749,7 @@
     ],
     "status": "Après prolongation",
     "venue": "Prudential Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/phi-vs-njd/2026/10/01/2026020009",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020009",
     "sides": [
       {
         "code": "PHI",
@@ -3662,7 +3778,7 @@
     ],
     "status": "Terminé",
     "venue": "Madison Square Garden",
-    "nhlUrl": "https://www.nhl.com/gamecenter/tbl-vs-nyr/2026/10/01/2026020010",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020010",
     "sides": [
       {
         "code": "TBL",
@@ -3691,7 +3807,7 @@
     ],
     "status": "Terminé",
     "venue": "Nationwide Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/buf-vs-cbj/2026/10/01/2026020011",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020011",
     "sides": [
       {
         "code": "BUF",
@@ -3720,7 +3836,7 @@
     ],
     "status": "Terminé",
     "venue": "Ball Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/lak-vs-col/2026/09/30/2026020007",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020007",
     "sides": [
       {
         "code": "LAK",
@@ -3749,7 +3865,7 @@
     ],
     "status": "Terminé",
     "venue": "Xfinity Mobile Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/pit-vs-phi/2026/09/30/2026020006",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020006",
     "sides": [
       {
         "code": "PIT",
@@ -3778,7 +3894,7 @@
     ],
     "status": "Terminé",
     "venue": "Scotiabank Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/nyi-vs-tor/2026/09/30/2026020008",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020008",
     "sides": [
       {
         "code": "NYI",
@@ -3807,7 +3923,7 @@
     ],
     "status": "Terminé",
     "venue": "T-Mobile Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/chi-vs-vgk/2026/09/29/2026020005",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020005",
     "sides": [
       {
         "code": "CHI",
@@ -3836,7 +3952,7 @@
     ],
     "status": "Après prolongation",
     "venue": "Rogers Place",
-    "nhlUrl": "https://www.nhl.com/gamecenter/van-vs-edm/2026/09/29/2026020004",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020004",
     "sides": [
       {
         "code": "VAN",
@@ -3865,7 +3981,7 @@
     ],
     "status": "Terminé",
     "venue": "TD Garden",
-    "nhlUrl": "https://www.nhl.com/gamecenter/nyr-vs-bos/2026/09/29/2026020003",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020003",
     "sides": [
       {
         "code": "NYR",
@@ -3894,12 +4010,12 @@
     ],
     "status": "Terminé",
     "venue": "Scotiabank Arena",
-    "nhlUrl": "https://www.nhl.com/gamecenter/mtl-vs-tor/2026/09/29/2026020002",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020002",
     "sides": [
       {
         "code": "MTL",
         "slug": "montreal",
-        "name": "MontrÃ©al Canadiens",
+        "name": "Montréal Canadiens",
         "score": 3,
         "home": false,
         "winner": true
@@ -3923,7 +4039,7 @@
     ],
     "status": "Après prolongation",
     "venue": "Lenovo Center",
-    "nhlUrl": "https://www.nhl.com/gamecenter/fla-vs-car/2026/09/29/2026020001",
+    "nhlUrl": "https://www.nhl.com/gamecenter/2026020001",
     "sides": [
       {
         "code": "FLA",
