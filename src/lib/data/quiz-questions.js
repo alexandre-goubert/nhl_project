@@ -311,7 +311,7 @@ export const quizDisponibles = {
 
         questions: [
             {
-                question: "Quelle franchise a remporté 24 Coupes Stanley jusqu'à la fin de 2025 ?",
+                question: "Quelle franchise a remporté 24 Coupes Stanley à ce jour ?",
 
                 reponses: [
                     "Toronto Maple Leafs",
@@ -419,10 +419,10 @@ export const quizDisponibles = {
                 question: "Quelle franchise porte le nom d'une créature marine légendaire ?",
 
                 reponses: [
-                    "Florida Panthers",
-                    "Nashville Predators",
-                    "Boston Bruins",
-                    "Seattle Kraken"
+                    "Florida",
+                    "Nashville",
+                    "Boston",
+                    "Seattle"
                 ],
 
                 bonneReponse: 3,
@@ -663,7 +663,7 @@ export const quizDisponibles = {
             },
 
             {
-                question: "Quel événement international entraîne une pause en février 2026 ?",
+                question: "Quel événement international a entraîné une pause en février 2026 ?",
 
                 reponses: [
                     "La Coupe du monde de football",

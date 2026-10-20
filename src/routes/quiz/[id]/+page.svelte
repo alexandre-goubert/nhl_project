@@ -56,7 +56,7 @@
     {#if !termine}
         <section id="quiz-content" aria-labelledby="question-title">
             <div class="quiz-progress">
-                <p>Question {indexQuestion + 1} sur {quiz.questions.length}</p>
+                <p id="question-counter">Question {indexQuestion + 1} sur {quiz.questions.length}</p>
                 <progress value={indexQuestion + (questionValidee ? 1 : 0)} max={quiz.questions.length} aria-label="Questions terminées"></progress>
             </div>
 
@@ -90,11 +90,11 @@
 
             <div class="quiz-actions">
                 {#if !questionValidee}
-                    <button type="button" disabled={reponseChoisie === null} onclick={validerReponse}>
+                    <button id="validate-answer" type="button" disabled={reponseChoisie === null} onclick={validerReponse}>
                         Valider ma réponse
                     </button>
                 {:else}
-                    <button type="button" onclick={questionSuivante}>
+                    <button id="next-question" type="button" onclick={questionSuivante}>
                         {indexQuestion === quiz.questions.length - 1 ? 'Voir mon résultat' : 'Question suivante'}
                     </button>
                 {/if}
@@ -102,9 +102,9 @@
         </section>
     {:else}
         <section id="quiz-result" aria-live="polite">
-            <h2>Quiz terminé !</h2>
-            <p>Tu as obtenu {score} sur {quiz.questions.length} !</p>
-            <button type="button" onclick={recommencer}>Rejouer</button>
+            <h2 id="result-title">Quiz terminé !</h2>
+            <p id="final-score">Tu as obtenu {score} sur {quiz.questions.length} !</p>
+            <button id="restart-quiz" type="button" onclick={recommencer}>Rejouer</button>
             <a href={resolve('/quiz')}>Choisir un autre quiz</a>
         </section>
     {/if}

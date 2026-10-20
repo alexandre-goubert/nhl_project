@@ -113,6 +113,9 @@
         border: 1px solid #39BDE0;
         border-radius: 8px;
         font-size: 14px;
+        font-weight: 600;
+        font-family: 'Barlow', sans-serif;
+        color:#087DA0
     }
     input:focus {
         outline: 3px solid #087DA0;

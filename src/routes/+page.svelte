@@ -315,7 +315,13 @@
         margin-bottom: 20px;
     }
 
+    .result-heading time{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
     .status {
+        font-weight: 600;
         padding: 4px 8px;
         border-radius: 5px;
         background: var(--table-row, #f8fafc);
@@ -367,6 +373,11 @@
         margin-top: 20px;
         padding-top: 14px;
         border-top: 1px solid var(--table-row, #f8fafc);
+    }
+
+    .result-footer span {
+        font-size: 16px;
+        font-weight: 600;
     }
 
     .discovery-grid {
