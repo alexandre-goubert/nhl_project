@@ -56,6 +56,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&amp;family=Graduate&amp;display=swap" rel="stylesheet" />
 	<script src="https://kit.fontawesome.com/f6a2136e94.js" crossorigin="anonymous"></script>
 	<link rel="icon" type="image/png" href={favicon} />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 </svelte:head>
 
 <Header />
