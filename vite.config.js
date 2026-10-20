@@ -15,7 +15,8 @@ export default defineConfig({
             adapter: adapter(),
 
             paths: {
-                base: '/nhl_project'
+                base: '',
+                relative: false
             }
         })
     ]
