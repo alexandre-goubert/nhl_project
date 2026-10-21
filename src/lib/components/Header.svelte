@@ -15,12 +15,13 @@ import { asset, resolve } from '$app/paths';
         <img class="header-logo" src={asset('images/brand/nhl-zone-logo.png')} alt="NHL Zone — Accueil" width="2078" height="757" />
     </a>
 
-    <div class="selectors-mode" aria-label="Choisir le thème">
-        <button class="dark-mode-button" type="button" aria-pressed={theme === 'dark'} onclick={() => setTheme('dark')}>
-            <i class="fas fa-moon" aria-hidden="true"></i>Dark Mode
-        </button>
-        <button class="light-mode-button" type="button" aria-pressed={theme === 'light'} onclick={() => setTheme('light')}>
-            <i class="fas fa-sun" aria-hidden="true"></i>Light Mode
+    <div class="selectors-mode">
+        <button class="theme-toggle-button" type="button" onclick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+            {#if theme === 'dark'}
+                <i class="fas fa-sun" aria-hidden="true"></i>Passer en mode clair
+            {:else}
+                <i class="fas fa-moon" aria-hidden="true"></i>Passer en mode sombre
+            {/if}
         </button>
     </div>
 
@@ -114,7 +115,7 @@ import { asset, resolve } from '$app/paths';
         margin-right: 10px;
     }
 
-    .selectors-mode button[aria-pressed='true'] {
+    .selectors-mode button:hover {
         color: #39BDE0;
     }
 
