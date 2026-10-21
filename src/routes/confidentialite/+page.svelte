@@ -14,7 +14,7 @@
 
     <section>
         <h2>Responsable et contact</h2>
-        <p>Alexandre Goubert est responsable des traitements de données mis en œuvre pour NHL Zone, site de fans indépendant et non affilié à la NHL.</p>
+        <p>NHL Zone via GitHub Pages est responsable des traitements de données mis en œuvre pour NHL Zone, site de fans indépendant et non affilié à la NHL.</p>
         <p>Pour toute question ou demande relative à vos données : <a href="mailto:infocontactnhlzone@gmail.com">infocontactnhlzone@gmail.com</a>.</p>
     </section>
 

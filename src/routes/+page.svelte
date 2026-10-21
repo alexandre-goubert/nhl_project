@@ -154,13 +154,14 @@
         max-width: none;
         margin: 0;
         padding: 0;
+        overflow-x: clip;
         color: var(--text-color, #101c30);
         background: var(--bg-body, #f1f5f9);
     }
 
     .hero {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         background: #101c30;
         color: white;
     }
@@ -498,7 +499,7 @@
 
     @media (max-width: 700px) {
         .hero {
-            grid-template-columns: 1fr;
+            grid-template-columns: minmax(0, 1fr);
         }
 
         .hero-image {
