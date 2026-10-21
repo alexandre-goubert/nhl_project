@@ -1945,6 +1945,19 @@ a:hover {
     font-weight: 700;
 }
 
+.player-container .player-nationality {
+    margin-top: 8px;
+    color: inherit;
+}
+
+.player-container .player-flag {
+    display: block;
+    width: 32px;
+    height: 22px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
 .player-container p {
     margin: 0;
     font-size: 14px;
