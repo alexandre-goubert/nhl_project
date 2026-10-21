@@ -14,6 +14,7 @@
         { id: 'western', label: 'Conférence Ouest', rows: rankings.western.rows.slice(0, 8) }
     ];
     const teamImageBase = asset('images/logos/TOR.png').replace(/TOR\.png$/, '');
+    const codes = Object.fromEntries(teams.map((team) => [team.slug, team.abreviation]));
 
     /** @type {typeof teams} */
     let featuredTeams = $state([]);
@@ -34,7 +35,7 @@
 
 <svelte:head>
     <title>NHL Zone — Toute la passion de la NHL</title>
-    <meta name="description" content="Explorez les franchises NHL, consultez les derniers résultats et classements disponibles, et testez vos connaissances avec nos quiz." />
+    <meta name="description" content="Explorez les franchises NHL, consultez les résultats et classements de la saison 2025-2026, et testez vos connaissances avec nos quiz." />
 </svelte:head>
 
 <main class="home-page">
@@ -116,7 +117,7 @@
                                 {#each conference.rows as team (team.slug)}
                                     <tr>
                                         <td>{team.rank}</td>
-                                        <th scope="row"><a href={resolve('/[slug]', { slug: team.slug })}>{team.name}</a></th>
+                                        <th scope="row"><div class="team-entry"><span class="team-abbreviation" style:background-image={`url("${teamImageBase}${codes[team.slug]}.png")`}>{codes[team.slug]}</span><a href={resolve('/[slug]', { slug: team.slug })}>{team.name}</a></div></th>
                                         <td class="points">{team.points}</td>
                                     </tr>
                                 {/each}
@@ -353,6 +354,19 @@
     .result-team a, tbody a {
         color: var(--text-color, #101c30);
         font-weight: 600;
+    }
+
+    .team-entry {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .team-entry .team-abbreviation {
+        flex: none;
+        width: 52px;
+        height: 36px;
+        font-size: 12px;
     }
 
     .result-team small {

@@ -15,7 +15,7 @@
 
 <svelte:head>
     <title>Les équipes — NHL Zone</title>
-    <meta name="description" content="Découvre les 32 franchises NHL, regroupées par division et conférence." />
+    <meta name="description" content="Découvre les 32 franchises NHL de la saison 2025-2026, regroupées par division et conférence." />
 </svelte:head>
 
 <main class="teams-page">

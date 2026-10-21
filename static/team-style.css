@@ -1610,117 +1610,106 @@ a:hover {
     margin-right: auto;
 }
 
-.team-matches-grid {
+.team-recent-matches .results-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
+    gap: 24px;
 }
 
-.team-match-card {
+.team-recent-matches .result-card {
     min-width: 0;
     padding: 20px;
-    background: var(--card-color);
-    border: 1px solid #E2E8F0;
-    border-radius: 14px;
-    box-shadow: 0 6px 22px rgb(16 28 48 / 6%);
+    overflow: hidden;
+    border: 1px solid color-mix(in srgb, var(--muted-text, #52647c) 18%, transparent);
+    border-radius: 12px;
+    background: var(--card-color, white);
+    box-shadow: 0 4px 16px rgb(16 28 48 / 4%);
 }
 
-.team-match-top,
-.team-match-bottom {
+.team-recent-matches .result-heading,
+.team-recent-matches .result-footer {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 8px;
-    color: #52647C;
+    color: var(--muted-text, #52647c);
     font-size: 13px;
 }
 
-.team-match-top {
-    margin-bottom: 16px;
+.team-recent-matches .result-heading {
+    margin-bottom: 20px;
+}
+
+.team-recent-matches .result-heading time {
+    font-size: 16px;
     font-weight: 600;
 }
 
-.team-match-side {
+.team-recent-matches .status {
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background: var(--table-row, #f8fafc);
+}
+
+.team-recent-matches .result-team {
     display: grid;
-    grid-template-columns: 48px minmax(0, 1fr) 32px;
+    grid-template-columns: 40px minmax(0, 1fr) auto;
     align-items: center;
     gap: 10px;
     margin: 16px 0;
 }
 
-.team-match-code {
+.team-recent-matches .team-abbreviation {
     display: grid;
     place-items: center;
-    height: 48px;
+    height: 40px;
+    border-radius: 6px;
+    background: #101c30;
     color: white;
-    font-weight: 800;
-    background-color: #101C30;
+    font-size: 13px;
+    font-weight: 700;
     background-size: cover;
-    border-radius: 8px;
-    text-shadow: 0 1px 3px #000;
+    background-position: center;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 70%);
 }
 
-.team-match-identity {
-    min-width: 0;
-}
-
-.team-match-identity a {
-    color: #101C30;
-    font-size: 15px;
+.team-recent-matches .result-team a {
+    color: var(--text-color, #101c30);
     font-weight: 600;
 }
 
-.team-match-identity a:hover,
-.team-match-bottom a:hover {
-    color: #087DA0;
-}
-
-.team-match-identity small {
+.team-recent-matches .result-team small {
     display: block;
     margin-top: 4px;
-    color: #52647C;
-}
-
-.team-match-score {
-    color: #101C30;
-    font-size: 28px;
-    text-align: right;
-    font-variant-numeric: tabular-nums;
-}
-
-.team-match-winner .team-match-score {
-    color: #087DA0;
-}
-
-.team-match-winner-badge {
-    display: inline-block;
-    margin-left: 6px;
-    padding: 3px 8px;
-    color: #07516A;
+    color: var(--muted-text, #52647c);
     font-size: 12px;
-    font-weight: 700;
-    background: #E7F6FB;
-    border-radius: 6px;
 }
 
-.team-match-bottom {
-    margin-top: 16px;
+.team-recent-matches .result-team strong {
+    font-size: 28px;
+}
+
+.team-recent-matches .winner strong {
+    color: var(--link-color, #087b9b);
+}
+
+.team-recent-matches .result-footer {
+    margin-top: 20px;
     padding-top: 14px;
-    border-top: 1px solid #E2E8F0;
+    border-top: 1px solid var(--table-row, #f8fafc);
 }
 
-.team-match-bottom span {
-    color: #52647C;
-    font-weight: 600;
-    font-style: italic;
-}
-
-.team-match-bottom a {
-    color: #087DA0;
+.team-recent-matches .result-footer span {
+    font-size: 16px;
     font-weight: 600;
 }
 
+.team-recent-matches .result-footer a {
+    color: var(--link-color, #087b9b);
+    font-weight: 600;
+}
 .team-matches-empty {
     padding: 24px;
     text-align: center;
@@ -2010,8 +1999,8 @@ img {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-    .team-matches-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .team-recent-matches .results-grid {
+        grid-template-columns: minmax(0, 1fr);
     }
 
 }
@@ -2074,7 +2063,7 @@ img {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .team-matches-grid {
+    .team-recent-matches .results-grid {
         grid-template-columns: minmax(0, 1fr);
     }
 

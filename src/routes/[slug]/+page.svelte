@@ -16,14 +16,43 @@
         const splitAt = statsNote.index + statsNote[0].length;
         return [contenu.slice(0, splitAt), contenu.slice(splitAt)];
     });
+
+    const site = 'https://nhlzone.com';
+    let url = $derived(`${site}/${encodeURIComponent(data.equipe.slug)}/`);
+    let logo = $derived(`${site}/images/logos/${data.equipe.abreviation}.png`);
+    let title = $derived(`${data.equipe.nom} | NHL Zone`);
+    let description = $derived(
+        `Découvrez les ${data.equipe.nom} (${data.equipe.ville}), équipe de la division ${data.equipe.division} en conférence ${data.equipe.conference} : palmarès, effectif, classement et derniers matchs.`
+    );
+    let jsonLd = $derived(
+        JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SportsTeam',
+            name: data.equipe.nom,
+            sport: 'Ice hockey',
+            url,
+            logo,
+            location: data.equipe.ville,
+            memberOf: { '@type': 'SportsOrganization', name: 'National Hockey League' }
+        }).replace(/</g, '\\u003c')
+    );
 </script>
 
 <svelte:head>
-    <title>{data.equipe.nom} | NHL Zone</title>
-    <meta
-        name="description"
-        content={`Découvrez les ${data.equipe.nom} : palmarès, effectif, localisation et historique des saisons.`}
-    />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={url} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NHL Zone" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={logo} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={logo} />
+    {@html `<script type="application/ld+json">${jsonLd}</script>`}
     <link rel="stylesheet" href={asset('team-style.css')} />
 </svelte:head>
 
@@ -32,30 +61,24 @@
 <section class="team-recent-matches" aria-labelledby="recent-matches-title">
     <h2 class="section-title" id="recent-matches-title">Les 3 derniers matchs</h2>
     {#if data.derniersMatchs.length}
-        <div class="team-matches-grid">
-            {#each data.derniersMatchs as match (`${match.date}-${match.teams.join('-')}`)}
-                <article class="team-match-card">
-                    <div class="team-match-top">
+        <div class="results-grid">
+            {#each data.derniersMatchs as match (match.nhlUrl)}
+                <article class="result-card">
+                    <div class="result-heading">
                         <time datetime={match.date}>{match.dateLabel}</time>
-                        <span>{match.status}</span>
+                        <span class="status">{match.status}</span>
                     </div>
                     {#each match.sides as side (side.code)}
-                        <div class:team-match-winner={side.winner} class="team-match-side">
-                            <span
-                                class="team-match-code"
-                                style:background-image={`url("${teamImageBase}${side.code}.png")`}
-                            >{side.code}</span>
-                            <div class="team-match-identity">
+                        <div class="result-team" class:winner={side.winner}>
+                            <span class="team-abbreviation" style:background-image={`url("${teamImageBase}${side.code}.png")`}>{side.code}</span>
+                            <div>
                                 <a href={resolve('/[slug]', { slug: side.slug })}>{side.name}</a>
-                                <small>
-                                    {side.home ? 'Domicile' : 'Extérieur'}
-                                    {#if side.winner}<span class="team-match-winner-badge">Victoire</span>{/if}
-                                </small>
+                                <small>{side.home ? 'Domicile' : 'Extérieur'}{side.winner ? ' · Victoire' : ''}</small>
                             </div>
-                            <strong class="team-match-score">{side.score}</strong>
+                            <strong>{side.score}</strong>
                         </div>
                     {/each}
-                    <div class="team-match-bottom">
+                    <div class="result-footer">
                         <span>{match.venue}</span>
                         <a href={match.nhlUrl} target="_blank" rel="noreferrer">Fiche NHL ↗</a>
                     </div>

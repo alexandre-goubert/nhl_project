@@ -23,7 +23,7 @@
 
 <svelte:head>
     <title>Matchs — NHL Zone</title>
-    <meta name="description" content="Consultez les résultats des matchs NHL et filtrez par date ou équipe." />
+    <meta name="description" content="Consultez les résultats des matchs NHL de la saison 2025-2026 et filtrez par date ou équipe." />
     <link rel="stylesheet" href={asset('legacy-style-matches.css')} />
 </svelte:head>
 

@@ -3,6 +3,7 @@
     import { asset, resolve } from '$app/paths';
     import Footer from '#lib/components/Footer.svelte';
     import standings from '#lib/data/rankings.json';
+    import { teams } from '#lib/data/teams.js';
 
     /** @type {{ id: 'nhl' | 'eastern' | 'western' | 'atlantic' | 'metropolitan' | 'central' | 'pacific', label: string }[]} */
     const categories = [
@@ -18,11 +19,14 @@
     /** @type {'nhl' | 'eastern' | 'western' | 'atlantic' | 'metropolitan' | 'central' | 'pacific'} */
     let selected = $state('nhl');
     let ranking = $derived(standings[selected]);
+
+    const logoBase = asset('images/logos/TOR.png').replace(/TOR\.png$/, '');
+    const codes = Object.fromEntries(teams.map((team) => [team.slug, team.abreviation]));
 </script>
 
 <svelte:head>
     <title>Classements — NHL Zone</title>
-    <meta name="description" content="Consultez les classements NHL par ligue, conférence et division." />
+    <meta name="description" content="Consultez les classements NHL de la saison 2025-2026 par ligue, conférence et division." />
     <link rel="stylesheet" href={asset('legacy-style-rankings.css')} />
 </svelte:head>
 
@@ -77,7 +81,12 @@
                 {#each ranking.rows as row (row.slug)}
                     <tr>
                         <td>{row.rank}</td>
-                        <td><a href={resolve('/[slug]', { slug: row.slug })}>{row.name}</a></td>
+                        <td>
+                                                    <div class="team-entry">
+                                                        <span class="team-abbreviation" style:background-image={`url("${logoBase}${codes[row.slug]}.png")`}>{codes[row.slug]}</span>
+                                                        <a href={resolve('/[slug]', { slug: row.slug })}>{row.name}</a>
+                                                    </div>
+                                                </td>
                         <td>{row.gp}</td>
                         <td>{row.wins}</td>
                         <td>{row.losses}</td>
@@ -116,6 +125,40 @@
 <Footer />
 
 <style>
+    .team-entry {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .team-abbreviation {
+        display: grid;
+        flex: none;
+        place-items: center;
+        width: 52px;
+        height: 36px;
+        border-radius: 6px;
+        background-color: #101c30;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+        text-shadow: 0 1px 3px rgb(0 0 0 / 70%);
+    }
+
+    @media (max-width: 600px) {
+        .team-entry {
+            gap: 6px;
+        }
+
+        .team-abbreviation {
+            width: 34px;
+            height: 24px;
+            font-size: 9px;
+        }
+    }
+
     :global(body.dark-mode) .ranking {
         background: #1c3052;
         border-color: #2f4a75;
