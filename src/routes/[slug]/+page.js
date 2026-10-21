@@ -1,5 +1,6 @@
 import rankings from '#lib/data/rankings.json';
 import nhlMeta from '#lib/data/nhl-meta.json';
+import matches from '#lib/data/matches.json';
 import { error } from '@sveltejs/kit';
 import { teams } from '#lib/data/teams.js';
 import { teamPageLoaders } from '#lib/data/teamPages.js';
@@ -41,5 +42,6 @@ export async function load({ params }) {
             Défaites : ${stats.losses} dans le temps réglementaire et ${stats.ot} en prolongation ou aux tirs au but.
             <a href="${nhlMeta.standingsSource}">Source NHL</a>.</p>`);
     }
-    return { equipe, contenu };
+    const derniersMatchs = matches.filter(match => match.teams.includes(equipe.abreviation)).slice(0, 3);
+    return { equipe, contenu, derniersMatchs };
 }
