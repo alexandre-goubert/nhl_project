@@ -1941,8 +1941,12 @@ a:hover {
 
 .player-container h4 {
     margin: 0 0 8px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
+}
+
+.player-container h4 span {
+    font-size: 18px;
 }
 
 .player-container .player-nationality {
@@ -1962,6 +1966,22 @@ a:hover {
     margin: 0;
     font-size: 14px;
     color: #52647C;
+}
+
+.position-legend {
+    margin: 0 0 16px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.player-container .player-bio {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.player-container .player-position {
+    color: #00B8D9;
+    font-weight: 700;
 }
 
 .player {
@@ -2186,8 +2206,12 @@ img {
 
     .player-container h4 {
         margin-bottom: 4px;
-        font-size: 15px;
+        font-size: 13px;
         overflow-wrap: anywhere;
+    }
+
+    .player-container h4 span {
+        font-size: 15px;
     }
 
     .player-container p {
