@@ -1,8 +1,13 @@
+<script>
+    import { resolve } from '$app/paths';
+</script>
+
 <footer>
     <div class="footer-title">NHL <span>Zone</span></div>
     <div class="footer-menu">
         <p>Site de fans indépendant</p>
         <p>Non affilié à la NHL</p>
+        <p><a href={resolve('/confidentialite')}>Politique de confidentialité</a></p>
     </div>
 </footer>
 
@@ -33,6 +38,17 @@
         gap: 30px;
         color: white;
         font-weight: 700;
+    }
+
+    .footer-menu a {
+        color: inherit;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    .footer-menu a:focus-visible {
+        outline: 3px solid #fff;
+        outline-offset: 3px;
     }
 
     .footer-menu p {

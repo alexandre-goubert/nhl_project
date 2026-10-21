@@ -1,6 +1,7 @@
 <script>
     import { onNavigate } from '$app/navigation';
     import { asset } from '$app/paths';
+    import AnalyticsConsent from '#lib/components/AnalyticsConsent.svelte';
 
     // Attend le CSS des pages héritées avant d'afficher leur contenu.
     const pageStyles = new Map([
@@ -61,6 +62,7 @@
 
 <Header />
 {@render children()}
+<AnalyticsConsent />
 
 <style>
 	:global(html) {

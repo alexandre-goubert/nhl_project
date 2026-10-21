@@ -87,3 +87,13 @@ GitHub Actions lance cette commande avant chaque publication (push sur main ou
 lancement manuel du workflow). Ce n’est pas une actualisation en direct ni quotidienne.
 Les données générées dans Actions ne sont pas réécrites dans le dépôt Git.
 Pour actualiser également la copie locale, exécuter la commande ci-dessus.
+
+## Mesure d'audience (Google Analytics 4)
+
+Identifiant du flux : `G-KJ75X36E90`. La balise est chargée uniquement sur `nhlzone.com`, après acceptation dans le panneau de consentement. Le choix est conservé 180 jours. Le bouton « Confidentialité et cookies » en bas de page permet de retirer le consentement ; cela supprime les cookies GA du site et recharge la page sans Analytics.
+
+Dans Administration → Flux de données → Web → Mesures améliorées → Pages vues → Paramètres avancés, activer les chargements de page et les changements de page basés sur les événements de l'historique. Le code n'envoie pas de `page_view` manuel : ne pas ajouter une seconde balise ou un suivi manuel en parallèle. Désactiver les mesures supplémentaires inutiles et conserver Google Signals / personnalisation publicitaire désactivés. Vérifier la durée de conservation des données dans l'administration (2 mois si cela suffit au projet).
+
+Après déploiement, vérifier dans Temps réel / DebugView : aucune collecte avant accord ou après refus ; une page vue après accord puis une par navigation entre deux pages. Les visites locales sont exclues et les bloqueurs peuvent empêcher la collecte. La réception effective des événements doit être vérifiée dans le compte Analytics.
+
+Le panneau décrit le fonctionnement technique. Compléter la politique de confidentialité avec l'identité et le contact du responsable, les durées effectivement configurées et les modalités d'exercice des droits avant mise en production ; ce panneau ne remplace pas cette information complète.

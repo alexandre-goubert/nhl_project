@@ -12,6 +12,7 @@ export function GET() {
         '/matchs/',
         '/classements/',
         '/quiz/',
+        '/confidentialite/',
         ...teams.map((team) => `/${encodeURIComponent(team.slug)}/`),
         ...Object.keys(quizDisponibles).map((id) => `/quiz/${encodeURIComponent(id)}/`)
     ];
