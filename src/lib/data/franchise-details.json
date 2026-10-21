@@ -1,0 +1,515 @@
+{
+    "season": "2026–2027",
+    "verifiedAt": "2026-10-21",
+    "ahlSource": "https://theahl.com/nhl-affiliations",
+    "echlSource": "https://echl.com/teams/nhl-ahl-affiliations",
+    "teams": {
+        "toronto": {
+            "history": [
+                {
+                    "name": "Toronto Hockey Club",
+                    "start": 1917,
+                    "end": 1918
+                },
+                {
+                    "name": "Toronto Arenas",
+                    "start": 1918,
+                    "end": 1919
+                },
+                {
+                    "name": "Toronto St. Patricks",
+                    "start": 1919,
+                    "end": 1927
+                },
+                {
+                    "name": "Toronto Maple Leafs",
+                    "start": 1927,
+                    "end": null
+                }
+            ],
+            "ahl": "Toronto Marlies",
+            "echl": "Cincinnati Cyclones",
+            "historySource": "https://en.wikipedia.org/wiki/Toronto_Maple_Leafs",
+            "note": ""
+        },
+        "boston": {
+            "history": [
+                {
+                    "name": "Boston Bruins",
+                    "start": 1924,
+                    "end": null
+                }
+            ],
+            "ahl": "Providence Bruins",
+            "echl": "Maine Mariners",
+            "historySource": "https://en.wikipedia.org/wiki/Boston_Bruins",
+            "note": ""
+        },
+        "buffalo": {
+            "history": [
+                {
+                    "name": "Buffalo Sabres",
+                    "start": 1970,
+                    "end": null
+                }
+            ],
+            "ahl": "Rochester Americans",
+            "echl": null,
+            "historySource": "https://en.wikipedia.org/wiki/Buffalo_Sabres",
+            "note": ""
+        },
+        "detroit": {
+            "history": [
+                {
+                    "name": "Detroit Cougars",
+                    "start": 1926,
+                    "end": 1930
+                },
+                {
+                    "name": "Detroit Falcons",
+                    "start": 1930,
+                    "end": 1932
+                },
+                {
+                    "name": "Detroit Red Wings",
+                    "start": 1932,
+                    "end": null
+                }
+            ],
+            "ahl": "Grand Rapids Griffins",
+            "echl": "Toledo Walleye",
+            "historySource": "https://en.wikipedia.org/wiki/Detroit_Red_Wings",
+            "note": ""
+        },
+        "florida": {
+            "history": [
+                {
+                    "name": "Florida Panthers",
+                    "start": 1993,
+                    "end": null
+                }
+            ],
+            "ahl": "Charlotte Checkers",
+            "echl": "Savannah Ghost Pirates",
+            "historySource": "https://en.wikipedia.org/wiki/Florida_Panthers",
+            "note": ""
+        },
+        "montreal": {
+            "history": [
+                {
+                    "name": "Canadiens de Montréal",
+                    "start": 1909,
+                    "end": null
+                }
+            ],
+            "ahl": "Rocket de Laval",
+            "echl": "Lions de Trois-Rivières",
+            "historySource": "https://en.wikipedia.org/wiki/Montreal_Canadiens",
+            "note": "Le club est fondé en 1909 dans la NHA et rejoint la NHL à sa création, en 1917."
+        },
+        "ottawa": {
+            "history": [
+                {
+                    "name": "Ottawa Senators",
+                    "start": 1992,
+                    "end": null
+                }
+            ],
+            "ahl": "Belleville Senators",
+            "echl": "Allen Americans",
+            "historySource": "https://en.wikipedia.org/wiki/Ottawa_Senators",
+            "note": "La franchise actuelle débute en 1992. Elle est distincte des anciens Senators d’Ottawa (1883–1934)."
+        },
+        "tampabay": {
+            "history": [
+                {
+                    "name": "Tampa Bay Lightning",
+                    "start": 1992,
+                    "end": null
+                }
+            ],
+            "ahl": "Syracuse Crunch",
+            "echl": "Orlando Solar Bears",
+            "historySource": "https://en.wikipedia.org/wiki/Tampa_Bay_Lightning",
+            "note": ""
+        },
+        "carolina": {
+            "history": [
+                {
+                    "name": "New England Whalers",
+                    "start": 1972,
+                    "end": 1979
+                },
+                {
+                    "name": "Hartford Whalers",
+                    "start": 1979,
+                    "end": 1997
+                },
+                {
+                    "name": "Carolina Hurricanes",
+                    "start": 1997,
+                    "end": null
+                }
+            ],
+            "ahl": "Chicago Wolves",
+            "echl": "Greensboro Gargoyles",
+            "historySource": "https://en.wikipedia.org/wiki/Carolina_Hurricanes",
+            "note": "Les New England Whalers évoluent dans la WHA jusqu’en 1979. Le club rejoint ensuite la NHL à Hartford, avant de déménager en Caroline du Nord en 1997."
+        },
+        "columbus": {
+            "history": [
+                {
+                    "name": "Columbus Blue Jackets",
+                    "start": 2000,
+                    "end": null
+                }
+            ],
+            "ahl": "Cleveland Monsters",
+            "echl": "Wheeling Nailers",
+            "historySource": "https://en.wikipedia.org/wiki/Columbus_Blue_Jackets",
+            "note": ""
+        },
+        "pittsburgh": {
+            "history": [
+                {
+                    "name": "Pittsburgh Penguins",
+                    "start": 1967,
+                    "end": null
+                }
+            ],
+            "ahl": "Wilkes-Barre/Scranton Penguins",
+            "echl": "Florida Everblades",
+            "historySource": "https://en.wikipedia.org/wiki/Pittsburgh_Penguins",
+            "note": ""
+        },
+        "islanders": {
+            "history": [
+                {
+                    "name": "New York Islanders",
+                    "start": 1972,
+                    "end": null
+                }
+            ],
+            "ahl": "Hamilton Hammers",
+            "echl": "Trenton Ironhawks",
+            "historySource": "https://en.wikipedia.org/wiki/New_York_Islanders",
+            "note": ""
+        },
+        "newjersey": {
+            "history": [
+                {
+                    "name": "Kansas City Scouts",
+                    "start": 1974,
+                    "end": 1976
+                },
+                {
+                    "name": "Colorado Rockies",
+                    "start": 1976,
+                    "end": 1982
+                },
+                {
+                    "name": "New Jersey Devils",
+                    "start": 1982,
+                    "end": null
+                }
+            ],
+            "ahl": "Utica Comets",
+            "echl": "Adirondack Thunder",
+            "historySource": "https://en.wikipedia.org/wiki/New_Jersey_Devils",
+            "note": ""
+        },
+        "philadelphia": {
+            "history": [
+                {
+                    "name": "Philadelphia Flyers",
+                    "start": 1967,
+                    "end": null
+                }
+            ],
+            "ahl": "Lehigh Valley Phantoms",
+            "echl": "Reading Royals",
+            "historySource": "https://en.wikipedia.org/wiki/Philadelphia_Flyers",
+            "note": ""
+        },
+        "washington": {
+            "history": [
+                {
+                    "name": "Washington Capitals",
+                    "start": 1974,
+                    "end": null
+                }
+            ],
+            "ahl": "Hershey Bears",
+            "echl": "South Carolina Stingrays",
+            "historySource": "https://en.wikipedia.org/wiki/Washington_Capitals",
+            "note": ""
+        },
+        "rangers": {
+            "history": [
+                {
+                    "name": "New York Rangers",
+                    "start": 1926,
+                    "end": null
+                }
+            ],
+            "ahl": "Hartford Wolf Pack",
+            "echl": null,
+            "historySource": "https://en.wikipedia.org/wiki/New_York_Rangers",
+            "note": ""
+        },
+        "chicago": {
+            "history": [
+                {
+                    "name": "Chicago Black Hawks",
+                    "start": 1926,
+                    "end": 1986
+                },
+                {
+                    "name": "Chicago Blackhawks",
+                    "start": 1986,
+                    "end": null
+                }
+            ],
+            "ahl": "Rockford IceHogs",
+            "echl": "Indy Fuel",
+            "historySource": "https://en.wikipedia.org/wiki/Chicago_Blackhawks",
+            "note": ""
+        },
+        "stlouis": {
+            "history": [
+                {
+                    "name": "St. Louis Blues",
+                    "start": 1967,
+                    "end": null
+                }
+            ],
+            "ahl": "Springfield Thunderbirds",
+            "echl": "Worcester Railers",
+            "historySource": "https://en.wikipedia.org/wiki/St._Louis_Blues",
+            "note": ""
+        },
+        "nashville": {
+            "history": [
+                {
+                    "name": "Nashville Predators",
+                    "start": 1998,
+                    "end": null
+                }
+            ],
+            "ahl": "Milwaukee Admirals",
+            "echl": "Atlanta Gladiators",
+            "historySource": "https://en.wikipedia.org/wiki/Nashville_Predators",
+            "note": ""
+        },
+        "dallas": {
+            "history": [
+                {
+                    "name": "Minnesota North Stars",
+                    "start": 1967,
+                    "end": 1993
+                },
+                {
+                    "name": "Dallas Stars",
+                    "start": 1993,
+                    "end": null
+                }
+            ],
+            "ahl": "Texas Stars",
+            "echl": "Idaho Steelheads",
+            "historySource": "https://en.wikipedia.org/wiki/Dallas_Stars",
+            "note": ""
+        },
+        "colorado": {
+            "history": [
+                {
+                    "name": "Nordiques de Québec",
+                    "start": 1972,
+                    "end": 1995
+                },
+                {
+                    "name": "Colorado Avalanche",
+                    "start": 1995,
+                    "end": null
+                }
+            ],
+            "ahl": "Colorado Eagles",
+            "echl": "New Mexico Goatheads",
+            "historySource": "https://en.wikipedia.org/wiki/Colorado_Avalanche",
+            "note": "Les Nordiques évoluent dans la WHA de 1972 à 1979, puis dans la NHL jusqu’à leur départ pour Denver en 1995."
+        },
+        "minnesota": {
+            "history": [
+                {
+                    "name": "Minnesota Wild",
+                    "start": 2000,
+                    "end": null
+                }
+            ],
+            "ahl": "Iowa Wild",
+            "echl": "Jacksonville Icemen",
+            "historySource": "https://en.wikipedia.org/wiki/Minnesota_Wild",
+            "note": ""
+        },
+        "utah": {
+            "history": [
+                {
+                    "name": "Utah Hockey Club",
+                    "start": 2024,
+                    "end": 2025
+                },
+                {
+                    "name": "Utah Mammoth",
+                    "start": 2025,
+                    "end": null
+                }
+            ],
+            "ahl": "Tucson Roadrunners",
+            "echl": null,
+            "historySource": "https://en.wikipedia.org/wiki/Utah_Mammoth",
+            "note": "Créée en 2024, la franchise de l’Utah reprend les activités hockey des Coyotes. L’historique des noms des Coyotes reste distinct de celui de l’Utah."
+        },
+        "winnipeg": {
+            "history": [
+                {
+                    "name": "Winnipeg Jets",
+                    "start": 1972,
+                    "end": 1996
+                },
+                {
+                    "name": "Atlanta Thrashers",
+                    "start": 1999,
+                    "end": 2011
+                },
+                {
+                    "name": "Winnipeg Jets",
+                    "start": 2011,
+                    "end": null
+                }
+            ],
+            "ahl": "Manitoba Moose",
+            "echl": "Bloomington Bison",
+            "historySource": "https://en.wikipedia.org/wiki/Winnipeg_Jets",
+            "note": "Les premiers Jets jouent en WHA de 1972 à 1979, puis en NHL jusqu’en 1996. L’équipe actuelle provient du déménagement des Thrashers en 2011. Depuis septembre 2026, la NHL réunit les historiques des deux versions des Jets et des Thrashers.",
+            "additionalSource": "https://www.nhl.com/jets/news/topic/media/jets-and-nhl-announce-consolidation-of-winnipeg-jets-history"
+        },
+        "calgary": {
+            "history": [
+                {
+                    "name": "Atlanta Flames",
+                    "start": 1972,
+                    "end": 1980
+                },
+                {
+                    "name": "Calgary Flames",
+                    "start": 1980,
+                    "end": null
+                }
+            ],
+            "ahl": "Calgary Wranglers",
+            "echl": "Rapid City Rush",
+            "historySource": "https://en.wikipedia.org/wiki/Calgary_Flames",
+            "note": ""
+        },
+        "sanjose": {
+            "history": [
+                {
+                    "name": "San Jose Sharks",
+                    "start": 1991,
+                    "end": null
+                }
+            ],
+            "ahl": "San Jose Barracuda",
+            "echl": "Wichita Thunder",
+            "historySource": "https://en.wikipedia.org/wiki/San_Jose_Sharks",
+            "note": ""
+        },
+        "anaheim": {
+            "history": [
+                {
+                    "name": "Mighty Ducks of Anaheim",
+                    "start": 1993,
+                    "end": 2006
+                },
+                {
+                    "name": "Anaheim Ducks",
+                    "start": 2006,
+                    "end": null
+                }
+            ],
+            "ahl": "San Diego Gulls",
+            "echl": "Tulsa Oilers",
+            "historySource": "https://en.wikipedia.org/wiki/Anaheim_Ducks",
+            "note": ""
+        },
+        "losangeles": {
+            "history": [
+                {
+                    "name": "Los Angeles Kings",
+                    "start": 1967,
+                    "end": null
+                }
+            ],
+            "ahl": "Ontario Reign",
+            "echl": "Greenville Swamp Rabbits",
+            "historySource": "https://en.wikipedia.org/wiki/Los_Angeles_Kings",
+            "note": ""
+        },
+        "vegas": {
+            "history": [
+                {
+                    "name": "Vegas Golden Knights",
+                    "start": 2017,
+                    "end": null
+                }
+            ],
+            "ahl": "Henderson Silver Knights",
+            "echl": "Tahoe Knight Monsters",
+            "historySource": "https://en.wikipedia.org/wiki/Vegas_Golden_Knights",
+            "note": ""
+        },
+        "vancouver": {
+            "history": [
+                {
+                    "name": "Vancouver Canucks",
+                    "start": 1970,
+                    "end": null
+                }
+            ],
+            "ahl": "Abbotsford Canucks",
+            "echl": "Kalamazoo Wings",
+            "historySource": "https://en.wikipedia.org/wiki/Vancouver_Canucks",
+            "note": "Cette chronologie concerne la franchise NHL créée en 1970, distincte de l’ancien club de ligue mineure du même nom."
+        },
+        "edmonton": {
+            "history": [
+                {
+                    "name": "Alberta Oilers",
+                    "start": 1972,
+                    "end": 1973
+                },
+                {
+                    "name": "Edmonton Oilers",
+                    "start": 1973,
+                    "end": null
+                }
+            ],
+            "ahl": "Bakersfield Condors",
+            "echl": "Fort Wayne Komets",
+            "historySource": "https://en.wikipedia.org/wiki/Edmonton_Oilers",
+            "note": "Les Oilers jouent dans la WHA jusqu’en 1979, avant de rejoindre la NHL."
+        },
+        "seattle": {
+            "history": [
+                {
+                    "name": "Seattle Kraken",
+                    "start": 2021,
+                    "end": null
+                }
+            ],
+            "ahl": "Coachella Valley Firebirds",
+            "echl": "Kansas City Mavericks",
+            "historySource": "https://en.wikipedia.org/wiki/Seattle_Kraken",
+            "note": ""
+        }
+    }
+}

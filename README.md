@@ -88,6 +88,12 @@ lancement manuel du workflow). Ce n’est pas une actualisation en direct ni quo
 Les données générées dans Actions ne sont pas réécrites dans le dépôt Git.
 Pour actualiser également la copie locale, exécuter la commande ci-dessus.
 
+## Historique des franchises et clubs affiliés
+
+Les 32 fiches utilisent le composant `src/lib/components/FranchiseDetails.svelte` et les données de `src/lib/data/franchise-details.json`, entre le palmarès et l’effectif. Les affiliations correspondent à la saison 2026–2027, vérifiées le 21 octobre 2026 dans les annuaires officiels AHL et ECHL. Chaque historique comporte un lien vers sa source Wikipédia ; le cas des Jets comporte également une précision officielle de la NHL.
+
+Ces données sont éditoriales et ne sont pas modifiées par `update:nhl`. Pour les actualiser, modifier les noms, périodes ou affiliations dans le fichier JSON, puis mettre à jour la saison et la date de vérification. Une valeur `null` pour ECHL affiche « Aucun affilié répertorié ». Les dates de début indiquent les périodes d’utilisation des noms en compétition, pas nécessairement la date d’attribution d’une franchise.
+
 ## Mesure d'audience (Google Analytics 4)
 
 Identifiant du flux : `G-KJ75X36E90`. La balise est chargée uniquement sur `nhlzone.com`, après acceptation dans le panneau de consentement. Le choix est conservé 180 jours. Le bouton « Confidentialité et cookies » en bas de page permet de retirer le consentement ; cela supprime les cookies GA du site et recharge la page sans Analytics.

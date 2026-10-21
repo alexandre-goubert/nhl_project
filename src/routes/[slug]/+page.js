@@ -4,6 +4,7 @@ import matches from '#lib/data/matches.json';
 import { error } from '@sveltejs/kit';
 import { teams } from '#lib/data/teams.js';
 import { teamPageLoaders } from '#lib/data/teamPages.js';
+import franchiseDetails from '#lib/data/franchise-details.json';
 
 export function entries() {
     return teams.map((team) => ({
@@ -43,5 +44,7 @@ export async function load({ params }) {
             <a href="${nhlMeta.standingsSource}">Source NHL</a>.</p>`);
     }
     const derniersMatchs = matches.filter(match => match.teams.includes(equipe.abreviation)).slice(0, 3);
-    return { equipe, contenu, derniersMatchs };
+    const franchise = franchiseDetails.teams[/** @type {keyof typeof franchiseDetails.teams} */ (equipe.slug)];
+    if (!franchise) error(500, `L’historique de ${equipe.nom} est indisponible.`);
+    return { equipe, contenu, derniersMatchs, franchise };
 }

@@ -1,0 +1,165 @@
+/* Palette commune : priorité aux couleurs du thème, même après navigation. */
+html body.dark-mode {
+    color-scheme: dark;
+    --bg-color-dark: #0b1220;
+    --bg-body: #0b1220;
+    --bg-color: #0b1220;
+    --text-color: #f1f5f9;
+    --description-text: #f1f5f9;
+    --card-color-dark: #1c3052;
+    --card-color: #1c3052;
+    --muted-text: #c1ccda;
+    --table-row: #24344c;
+    --link-color: #67d7f3;
+    --border-color: #64748b;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+}
+
+/* Accueil et liste des équipes. */
+body.dark-mode .divisions-menu a {
+    color: var(--link-color);
+}
+
+body.dark-mode .teams-page input {
+    background: var(--card-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+body.dark-mode input::placeholder {
+    color: var(--muted-text);
+    opacity: 1;
+}
+
+body.dark-mode .divisions-menu a:hover,
+body.dark-mode .home-page .button:hover {
+    color: #101c30;
+}
+
+/* Fiches équipes : statistiques, palmarès, joueurs et historique. */
+body.dark-mode :is(.stats-container > div, .stats-container p:last-child,
+    .palmares, .minimap-container, .color-club, .history-container,
+    .season-history, .player, .player-card, .player-container) {
+    color: var(--text-color);
+}
+
+body.dark-mode :is(.stats-container p, .honour-years, .minimap-container p, .color-club p,
+    .player-container p, .player-info p, .team-match-top, .team-match-bottom,
+    .team-match-identity small) {
+    color: var(--muted-text);
+}
+
+body.dark-mode :is(.history-container, .player, .player-card, .player-container,
+    .palmares, .minimap-container, .color-club, .team-match-card) {
+    background-color: var(--card-color);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .season-history tbody tr:nth-child(even) {
+    background: var(--table-row);
+}
+
+body.dark-mode .season-history tbody tr:hover {
+    background: #304460;
+}
+
+body.dark-mode .shirt-container {
+    background: #304460;
+}
+
+body.dark-mode :is(.team-stats-note a, .team-match-bottom a) {
+    color: var(--link-color);
+}
+
+body.dark-mode .team-match-identity a {
+    color: var(--text-color);
+}
+
+/* Matchs et filtres. */
+body.dark-mode :is(.match-card, .matches-filters, .matches-empty) {
+    background: var(--card-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+body.dark-mode :is(.match-top, .match-top span, .match-bottom,
+    .match-bottom span, .match-team small) {
+    color: var(--muted-text);
+}
+
+body.dark-mode .match-team a {
+    color: var(--text-color);
+}
+
+body.dark-mode :is(.winner .match-score, .match-bottom a, .matches-source a) {
+    color: var(--link-color);
+}
+
+body.dark-mode .matches-filters :is(input, select) {
+    background: #0f2037;
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+body.dark-mode :is(.match-status, .winner-badge, .playoff-badge, .team-match-winner-badge) {
+    background: #143d50;
+    color: #a5ecff;
+}
+
+/* Quiz : sélection, validation, résultat et boutons désactivés. */
+body.dark-mode :is(.quiz-card h3, .quiz-card p, .quiz-introduction p,
+    #question-title, #question-counter, #quiz-feedback, #result-title, #final-score,
+    .quiz-title) {
+    color: var(--text-color);
+}
+
+body.dark-mode .quiz-card {
+    background: var(--card-color);
+}
+
+body.dark-mode :is(.quiz-back, .quiz-back:visited, #quiz-result a) {
+    color: var(--link-color);
+}
+
+body.dark-mode :is(.quiz-answers button, #validate-answer, #next-question, #restart-quiz) {
+    background: #1c3052;
+    color: #f1f5f9;
+    border-color: #67d7f3;
+}
+
+body.dark-mode :is(.quiz-answers button, #validate-answer, #next-question, #restart-quiz):hover:not(:disabled),
+body.dark-mode .quiz-answers button[aria-pressed="true"] {
+    background: #67d7f3;
+    color: #101c30;
+}
+
+body.dark-mode .quiz-answers button.correct {
+    background: #14532d;
+    color: #dcfce7;
+    border-color: #86efac;
+    opacity: 1;
+}
+
+body.dark-mode .quiz-answers button.incorrect {
+    background: #7f1d1d;
+    color: #fee2e2;
+    border-color: #fca5a5;
+    opacity: 1;
+}
+
+body.dark-mode #validate-answer:disabled {
+    background: #27364a;
+    color: #c1ccda;
+    border-color: #64748b;
+    cursor: not-allowed;
+}
+
+body.dark-mode progress {
+    accent-color: #67d7f3;
+}
+
+body.dark-mode :is(a, button, input, select, summary, [tabindex]):focus-visible {
+    outline: 3px solid #67d7f3;
+    outline-offset: 3px;
+}

@@ -2,6 +2,7 @@
     import { onNavigate } from '$app/navigation';
     import { asset } from '$app/paths';
     import AnalyticsConsent from '#lib/components/AnalyticsConsent.svelte';
+    import '#lib/theme.css';
 
     // Attend le CSS des pages héritées avant d'afficher leur contenu.
     const pageStyles = new Map([

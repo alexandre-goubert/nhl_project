@@ -1,5 +1,6 @@
 <script>
     import { asset, resolve } from '$app/paths';
+    import FranchiseDetails from '#lib/components/FranchiseDetails.svelte';
 
     let { data } = $props();
 
@@ -11,10 +12,15 @@
         )
     );
     let contentParts = $derived.by(() => {
-        const statsNote = /<p class="team-stats-note">[\s\S]*?<\/p>/.exec(contenu);
-        if (!statsNote) return [contenu, ''];
+        // Chaque fragment reste équilibré : le composant partage le même <main>.
+        const main = /<main[^>]*>([\s\S]*?)<\/main>([\s\S]*)/.exec(contenu);
+        if (!main) throw new Error('Structure de la fiche équipe invalide.');
+        const body = main[1];
+        const statsNote = /<p class="team-stats-note">[\s\S]*?<\/p>/.exec(body);
+        const squad = /<h2\b[^>]*\bid="squad"[^>]*>/.exec(body);
+        if (!statsNote || !squad) throw new Error('Section manquante dans la fiche équipe.');
         const splitAt = statsNote.index + statsNote[0].length;
-        return [contenu.slice(0, splitAt), contenu.slice(splitAt)];
+        return [body.slice(0, splitAt), body.slice(splitAt, squad.index), body.slice(squad.index), main[2]];
     });
 
     const site = 'https://nhlzone.com';
@@ -56,6 +62,8 @@
     <link rel="stylesheet" href={asset('team-style.css')} />
 </svelte:head>
 
+<main>
+<a class="back-to-teams" href={resolve('/equipes')}>← Retour aux équipes</a>
 {@html contentParts[0]}
 
 <section class="team-recent-matches" aria-labelledby="recent-matches-title">
@@ -91,3 +99,7 @@
 </section>
 
 {@html contentParts[1]}
+<FranchiseDetails franchise={data.franchise} />
+{@html contentParts[2]}
+</main>
+{@html contentParts[3]}

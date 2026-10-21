@@ -418,8 +418,35 @@ a:hover {
 .team-presentation-container {
     grid-area: presentation;
     display: grid;
-    gap: 14px;
+    grid-template-columns: minmax(0, 1fr) 380px;
+    column-gap: 40px;
+    row-gap: 14px;
+    align-items: center;
     min-width: 0;
+}
+
+.team-presentation-container > :not(.minimap-container) {
+    grid-column: 1;
+}
+
+.team-presentation-container .minimap-container {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    padding: 12px;
+}
+
+.team-presentation-container .minimap-container h2 {
+    font-size: 16px;
+}
+
+.team-presentation-container .minimap-container p {
+    margin: 4px 0 8px;
+    font-size: 14px;
+}
+
+.team-presentation-container .minimap-container img {
+    width: 100%;
+    height: auto;
 }
 
 .team-presentation-container .conference,
@@ -439,6 +466,29 @@ a:hover {
 .conference p {
     margin: 0;
     padding: 0;
+}
+
+.back-to-teams {
+    display: inline-block;
+    margin: 0 0 16px;
+    padding: 10px 18px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #101C30;
+    border: 1px solid #39BDE0;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.back-to-teams:visited {
+    color: white;
+}
+
+.back-to-teams:hover,
+.back-to-teams:focus-visible {
+    color: white;
+    background-color: #1C3052;
 }
 
 .equipe-nom {
@@ -1041,7 +1091,6 @@ a:hover {
 }
 
 .palmares {
-    grid-row: span 2;
     min-width: 0;
     padding: 24px;
     background: var(--card-color);
@@ -1994,6 +2043,17 @@ img {
 
 /* Tablettes et mobiles */
 
+@media (max-width: 1200px) {
+    .team-presentation-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .team-presentation-container .minimap-container {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
+
 @media (max-width: 1000px) {
     .roster-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2033,6 +2093,15 @@ img {
         grid-template-areas: "logo" "presentation";
         padding: 24px;
         gap: 24px;
+    }
+
+    .team-presentation-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .team-presentation-container .minimap-container {
+        grid-column: 1;
+        grid-row: auto;
     }
 
     .color-container {
@@ -2085,7 +2154,31 @@ img {
 
 @media (max-width: 480px) {
     .roster-grid {
-        grid-template-columns: minmax(0, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .shirt-container img {
+        width: 130px;
+    }
+
+    .shirt-container p {
+        top: 38px;
+        font-size: 28px;
+    }
+
+    .player-container {
+        padding: 12px 8px;
+    }
+
+    .player-container h4 {
+        margin-bottom: 4px;
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .player-container p {
+        font-size: 12px;
     }
 
 }

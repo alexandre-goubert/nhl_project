@@ -1,5 +1,6 @@
 <script>
 import { asset, resolve } from '$app/paths';
+    import { onMount } from 'svelte';
     let theme = $state('light');
     let menuEquipesOuvert = $state(false);
 
@@ -7,7 +8,15 @@ import { asset, resolve } from '$app/paths';
     function setTheme(nextTheme) {
         theme = nextTheme;
         document.body.classList.toggle('dark-mode', theme === 'dark');
+        try { localStorage.setItem('nhlzone-theme', theme); } catch { /* Stockage indisponible. */ }
     }
+
+    onMount(() => {
+        try {
+            const saved = localStorage.getItem('nhlzone-theme');
+            if (saved === 'dark' || saved === 'light') setTheme(saved);
+        } catch { /* Conserve le thème courant. */ }
+    });
 </script>
 
 <header>
